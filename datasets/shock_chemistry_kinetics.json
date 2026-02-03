@@ -1,0 +1,26 @@
+{
+  "description": "Zeldovich Mechanism Reaction Rates (High Temp Air)",
+  "reactions": [
+    {
+      "reaction": "O + N2 -> NO + N",
+      "A": 180000000000000.0,
+      "b": 0.0,
+      "Ea_cal_mol": 76250,
+      "note": "Rate-limiting step for thermal NO formation"
+    },
+    {
+      "reaction": "N + O2 -> NO + O",
+      "A": 6400000000.0,
+      "b": 1.0,
+      "Ea_cal_mol": 6280,
+      "note": "Fast secondary step"
+    },
+    {
+      "reaction": "N + OH -> NO + H",
+      "A": 38000000000000.0,
+      "b": 0.0,
+      "Ea_cal_mol": 0,
+      "note": "Relevant in moist atmosphere (ocean impact)"
+    }
+  ]
+}

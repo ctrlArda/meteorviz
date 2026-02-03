@@ -1,0 +1,47 @@
+{
+  "Bennu": {
+    "shape_type": "Spinning Top",
+    "sphericity": 0.85,
+    "drag_coefficient_cd": 1.8,
+    "rotation_period_hours": 4.29,
+    "porosity_percent": 50,
+    "model_url": "https://nasa3d.arc.nasa.gov/detail/bennu"
+  },
+  "Itokawa": {
+    "shape_type": "Peanut / Bi-lobed",
+    "sphericity": 0.6,
+    "drag_coefficient_cd": 2.2,
+    "rotation_period_hours": 12.13,
+    "porosity_percent": 40,
+    "model_url": "https://nasa3d.arc.nasa.gov/detail/itokawa"
+  },
+  "Eros": {
+    "shape_type": "Elongated / Potato",
+    "sphericity": 0.55,
+    "drag_coefficient_cd": 2.5,
+    "rotation_period_hours": 5.27,
+    "porosity_percent": 20,
+    "model_url": "https://nasa3d.arc.nasa.gov/detail/eros-shaped"
+  },
+  "Ryugu": {
+    "shape_type": "Spinning Top / Diamond",
+    "sphericity": 0.88,
+    "drag_coefficient_cd": 1.9,
+    "rotation_period_hours": 7.63,
+    "porosity_percent": 55,
+    "model_url": "https://nasa3d.arc.nasa.gov/detail/ryugu"
+  },
+  "Didymos": {
+    "shape_type": "Spheroid + Moonlet",
+    "sphericity": 0.9,
+    "drag_coefficient_cd": 1.5,
+    "rotation_period_hours": 2.26,
+    "porosity_percent": 20
+  },
+  "Chicxulub_Impactor": {
+    "shape_type": "Spherical (Assumed)",
+    "sphericity": 0.98,
+    "drag_coefficient_cd": 1.2,
+    "porosity_percent": 10
+  }
+}

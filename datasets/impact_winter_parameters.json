@@ -1,0 +1,79 @@
+{
+  "dust_injection_models": {
+    "small_impact_10mt": {
+      "dust_mass_kg": 1000000000.0,
+      "stratosphere_residence_months": 3,
+      "surface_cooling_kelvin": 0.1,
+      "regional_effect": true
+    },
+    "medium_impact_1000mt": {
+      "dust_mass_kg": 1000000000000.0,
+      "stratosphere_residence_months": 12,
+      "surface_cooling_kelvin": 2,
+      "hemisphere_effect": true
+    },
+    "large_impact_1e6mt": {
+      "dust_mass_kg": 1000000000000000.0,
+      "stratosphere_residence_months": 36,
+      "surface_cooling_kelvin": 10,
+      "global_effect": true,
+      "crop_failure_probability": 0.9
+    },
+    "chicxulub_class_1e8mt": {
+      "dust_mass_kg": 1e+18,
+      "stratosphere_residence_months": 120,
+      "surface_cooling_kelvin": 26,
+      "global_effect": true,
+      "mass_extinction": true,
+      "photosynthesis_shutdown_months": 24
+    }
+  },
+  "volcanic_analogues": {
+    "tambora_1815": {
+      "vei": 7,
+      "sulfur_dioxide_mt": 100,
+      "global_cooling_kelvin": 0.5,
+      "year_without_summer": true
+    },
+    "pinatubo_1991": {
+      "vei": 6,
+      "sulfur_dioxide_mt": 20,
+      "global_cooling_kelvin": 0.3,
+      "duration_years": 2
+    },
+    "laki_1783": {
+      "vei": 4,
+      "sulfur_dioxide_mt": 120,
+      "regional_deaths": 23000,
+      "crop_failure_europe": true
+    }
+  },
+  "impact_winter_thresholds": {
+    "regional_climate_change_joules": 1e+18,
+    "continental_climate_change_joules": 1e+20,
+    "global_climate_change_joules": 1e+22,
+    "mass_extinction_joules": 1e+24
+  },
+  "recovery_timescales": {
+    "dust_settling_months": [
+      6,
+      24,
+      60
+    ],
+    "ocean_temperature_recovery_years": [
+      5,
+      20,
+      100
+    ],
+    "ecosystem_recovery_years": [
+      10,
+      100,
+      1000
+    ],
+    "atmospheric_chemistry_years": [
+      2,
+      10,
+      50
+    ]
+  }
+}

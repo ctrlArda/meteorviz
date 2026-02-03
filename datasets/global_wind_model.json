@@ -1,0 +1,76 @@
+{
+  "description": "Simplified Global Atmospheric Circulation Model",
+  "units": "m/s",
+  "zones": [
+    {
+      "name": "Polar Easterlies (North)",
+      "lat_min": 60,
+      "lat_max": 90,
+      "u_avg": -5.0,
+      "v_avg": -2.0,
+      "variability": 0.5
+    },
+    {
+      "name": "Westerlies (North)",
+      "lat_min": 30,
+      "lat_max": 60,
+      "u_avg": 10.0,
+      "v_avg": 2.0,
+      "variability": 0.4
+    },
+    {
+      "name": "Trade Winds (North)",
+      "lat_min": 0,
+      "lat_max": 30,
+      "u_avg": -6.0,
+      "v_avg": -1.0,
+      "variability": 0.3
+    },
+    {
+      "name": "Trade Winds (South)",
+      "lat_min": -30,
+      "lat_max": 0,
+      "u_avg": -6.0,
+      "v_avg": 1.0,
+      "variability": 0.3
+    },
+    {
+      "name": "Westerlies (South)",
+      "lat_min": -60,
+      "lat_max": -30,
+      "u_avg": 12.0,
+      "v_avg": -2.0,
+      "variability": 0.4
+    },
+    {
+      "name": "Polar Easterlies (South)",
+      "lat_min": -90,
+      "lat_max": -60,
+      "u_avg": -8.0,
+      "v_avg": 3.0,
+      "variability": 0.6
+    }
+  ],
+  "jet_streams": [
+    {
+      "name": "Polar Jet (North)",
+      "lat": 60,
+      "speed": 40
+    },
+    {
+      "name": "Subtropical Jet (North)",
+      "lat": 30,
+      "speed": 35
+    },
+    {
+      "name": "Subtropical Jet (South)",
+      "lat": -30,
+      "speed": 35
+    },
+    {
+      "name": "Polar Jet (South)",
+      "lat": -60,
+      "speed": 45
+    }
+  ]
+}

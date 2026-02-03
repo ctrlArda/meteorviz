@@ -1,0 +1,17 @@
+region,gdp_per_km2_usd,asset_value_multiplier
+North America (Urban),5000000,3.5
+North America (Rural),50000,2.0
+Europe (Western Urban),4000000,3.2
+Europe (Rural),45000,2.2
+East Asia (Urban),3500000,3.0
+East Asia (Rural),30000,1.8
+South Asia (Urban),1500000,2.5
+South Asia (Rural),15000,1.5
+Middle East (Urban),2500000,2.8
+Africa (Urban),800000,2.0
+Africa (Rural),5000,1.2
+South America (Urban),1200000,2.2
+South America (Rural),10000,1.5
+Oceania (Urban),3000000,3.0
+Oceania (Rural),20000,1.8
+Polar/Desert/Empty,0,1.0

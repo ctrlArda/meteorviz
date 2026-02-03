@@ -1,0 +1,78 @@
+{
+  "ground_based_surveys": {
+    "catalina_sky_survey": {
+      "location": "Arizona, USA",
+      "telescope_aperture_m": 1.5,
+      "limiting_magnitude": 21.5,
+      "neos_discovered": 47000,
+      "status": "Operational"
+    },
+    "pan_starrs": {
+      "location": "Hawaii, USA",
+      "telescope_aperture_m": 1.8,
+      "limiting_magnitude": 22.0,
+      "neos_discovered": 8000,
+      "status": "Operational"
+    },
+    "atlas": {
+      "location": "Hawaii, Chile, South Africa",
+      "telescope_aperture_m": 0.5,
+      "limiting_magnitude": 19.5,
+      "coverage": "Full sky every 2 nights",
+      "detection_range_m_asteroid": {
+        "20m": "Days",
+        "100m": "Weeks"
+      },
+      "status": "Operational"
+    },
+    "zwicky_transient_facility": {
+      "location": "California, USA",
+      "telescope_aperture_m": 1.2,
+      "limiting_magnitude": 20.5,
+      "status": "Operational"
+    }
+  },
+  "space_based_surveys": {
+    "neowise": {
+      "wavelength": "Infrared",
+      "neos_discovered": 377,
+      "neos_characterized": 215000,
+      "status": "Decommissioned 2024"
+    },
+    "neo_surveyor": {
+      "launch_year": 2028,
+      "wavelength": "Infrared",
+      "expected_detections": "65% of 140m+ PHAs in 5 years",
+      "status": "In development"
+    },
+    "vera_rubin_observatory": {
+      "location": "Chile",
+      "first_light_year": 2025,
+      "expected_neo_detections_per_year": 10000,
+      "status": "Under construction"
+    }
+  },
+  "radar_facilities": {
+    "goldstone": {
+      "location": "California, USA",
+      "antenna_diameter_m": 70,
+      "range_au": 0.1,
+      "resolution_m": 4,
+      "capabilities": [
+        "Shape modeling",
+        "Rotation",
+        "Moon detection"
+      ]
+    },
+    "arecibo": {
+      "location": "Puerto Rico",
+      "status": "Collapsed 2020",
+      "historical_importance": "Highest resolution asteroid radar"
+    },
+    "green_bank": {
+      "location": "West Virginia, USA",
+      "antenna_diameter_m": 100,
+      "status": "Operational (receive only)"
+    }
+  }
+}

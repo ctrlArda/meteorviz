@@ -1,0 +1,7331 @@
+[
+  {
+    "name": "Medical Park",
+    "lat": 36.8566029,
+    "lon": 30.7468263,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Yakutiye Araştırma Hastanesi",
+    "lat": 39.8976812,
+    "lon": 41.2398127,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "მედიჰელპი",
+    "lat": 41.7134621,
+    "lon": 44.7990535,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Baltalimanı Hastanesi",
+    "lat": 41.0964088,
+    "lon": 29.0535611,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Արթիկի ծննդատուն",
+    "lat": 40.6167606,
+    "lon": 43.9690525,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Γενικό Νοσοκομείο Διδυμοτείχου",
+    "lat": 41.352231,
+    "lon": 26.5036849,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Florence Nightingale",
+    "lat": 41.0632063,
+    "lon": 29.0042388,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Պոլիկլինիկա թիվ 3",
+    "lat": 40.1523212,
+    "lon": 44.4746215,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Սուրբ Աստվածամայր բժշկական կենտրոն",
+    "lat": 40.1524467,
+    "lon": 44.4738686,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Şifa Hastanesi",
+    "lat": 38.7370205,
+    "lon": 41.4942881,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Արթիկի բժշկական կենտրոն",
+    "lat": 40.6147621,
+    "lon": 43.9682169,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ծաղկահովիտի հիվանդանոց",
+    "lat": 40.6377707,
+    "lon": 44.2214512,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Bağcılar Tekden Hastanesi",
+    "lat": 41.0479666,
+    "lon": 28.8449942,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Hospital",
+    "lat": 40.977664,
+    "lon": 28.8730593,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Kuşadası Özel Hastanesi",
+    "lat": 37.8600215,
+    "lon": 27.2678679,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "First Aid",
+    "lat": 39.3686384,
+    "lon": 26.1747433,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی فریاکەوتنی رۆژئاوای هەولێر",
+    "lat": 36.1611088,
+    "lon": 43.9685698,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "SDÜ Araştırma ve Uygulama Hastanesi",
+    "lat": 37.8274484,
+    "lon": 30.5399429,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çevre Hastanesi",
+    "lat": 41.0672214,
+    "lon": 29.0013232,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Քանաքեռ-Զեյթուն բժշկական կենտրոն",
+    "lat": 40.2045568,
+    "lon": 44.5325965,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Amerikan Hastanesi",
+    "lat": 41.0533806,
+    "lon": 28.9952948,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ΕΠΕΙΓΟΝΤΑ",
+    "lat": 39.0919135,
+    "lon": 26.5493107,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Unknown Hospital",
+    "lat": 39.0058606,
+    "lon": 31.1442464,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kaşkaloğlu Göz Hastanesi",
+    "lat": 38.432016,
+    "lon": 27.1473523,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Fulya Hastanesi",
+    "lat": 41.0557195,
+    "lon": 28.9995499,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Özel Avcılar Anadolu Hastanesi",
+    "lat": 41.0054462,
+    "lon": 28.7061163,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Avcılar Hospital",
+    "lat": 40.9947818,
+    "lon": 28.709593,
+    "beds": "Unknown",
+    "operator": "Özel Hastane"
+  },
+  {
+    "name": "Özel Medicana Hastanesi",
+    "lat": 40.9812753,
+    "lon": 28.7211479,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی نێودەوڵەتی ژین",
+    "lat": 36.1944524,
+    "lon": 44.044492,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Başkent Üniversitesi Zübeyde Hanım Uygulama Merkezi",
+    "lat": 38.4640228,
+    "lon": 27.0932624,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Raparin Teaching Hospital For Children",
+    "lat": 36.2188658,
+    "lon": 44.0355138,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Khanzad teaching Center for Oral and Dental Health",
+    "lat": 36.1961977,
+    "lon": 44.0170763,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی تایبەتی هەولێر",
+    "lat": 36.2174045,
+    "lon": 43.9861067,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی ڕزگاری",
+    "lat": 36.1917592,
+    "lon": 44.0379796,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی سەردەمی تایبەت",
+    "lat": 36.1676776,
+    "lon": 43.9763724,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Koç Üniversitesi Hastanesi",
+    "lat": 41.0241414,
+    "lon": 28.9166504,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Mediplus Tıp Merkezi",
+    "lat": 41.0178075,
+    "lon": 28.6608987,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی فریاکەوتنی ڕۆژهەڵات",
+    "lat": 36.1926381,
+    "lon": 44.0394417,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ÇOMÜ Tıp Fakültesi Hastanesi",
+    "lat": 40.1154569,
+    "lon": 26.4135683,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Fatih Hastanesi",
+    "lat": 41.0156766,
+    "lon": 28.9507717,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İstanbul Cerrahi Hastanesi",
+    "lat": 41.0555721,
+    "lon": 28.9980027,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bağcılar Eğitim ve Araştırma Hastanesi",
+    "lat": 41.0301322,
+    "lon": 28.8712404,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel İstanbul Şafak Hastahanesi",
+    "lat": 41.0656093,
+    "lon": 28.8999746,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Derman Hastanesi",
+    "lat": 41.4036983,
+    "lon": 27.3551443,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Saygı Hastanesi",
+    "lat": 40.9697567,
+    "lon": 29.2581715,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sultanbeyli Dünyagöz Hastanesi",
+    "lat": 40.9685018,
+    "lon": 29.2534249,
+    "beds": "Unknown",
+    "operator": "Dünyagöz"
+  },
+  {
+    "name": "Ersoy Hastanesi",
+    "lat": 40.966572,
+    "lon": 29.2694043,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "balıklı rum hastanesi vakfı",
+    "lat": 40.9996039,
+    "lon": 28.9175398,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yedikule Göğüş Hastalıkları Hastanesi",
+    "lat": 41.0021036,
+    "lon": 28.9152374,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yedikule Surp PIRGIÇ ERMENI Hastanesi",
+    "lat": 40.9938689,
+    "lon": 28.9152516,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "SÜLEYMANİYE KADIN DOĞUM VE ÇOCUK HASTANESİ",
+    "lat": 40.9956164,
+    "lon": 28.9148279,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "MEDILIFE HASTANESİ",
+    "lat": 41.048796,
+    "lon": 28.8595084,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Hospitalist Hastanesi",
+    "lat": 41.0345832,
+    "lon": 28.8550884,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "المشفى الجديد",
+    "lat": 36.3636584,
+    "lon": 37.4963741,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی مێدیکانۆ",
+    "lat": 36.2123772,
+    "lon": 44.010899,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dünya Göz Hastanesi",
+    "lat": 40.8788795,
+    "lon": 29.2362412,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Selçuklu Hastanesi",
+    "lat": 37.1731904,
+    "lon": 33.2226255,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yaşam Tıp Merkezi",
+    "lat": 41.6371858,
+    "lon": 32.3312007,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bezmialem Vakıf Üniversitesi Tıp Fakültesi Acil Tıp",
+    "lat": 41.0199922,
+    "lon": 28.9348553,
+    "beds": "Unknown",
+    "operator": "Bezmialem Vakfı"
+  },
+  {
+    "name": "İstanbul Üniversitesi Tıp Fakültesi Hastanesi",
+    "lat": 41.0168625,
+    "lon": 28.9339596,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Avusturya Sen Jorj Hastanesi",
+    "lat": 41.0242924,
+    "lon": 28.9743145,
+    "beds": "48",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Asya Hastanesi",
+    "lat": 41.073873,
+    "lon": 28.9038241,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Bilge Hastanesi",
+    "lat": 41.0695422,
+    "lon": 28.9073845,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Avrupa Özel Şafak Hastanesi",
+    "lat": 41.0596967,
+    "lon": 28.9123842,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی مێدیکاڵ هێڵپ",
+    "lat": 36.2071764,
+    "lon": 44.0250779,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Lüleburgaz Tıp Merkezi",
+    "lat": 41.400153,
+    "lon": 27.364433,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Semel General Hospital",
+    "lat": 36.8606958,
+    "lon": 42.8369617,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی مەریەمانە",
+    "lat": 36.2276888,
+    "lon": 43.9915332,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kadın Doğum Ve Çocuk Acil",
+    "lat": 39.9640568,
+    "lon": 32.8290487,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel PembeMavi Hastanesi",
+    "lat": 40.2327279,
+    "lon": 28.9801761,
+    "beds": "Unknown",
+    "operator": "Özel PembeMavi Hastanesi"
+  },
+  {
+    "name": "Yedigün Tıp Merkezi Çamdibi Şubesi",
+    "lat": 38.4349213,
+    "lon": 27.1923771,
+    "beds": "Unknown",
+    "operator": "Yedigün Tıp Merkezi"
+  },
+  {
+    "name": "Cure Plus Medical Clinic",
+    "lat": 36.6533943,
+    "lon": 31.6816726,
+    "beds": "Unknown",
+    "operator": "Dr. Jale Dağlı, MD"
+  },
+  {
+    "name": "Özel Akhisar Doğuş Hastanesi",
+    "lat": 38.9126062,
+    "lon": 27.8264444,
+    "beds": "Unknown",
+    "operator": "Doğuş"
+  },
+  {
+    "name": "Akhisar Mustafa Kirazoğlu Devlet Hastanesi",
+    "lat": 38.9139883,
+    "lon": 27.8305462,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ქ.თბილისის კარდიოლოგიური საავადმყოფო",
+    "lat": 41.7060115,
+    "lon": 44.7972347,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çorlu Ağız ve Diş Sağlığı Merkezi",
+    "lat": 41.1500602,
+    "lon": 27.8476731,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tekirdağ Doktor İsmail Fehmi Cumalıoğlu Şehir Hastanesi Acil",
+    "lat": 41.0083859,
+    "lon": 27.5245198,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Resul Ülkümen Veteriner Kliniği",
+    "lat": 37.181094,
+    "lon": 33.2099716,
+    "beds": "Unknown",
+    "operator": "Resul Ülkümen Veteriner Kliniği"
+  },
+  {
+    "name": "Medicana Zincirlikuyu Hastanesi",
+    "lat": 41.0714522,
+    "lon": 29.0151774,
+    "beds": "Unknown",
+    "operator": "Medicana Sağlık Grubu"
+  },
+  {
+    "name": "Özel Medar Hastanesi Acil Girişi",
+    "lat": 40.7602438,
+    "lon": 30.3620976,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "SEAH Ambulans Acil Girişi",
+    "lat": 40.7560786,
+    "lon": 30.390358,
+    "beds": "Unknown",
+    "operator": "Sakarya Üniversitesi Eğitim ve Araştırma Hastanesi"
+  },
+  {
+    "name": "SEAH Sarı Alan Acil Girişi",
+    "lat": 40.7563157,
+    "lon": 30.3896103,
+    "beds": "Unknown",
+    "operator": "Sakarya Üniversitesi Eğitim ve Araştırma Hastanesi"
+  },
+  {
+    "name": "SEAH Yeşil Alan Acil Girişi",
+    "lat": 40.7562616,
+    "lon": 30.3888048,
+    "beds": "Unknown",
+    "operator": "Sakarya Üniversitesi Eğitim ve Araştırma Hastanesi"
+  },
+  {
+    "name": "SEAH Çocuk Acil",
+    "lat": 40.757332,
+    "lon": 30.3877892,
+    "beds": "Unknown",
+    "operator": "Sakarya Üniversitesi Eğitim ve Araştırma Hastanesi"
+  },
+  {
+    "name": "SEAH Doğum Acil",
+    "lat": 40.7575766,
+    "lon": 30.3879998,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "PAKY HOSPITAL | نەخۆشخانەی پاکی",
+    "lat": 36.1706849,
+    "lon": 43.9789833,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yeni AKTIP",
+    "lat": 41.6219427,
+    "lon": 32.341383,
+    "beds": "Unknown",
+    "operator": "Özel Hastane"
+  },
+  {
+    "name": "Vize Devlet Hastanesi",
+    "lat": 41.5841943,
+    "lon": 27.7537747,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Konya Numune Hastanesi Acil",
+    "lat": 37.8804182,
+    "lon": 32.491073,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Belde Tıp Merkezi",
+    "lat": 41.0567006,
+    "lon": 28.9153423,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "German Hospital",
+    "lat": 41.7340889,
+    "lon": 44.7749185,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ardahan Ağız Ve Diş Sağlığı Merkezi",
+    "lat": 41.1053069,
+    "lon": 42.690999,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çıldır ilçe devlet hastanesi",
+    "lat": 41.1226242,
+    "lon": 43.1382465,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ი. ჟორდანიას სახელობის სამედიცინო ცენტრი",
+    "lat": 41.7285496,
+    "lon": 44.7174059,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ege Üniversitesi Hastanesi",
+    "lat": 38.4554655,
+    "lon": 27.2110809,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Eşrefpaşa Hastanesi",
+    "lat": 38.4242833,
+    "lon": 27.160391,
+    "beds": "Unknown",
+    "operator": "İzmir Büyükşehir Belediyesi"
+  },
+  {
+    "name": "Central Hospital",
+    "lat": 38.4608814,
+    "lon": 27.1669755,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "\"Արմենիա\" հանրապետական բժշկական կենտրոն",
+    "lat": 40.2074148,
+    "lon": 44.4784592,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ankara Üniversitesi Tıp Fakültesi Cebeci Hastanesi",
+    "lat": 39.9333314,
+    "lon": 32.8836893,
+    "beds": "Unknown",
+    "operator": "Ankara Üniversitesi"
+  },
+  {
+    "name": "Kemer Özel Yasam Hastanesi",
+    "lat": 36.5990092,
+    "lon": 30.5579537,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çapa Tıp Fakültesi Hastanesi",
+    "lat": 41.0169569,
+    "lon": 28.9339536,
+    "beds": "Unknown",
+    "operator": "T.C. İstanbul Üniversitesi"
+  },
+  {
+    "name": "Özel Çapa Hastanesi",
+    "lat": 41.0133216,
+    "lon": 28.9341763,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İstanbul Bezmialem Vakıf Üniversitesi Valide Sultan Gureba Hastanesi",
+    "lat": 41.0186346,
+    "lon": 28.9359844,
+    "beds": "Unknown",
+    "operator": "İstanbul Bezm-i alem Vakfı"
+  },
+  {
+    "name": "Medilife Çapa Hastanesi",
+    "lat": 41.0148299,
+    "lon": 28.9334617,
+    "beds": "Unknown",
+    "operator": "Medilife"
+  },
+  {
+    "name": "Özel Batman Hastanesi",
+    "lat": 37.8992163,
+    "lon": 41.1302146,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ardahan İl Sağlık Müdürlüğü",
+    "lat": 41.1050059,
+    "lon": 42.6905735,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Gürlife Hospital Hastanesi",
+    "lat": 39.7951864,
+    "lon": 30.5348931,
+    "beds": "Unknown",
+    "operator": "Özel Gürlife Hospital Hastanesi"
+  },
+  {
+    "name": "Kapadokya Hastanesi",
+    "lat": 38.644561,
+    "lon": 34.7329454,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ավստրիական մանկական հիվանդանոց",
+    "lat": 40.803812,
+    "lon": 43.8493565,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "sağlık ocağı",
+    "lat": 37.365995,
+    "lon": 32.1293117,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "lokman hekim hayat hastanesi",
+    "lat": 38.4942078,
+    "lon": 43.3971738,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İstanbul Eğitim ve Araştırma Hastanesi",
+    "lat": 41.0032691,
+    "lon": 28.9380405,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "SBÜ Sultan Abdülhamid Han Eğitim ve Araştırma Hastanesi",
+    "lat": 41.0011021,
+    "lon": 29.0206857,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Şişli Etfal Eğitim ve Araştırma Hastanesi",
+    "lat": 41.0578908,
+    "lon": 28.9906883,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Haydarpaşa Numune Eğitim ve Araştırma Hastanesi",
+    "lat": 41.004774,
+    "lon": 29.0229597,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dr. Lütfi Kırdar Kartal Eğitim ve Araştırma Hastanesi",
+    "lat": 40.9151429,
+    "lon": 29.1739112,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Okmeydanı Profesör Doktor Cemil Taşçıoğlu Şehir Hastanesi",
+    "lat": 41.0645108,
+    "lon": 28.9749829,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Göztepe Prof. Dr. Süleyman Yalçın Şehir Hastanesi",
+    "lat": 40.9867224,
+    "lon": 29.0570969,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dokuz Eylül Üniversitesi Hastanesi",
+    "lat": 38.3946095,
+    "lon": 27.0341514,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İzmir Atatürk Eğitim ve Araştırma Hastanesi",
+    "lat": 38.3971847,
+    "lon": 27.1038006,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Maltepe Üniversitesi Hastanesi",
+    "lat": 40.925514,
+    "lon": 29.1351134,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Finike Devlet Hastanesi",
+    "lat": 36.3033443,
+    "lon": 30.1496115,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ღუდუშაურის სახელობის ეროვნული სამედიცინო ცენტრი",
+    "lat": 41.7792551,
+    "lon": 44.7728221,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Aliağa Devlet Hastanesi",
+    "lat": 38.7869883,
+    "lon": 26.9753373,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Medical Point İzmir Hastanesi",
+    "lat": 38.4737102,
+    "lon": 27.1122187,
+    "beds": "Unknown",
+    "operator": "Medical Point"
+  },
+  {
+    "name": "Buca Kadın Doğum ve Çocuk Hastanesi",
+    "lat": 38.3759344,
+    "lon": 27.1810268,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Erenköy Polikliniği",
+    "lat": 40.972152,
+    "lon": 29.0763939,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tınaztepe Hastanesi",
+    "lat": 38.37029,
+    "lon": 27.1936683,
+    "beds": "Unknown",
+    "operator": "İzmir Tınaztepe Üniversitesi"
+  },
+  {
+    "name": "Fatih Sultan Mehmet Eğitim ve Araştırma Hastanesi",
+    "lat": 40.9710632,
+    "lon": 29.1048837,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Avicenna Hastanesi",
+    "lat": 40.9793026,
+    "lon": 29.108622,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Zara Devlet Hastanesi",
+    "lat": 39.8925816,
+    "lon": 37.7487738,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ondokuz Mayıs Üniversitesi Tıp Fakültesi Hastanesi",
+    "lat": 41.3715524,
+    "lon": 36.2115367,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kolan Hospital-Beylikdüzü",
+    "lat": 41.0066704,
+    "lon": 28.6296259,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Turgut Özal Tıp Merkezi",
+    "lat": 38.3378688,
+    "lon": 38.429708,
+    "beds": "Unknown",
+    "operator": "İnönü Üniversitesi"
+  },
+  {
+    "name": "Amasya Üniversitesi Sabuncuoğlu Şerefeddin Eğitim ve Araştırma Hastanesi",
+    "lat": 40.6612604,
+    "lon": 35.847037,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "VM Medicalpark Mersin",
+    "lat": 36.7595257,
+    "lon": 34.5443006,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Susehri Devlet Hastanesi",
+    "lat": 40.1694943,
+    "lon": 38.0820052,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Karacabey Eski Devlet Hastanesi",
+    "lat": 40.2147015,
+    "lon": 28.3545438,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Emsey Hastanesi",
+    "lat": 40.9237898,
+    "lon": 29.2888718,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Seyhan Devlet Hastanesi",
+    "lat": 37.0198591,
+    "lon": 35.3188718,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Fatih Medical Park Hastanesi",
+    "lat": 41.0148015,
+    "lon": 28.9522605,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Unknown Hospital",
+    "lat": 40.1908551,
+    "lon": 44.5279625,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "MedStar Topçular Hastanesi",
+    "lat": 36.8854618,
+    "lon": 30.7399663,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İzmir Atatürk Eğitim ve Araştırma Hastanesi Hatay Hizmet Binası",
+    "lat": 38.4030757,
+    "lon": 27.1121201,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Esenyurt Necmi Kadıoğlu Devlet Hastanesi",
+    "lat": 41.0286914,
+    "lon": 28.6683609,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Reyap Hastanesi",
+    "lat": 41.1534421,
+    "lon": 27.8286567,
+    "beds": "Unknown",
+    "operator": "Reyap Sağlık Grubu"
+  },
+  {
+    "name": "Özel Çorlu Vatan Hastanesi",
+    "lat": 41.1616576,
+    "lon": 27.8012419,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Ulus Hastanesi",
+    "lat": 39.9538484,
+    "lon": 32.8530502,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "مستشفى رأس العين",
+    "lat": 36.8460093,
+    "lon": 40.074886,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Ata Grup Tıp Merkezi",
+    "lat": 39.8732775,
+    "lon": 32.6889154,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Amasya Gümüşhacıköy Devlet Hastanesi",
+    "lat": 40.8807499,
+    "lon": 35.2035848,
+    "beds": "Unknown",
+    "operator": "T.C. Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Zilan Hastanesi",
+    "lat": 37.8964878,
+    "lon": 41.1265326,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dünya Hastanesi",
+    "lat": 37.9023306,
+    "lon": 41.143035,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Düzce Atatürk Devlet Hastanesi",
+    "lat": 40.8114249,
+    "lon": 31.2406907,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Lokman Hekim Üniversitesi Ankara Hastanesi",
+    "lat": 39.956418,
+    "lon": 32.5833425,
+    "beds": "Unknown",
+    "operator": "Lokman Hekim Üniversitesi"
+  },
+  {
+    "name": "İzzet Baysal Devlet Hastanesi Köroğlu Ünitesi",
+    "lat": 40.7426522,
+    "lon": 31.6092649,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Gazi Hastanesi",
+    "lat": 41.1010032,
+    "lon": 28.8985811,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Satıroğlu Nar Hastanesi",
+    "lat": 39.896919,
+    "lon": 32.8774351,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medikal Point Hastanesi",
+    "lat": 37.8881439,
+    "lon": 41.1281389,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dr. Abdurrahman Yurtaslan Onkoloji Hastanesi",
+    "lat": 39.9687691,
+    "lon": 32.7779055,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "مشفى النور للتوليد",
+    "lat": 36.1875703,
+    "lon": 37.131572,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Seydişehir Devlet Hastanesi",
+    "lat": 37.4300495,
+    "lon": 31.8315214,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İzzet Baysal Kadın Doğum Hastanesi",
+    "lat": 40.7330617,
+    "lon": 31.6008572,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Florence Nightingale Hastanesi",
+    "lat": 40.9816285,
+    "lon": 29.0417135,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Kadıköy Hastanesi",
+    "lat": 41.0072126,
+    "lon": 29.0430345,
+    "beds": "138",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Dargeçit İlçe Devlet Hastanesi",
+    "lat": 37.5402829,
+    "lon": 41.7159723,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İtalyan Hastanesi - Giovanni Alberto Agnelli",
+    "lat": 41.028438,
+    "lon": 28.98111,
+    "beds": "Unknown",
+    "operator": "Universal Hospitals Group"
+  },
+  {
+    "name": "Balıkesir Devlet Hastanesi",
+    "lat": 39.6539222,
+    "lon": 27.8920989,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Eski Yalova Devlet Hastanesi",
+    "lat": 40.6629231,
+    "lon": 29.3075682,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Orta Devlet Hastanesi",
+    "lat": 40.6264783,
+    "lon": 33.1010517,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Polatlı Duatepe SSK Hastanesi",
+    "lat": 39.5616294,
+    "lon": 32.1428649,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Hüma Hastanesi",
+    "lat": 38.7134308,
+    "lon": 35.4952143,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sağlık Merkezi",
+    "lat": 41.2035674,
+    "lon": 29.0701352,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Beylikdüzü Devlet Hastanesi",
+    "lat": 41.0147199,
+    "lon": 28.6244577,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Başakşehir Tıp Merkezi",
+    "lat": 41.1055494,
+    "lon": 28.7934497,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Eskişehir Eski Asker Hastanesi",
+    "lat": 39.772647,
+    "lon": 30.5119605,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çerkezköy Devlet Hastanesi",
+    "lat": 41.2844779,
+    "lon": 28.011958,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Akademi Hastanesi",
+    "lat": 37.8657582,
+    "lon": 32.4911954,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Düzce Üniversitesi Tıp Fakültesi Hastanesi",
+    "lat": 40.9040011,
+    "lon": 31.1753846,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Refik Saime Koyuncu Kadınhanı Devlet Hastanesi",
+    "lat": 38.2380297,
+    "lon": 32.2328852,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Eskişehir Hastanesi",
+    "lat": 39.7849702,
+    "lon": 30.4951481,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Yunus Emre Devlet Hastanesi",
+    "lat": 39.7856768,
+    "lon": 30.4890123,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Maltepe Üniversitesi Kadın Doğum ve Çocuk Hastanesi",
+    "lat": 40.9260352,
+    "lon": 29.1333182,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gazipaşa Devlet Haştanesi",
+    "lat": 36.2735919,
+    "lon": 32.3031712,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ankara Gazi Mustafa Kemal Mesleki ve Çevresel Hastalıklar Hastanesi",
+    "lat": 39.9450353,
+    "lon": 32.8240136,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Medline Hastanesi",
+    "lat": 37.8794857,
+    "lon": 32.4487051,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Batman İluh Devlet Hastanesi",
+    "lat": 37.8896671,
+    "lon": 41.1254596,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Meram Devlet Hastanesi",
+    "lat": 37.8609877,
+    "lon": 32.4458551,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "KTO Karatay Üniversitesi Medicana Tıp Fakültesi Hastanesi",
+    "lat": 37.8937263,
+    "lon": 32.4960453,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Mardin Kadın Doğum ve Çocuk Hastanesi",
+    "lat": 37.3206722,
+    "lon": 40.7247946,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Kızılay Hastanesi",
+    "lat": 37.8668159,
+    "lon": 32.499335,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kadirli Devlet Hastanesi",
+    "lat": 37.3453545,
+    "lon": 36.0977503,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sanko Ozel Sani Konukoglu Hastanesi",
+    "lat": 37.0722335,
+    "lon": 37.3680616,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Malatya Eğitim ve Araştırma Hastanesi",
+    "lat": 38.3490628,
+    "lon": 38.2796838,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kahta Devlet Hastanesi",
+    "lat": 37.7974394,
+    "lon": 38.606372,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gözde Hastanesi",
+    "lat": 37.7599832,
+    "lon": 38.2789203,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Batman Eğitim ve Araştırma Hastanesi",
+    "lat": 37.9125532,
+    "lon": 41.1376351,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Eskişehir Anadolu Hastanesi",
+    "lat": 39.7672478,
+    "lon": 30.5139267,
+    "beds": "Unknown",
+    "operator": "Medes Özel Sağlık Hizmetleri"
+  },
+  {
+    "name": "Nazilli Devlet Hastanesi",
+    "lat": 37.9205347,
+    "lon": 28.3382917,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Midyat Devlet Hastanesi",
+    "lat": 37.4105651,
+    "lon": 41.3518564,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yaşam Hastanesi",
+    "lat": 37.8946586,
+    "lon": 41.1286555,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Düzce Atatürk Devlet Hastanesi",
+    "lat": 40.843055,
+    "lon": 31.1373834,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Diyarbakır SBÜ Gazi Yaşargil Eğitim Ve Araştırma Hastanesi",
+    "lat": 37.9849948,
+    "lon": 40.1359202,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Giresun Prof. Dr. A. İlhan Özdemir Devlet Hastanesi",
+    "lat": 40.9087473,
+    "lon": 38.3484875,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Çankırı Özel Karatekin Hastanesi",
+    "lat": 40.600507,
+    "lon": 33.6153211,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çanakkale Devlet Hastanesi",
+    "lat": 40.1493119,
+    "lon": 26.4079658,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Servergazi Devlet Hastanesi",
+    "lat": 37.7767263,
+    "lon": 29.0190606,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Mehmet Akif İnan Eğitim ve Araştırma Hastanesi",
+    "lat": 37.1834878,
+    "lon": 38.8127409,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Oltu İlçe Devlet Hastanesi",
+    "lat": 40.5404269,
+    "lon": 41.9873454,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Marmara Üniversitesi Pendik Eğitim ve Araştırma Hastanesi",
+    "lat": 40.8867609,
+    "lon": 29.2626952,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ümraniye Eğitim ve Araştırma Hastanesi",
+    "lat": 41.0323422,
+    "lon": 29.101272,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Bursa Hastanesi",
+    "lat": 40.2128212,
+    "lon": 28.976127,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Karaman Devlet Hastanesi",
+    "lat": 37.1659713,
+    "lon": 33.2569414,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kırşehir Devlet Hastanesi",
+    "lat": 39.1583922,
+    "lon": 34.1636081,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İlgi Hastanesi",
+    "lat": 41.0209094,
+    "lon": 28.8666912,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ada Hastanesi",
+    "lat": 40.9131716,
+    "lon": 38.4441628,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Viranşehir Devlet Hastanesi",
+    "lat": 37.2110776,
+    "lon": 39.7713692,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Aile Hastanesi",
+    "lat": 40.9974037,
+    "lon": 28.8669638,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bülent Ecevit Üniversitesi İbni Sina Kampüsü",
+    "lat": 41.4143711,
+    "lon": 31.7044514,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Zonguldak Bülent Ecevit Üniversitesi Tıp Fakültesi Hastanesi",
+    "lat": 41.4149122,
+    "lon": 31.7045531,
+    "beds": "Unknown",
+    "operator": "Zonguldak Bülent Ecevit Üniversitesi"
+  },
+  {
+    "name": "Ereğli Devlet Hastanesi",
+    "lat": 37.4692471,
+    "lon": 34.0445001,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Hacıbektaş İlçe Devlet Hastanesi",
+    "lat": 38.9381162,
+    "lon": 34.5555014,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Akçaabat Haçkalı Baba Devlet Hastanesi",
+    "lat": 41.0170691,
+    "lon": 39.5942435,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Şiran Devlet Hastanesi",
+    "lat": 40.1888311,
+    "lon": 39.1232991,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Yaşam Hastanesi",
+    "lat": 39.882833,
+    "lon": 32.8717938,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Adıyaman Üniversitesi Eğitim Araştırma Hastanesi",
+    "lat": 37.76705,
+    "lon": 38.3232174,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Alanya Anadolu Hastanesi",
+    "lat": 36.5557169,
+    "lon": 31.9905617,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Memorial Bahçelievler Hastanesi",
+    "lat": 40.993276,
+    "lon": 28.8527432,
+    "beds": "Unknown",
+    "operator": "Memorial"
+  },
+  {
+    "name": "Yenimahalle Eğitim ve Araştırma Hastanesi",
+    "lat": 39.9703698,
+    "lon": 32.6946613,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Üniversitesi Hastanesi",
+    "lat": 41.0349134,
+    "lon": 28.7786592,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Mehmet Akif Ersoy Göğüs Kalp Ve Damar Cerrahisi Eğitim Ve Araştırma Hastanesi",
+    "lat": 41.0333565,
+    "lon": 28.7770266,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kanuni Sultan Süleyman Eğitim ve Araştırma Hastanesi",
+    "lat": 41.0546445,
+    "lon": 28.7595861,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "KSBÜ Evliya Çelebi Eğitim ve Araştırma Hastanesi",
+    "lat": 39.4243355,
+    "lon": 29.9632961,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "DPÜ Kütahya Evliya Çelebi Eğitim ve Araştırma Hastanesi Ek Bina",
+    "lat": 39.4175,
+    "lon": 29.9900814,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Baykan Devlet Hastanesi",
+    "lat": 38.1600155,
+    "lon": 41.7817742,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Şifa Hastanesi",
+    "lat": 39.8272173,
+    "lon": 34.8201136,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Hayat Hastanesi",
+    "lat": 37.9627213,
+    "lon": 34.6650396,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Manavgat Devlet Hastanesi",
+    "lat": 36.7956582,
+    "lon": 31.4405853,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Uncalı Meydan Hastanesi",
+    "lat": 36.8930595,
+    "lon": 30.6209731,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Antalya Eğitim Ve Araştırma Hastanesi",
+    "lat": 36.8901746,
+    "lon": 30.677894,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Elbistan Devlet Hastanesi",
+    "lat": 38.2035375,
+    "lon": 37.1587144,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Osmaniye Devlet Hastanesi",
+    "lat": 37.0510399,
+    "lon": 36.184338,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gercüş Devlet Hastanesi",
+    "lat": 37.5674824,
+    "lon": 41.3859244,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Cizre Devlet Hastanesi",
+    "lat": 37.3149896,
+    "lon": 42.1930815,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ömerli Devlet Hastanesi",
+    "lat": 37.3993667,
+    "lon": 40.9438451,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Balıklıgöl Devlet Hastanesi",
+    "lat": 37.1552944,
+    "lon": 38.7750825,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "მედცენტრი",
+    "lat": 41.6425312,
+    "lon": 41.6352419,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gölbaşı Devlet Hastanesi",
+    "lat": 37.7899879,
+    "lon": 37.6601174,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Şırnak Devlet Hastanesi",
+    "lat": 37.5173023,
+    "lon": 42.441384,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bingöl Devlet Hastanesi",
+    "lat": 38.8940954,
+    "lon": 40.5129183,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Memorial Diyarbakır Hastanesi",
+    "lat": 37.9361283,
+    "lon": 40.1877815,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Zübeyde Hanım Doğum ve Kadın Hastalıkları Hastanesi",
+    "lat": 39.9643983,
+    "lon": 32.8396733,
+    "beds": "Unknown",
+    "operator": "Türkiye Cumhuriyeti Sağlık Bakanlığı"
+  },
+  {
+    "name": "Unknown Hospital",
+    "lat": 37.2440449,
+    "lon": 36.4609945,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Diyarlife Hastanesi",
+    "lat": 37.9164897,
+    "lon": 40.233809,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "25 Aralık Devlet Hastanesi",
+    "lat": 37.0649614,
+    "lon": 37.3611377,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gözde Hastanesi",
+    "lat": 37.0592185,
+    "lon": 37.3656228,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Գեղաշենի ամբուլատորիա",
+    "lat": 40.2234423,
+    "lon": 44.7224406,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Diyarbakır Selahaddin Eyyubi Devlet Hastanesi",
+    "lat": 37.9186091,
+    "lon": 40.2396554,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yüksek İhtisas Eğitim ve Araştırma Hastanesi",
+    "lat": 40.1848421,
+    "lon": 29.1286432,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Pasinler Devlet Hastanesi",
+    "lat": 39.9813115,
+    "lon": 41.6681622,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Genesis Hospital",
+    "lat": 37.9361727,
+    "lon": 40.2040942,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Sultan Hastanesi",
+    "lat": 37.931206,
+    "lon": 40.2044145,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Memorial Dicle Hastanesi",
+    "lat": 37.9255649,
+    "lon": 40.1619965,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kadın Hastalıkları Doğum ve Çocuk Hastalıkları Hastanesi Ek Bina",
+    "lat": 37.9223019,
+    "lon": 40.1565866,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Adana Şehir Hastanesi",
+    "lat": 37.0279589,
+    "lon": 35.3498369,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Samsun Eğitim Araştırma Hastanesi",
+    "lat": 41.2717517,
+    "lon": 36.2978184,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İdil Devlet Hastanesi",
+    "lat": 37.3398924,
+    "lon": 41.9004433,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ergani Devlet Hastanesi",
+    "lat": 38.2642716,
+    "lon": 39.7823243,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sungurlu Devlet Hastanesi",
+    "lat": 40.1725521,
+    "lon": 34.4000296,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Düztepe Yaşam Hastanesi",
+    "lat": 37.0472886,
+    "lon": 37.381443,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tokat Devlet Hastanesi",
+    "lat": 40.3273483,
+    "lon": 36.5634387,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ალექსანდრე ალადაშვილის სახელობის კლინიკა",
+    "lat": 41.7124096,
+    "lon": 44.7930011,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Solhan İlçe Devlet Hastanesi",
+    "lat": 38.9596347,
+    "lon": 41.0401085,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Aşkale Devlet Hastanesi",
+    "lat": 39.917552,
+    "lon": 40.6805377,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Şebinkarahisar Devlet Hastanesi",
+    "lat": 40.2986059,
+    "lon": 38.4259467,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kemer Devlet Hastanesi",
+    "lat": 36.6156739,
+    "lon": 30.5498425,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "MediClub Georgia",
+    "lat": 41.7284143,
+    "lon": 44.7633359,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Silopi Devlet Hastanesi",
+    "lat": 37.2593373,
+    "lon": 42.455501,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bursa Devlet Hastanesi",
+    "lat": 40.1871492,
+    "lon": 29.0521536,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Erzincan Özel Neon Hastanesi",
+    "lat": 39.7488562,
+    "lon": 39.4690207,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medical Park Hastanesi",
+    "lat": 37.0749818,
+    "lon": 37.3708278,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Necip Fazıl Kısakürek Kadın Doğum Ve Çocuk Hastanesi",
+    "lat": 37.5940826,
+    "lon": 36.8834339,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Ofm Hastanesi",
+    "lat": 36.9142545,
+    "lon": 30.6911761,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Nallıhan Devlet Hastanesi",
+    "lat": 40.1940928,
+    "lon": 31.3379599,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Boyabat Devlet Hastanesi",
+    "lat": 41.4636893,
+    "lon": 34.7856806,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sabuncuoğlu Şerafeddin Eğitim Araştırma Hastanesi",
+    "lat": 40.6591857,
+    "lon": 35.8071411,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Atatürk Göğüs Hastalıkları ve Cerrahi Hastanesi",
+    "lat": 40.0016941,
+    "lon": 32.854332,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Keçiören Eğitim ve Araştırma Hastanesi",
+    "lat": 40.0020883,
+    "lon": 32.8569323,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Polatlı Devlet Hastanesi",
+    "lat": 39.586216,
+    "lon": 32.1263588,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Devlet Hastanesi",
+    "lat": 39.5397268,
+    "lon": 44.0192871,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Beyhekim Devlet Hastanesi",
+    "lat": 37.9882338,
+    "lon": 32.4837387,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Hakkari Devlet Hastanesi",
+    "lat": 37.5727875,
+    "lon": 43.7328552,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Avrasya Hastanesi",
+    "lat": 41.0032497,
+    "lon": 28.9066589,
+    "beds": "Unknown",
+    "operator": "Avrasya Hospital Zeytinburnu"
+  },
+  {
+    "name": "Kozluk Devlet Hastanesi",
+    "lat": 38.1641464,
+    "lon": 41.499369,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Tatvan Devlet Hastanesi Ek-2",
+    "lat": 38.5078398,
+    "lon": 42.2859948,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bitlis Devlet Hastanesi",
+    "lat": 38.4418907,
+    "lon": 42.1402458,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bitlis Tatvan Devlet Hastanesi",
+    "lat": 38.4908194,
+    "lon": 42.1887129,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bingöl Devlet Hastanesi",
+    "lat": 38.9058875,
+    "lon": 40.5241018,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Anıt Hastanesi",
+    "lat": 37.8664849,
+    "lon": 32.4874272,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dicle Üniversitesi Tıp Fakültesi Hastanesi",
+    "lat": 37.9200189,
+    "lon": 40.2653307,
+    "beds": "Unknown",
+    "operator": "Dicle Üniversitesi"
+  },
+  {
+    "name": "Taşkent İlçe Devlet Hastanesi",
+    "lat": 36.9280055,
+    "lon": 32.4963652,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Mustafakemalpaşa Devlet Hastanesi",
+    "lat": 40.0290772,
+    "lon": 28.3633554,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Başkent Üniversitesi Hastanesi",
+    "lat": 37.8840572,
+    "lon": 32.4563428,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Konya Hospital",
+    "lat": 37.877009,
+    "lon": 32.4943172,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Diyarbakır Çocuk Hastalıkları Hastanesi",
+    "lat": 37.9202372,
+    "lon": 40.2363761,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ԱԼԱՎԵՐԴՈՒ ԲԺՇԿԱԿԱՆ ԿԵՆՏՐՈՆ",
+    "lat": 41.0962173,
+    "lon": 44.6446686,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Numune Hastanesi Karatay Semt Polikinliği",
+    "lat": 37.8667339,
+    "lon": 32.5038405,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Etimesgut Şehit Sait Ertürk Devlet Hastanesi",
+    "lat": 39.9450932,
+    "lon": 32.667066,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Koru Hastanesi",
+    "lat": 39.9651584,
+    "lon": 32.5874407,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Yaşam Hastanesi",
+    "lat": 36.5476894,
+    "lon": 32.0016983,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی سویدیی تایبەت",
+    "lat": 36.2221908,
+    "lon": 44.0070289,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Akdeniz Hastanesi",
+    "lat": 36.7838543,
+    "lon": 31.4303533,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Side Anadolu Hastanesi",
+    "lat": 36.7865435,
+    "lon": 31.3958033,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Serik Devlet Hastanesi",
+    "lat": 36.9199131,
+    "lon": 31.0887984,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Antalya Atatürk Devlet Hastanesi",
+    "lat": 36.8982434,
+    "lon": 30.6918134,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Olimpos Hastanesi",
+    "lat": 36.8709376,
+    "lon": 30.6342607,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Antalya Anadolu Hastanesi",
+    "lat": 36.8870711,
+    "lon": 30.7189547,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Rich Hastanesi",
+    "lat": 36.8882047,
+    "lon": 30.7331264,
+    "beds": "Unknown",
+    "operator": "ATM Özel Sağlık Hizmetleri"
+  },
+  {
+    "name": "Özel Yaşam Hastanesi, Antalya (Life Hospital)",
+    "lat": 36.8628732,
+    "lon": 30.7307663,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Seyhan Devlet Hastanesi | Marsa Kadın Hastalıkları ve Doğum Ek Hizmet Binası",
+    "lat": 36.9966905,
+    "lon": 35.3105068,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Adana Hastanesi",
+    "lat": 36.9954879,
+    "lon": 35.3145004,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Özel Ortopedia Hastanesi",
+    "lat": 36.9954337,
+    "lon": 35.3154441,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Adana Kadın Doğum ve Çocuk Hastalıkları Hastanesi",
+    "lat": 36.9869667,
+    "lon": 35.3155676,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Medline Adana Hastanesi",
+    "lat": 37.0533719,
+    "lon": 35.2545018,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dr. Ekrem Tok Ruh Sağlığı Hastalıkları Hastanesi",
+    "lat": 37.0522703,
+    "lon": 35.2625041,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Avrupa Hospital Hastanesi",
+    "lat": 37.0355501,
+    "lon": 35.3065857,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Adana Devlet Hastanesi",
+    "lat": 37.0196361,
+    "lon": 35.322034,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Ahu Hetman Hastanesi",
+    "lat": 36.8480579,
+    "lon": 28.2555799,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Marmaris Hastanesi",
+    "lat": 36.85136,
+    "lon": 28.2570559,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Marmaris Devlet Hastanesi",
+    "lat": 36.859285,
+    "lon": 28.257985,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Didim İlçe Devlet Hastanesi",
+    "lat": 37.3712946,
+    "lon": 27.2760795,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Farabi Hastanesi",
+    "lat": 37.9792756,
+    "lon": 32.5228712,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Baglar Hastanesi",
+    "lat": 37.9184839,
+    "lon": 40.207966,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Anadolu Hastanesi",
+    "lat": 38.6647907,
+    "lon": 39.1761204,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Mazıdağı İlçe Devlet Hastanesi",
+    "lat": 37.4726294,
+    "lon": 40.4964534,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Çatalca İlyas Çokay Devlet Hastanesi",
+    "lat": 41.1353012,
+    "lon": 28.4666491,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Palu İlçe Devlet Hastanesi",
+    "lat": 38.6942019,
+    "lon": 39.9292514,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Adıyaman Kadın Doğum ve Çocuk Hastanesi",
+    "lat": 37.7629106,
+    "lon": 38.3003501,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Odak Hastanesi",
+    "lat": 37.7849131,
+    "lon": 29.0934489,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Denizli Cerrahi Hastanesi",
+    "lat": 37.7394384,
+    "lon": 29.1133722,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kızıltepe Devlet Hastanesi",
+    "lat": 37.2267514,
+    "lon": 40.6252429,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Derik Devlet Hastanesi",
+    "lat": 37.3727789,
+    "lon": 40.2714894,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Nurdağı Devlet Hastanesi",
+    "lat": 37.1842813,
+    "lon": 36.7332332,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Acıbadem Kozyatağı Hastanesi",
+    "lat": 40.9766754,
+    "lon": 29.0930673,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Özel Ömer Sayar Hastanesi",
+    "lat": 36.9139742,
+    "lon": 34.8825318,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tarsus Devlet Hastanesi (Çocuk Hastanesi)",
+    "lat": 36.9171454,
+    "lon": 34.8852986,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tarsus Devlet Hastanesi",
+    "lat": 36.9141278,
+    "lon": 34.905326,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Numune Hastanesi",
+    "lat": 39.909038,
+    "lon": 41.2669226,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kadın ve Çocuk Hastanesi",
+    "lat": 39.7226798,
+    "lon": 43.0499332,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Tatvan Can Hastanesi",
+    "lat": 38.5060804,
+    "lon": 42.280241,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Mardin Park Hastanesi",
+    "lat": 37.325513,
+    "lon": 40.7208754,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Kızıltepe İpekyolu Hastanesi",
+    "lat": 37.1858549,
+    "lon": 40.598062,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Elazığ Eğitim ve Araştırma Hastanesi",
+    "lat": 38.6821899,
+    "lon": 39.2262388,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Asema Hospital",
+    "lat": 37.9358855,
+    "lon": 41.9387451,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sivas Devlet Hastanesi",
+    "lat": 39.744538,
+    "lon": 37.0118565,
+    "beds": "160",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bayburt Eski Devlet Hastanesi",
+    "lat": 40.2659256,
+    "lon": 40.2105079,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Rize Devlet Hastanesi",
+    "lat": 41.0284014,
+    "lon": 40.5144839,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Çağsu Hastanesi",
+    "lat": 40.7468126,
+    "lon": 31.6123464,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Toyotasa Hastanesi",
+    "lat": 40.7080469,
+    "lon": 30.3796387,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sakarya Eğitim ve Araştırma Hastanesi",
+    "lat": 40.757102,
+    "lon": 30.3897019,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Bulut Hastanesi",
+    "lat": 39.9151341,
+    "lon": 44.0502799,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Başkent Üniversitesi Alanya Uygulama ve Araştırma Merkezi",
+    "lat": 36.5469088,
+    "lon": 31.9944532,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Akademi Hastanesi",
+    "lat": 40.7595115,
+    "lon": 29.9758093,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Medi Bafra Hastanesi",
+    "lat": 41.5622068,
+    "lon": 35.9147162,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bafra Devlet Hastanesi",
+    "lat": 41.5517346,
+    "lon": 35.9297027,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karacabey Devlet Hastanesi",
+    "lat": 40.2082437,
+    "lon": 28.3476694,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Raparin Teaching Hospital For Children",
+    "lat": 36.2187327,
+    "lon": 44.0351355,
+    "beds": "Unknown",
+    "operator": "General Directorate of Health - Erbil"
+  },
+  {
+    "name": "Sorgun Yeni Devlet Hastanesi",
+    "lat": 39.8166569,
+    "lon": 35.1485548,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sorgun Devlet Hastanesi",
+    "lat": 39.8041916,
+    "lon": 35.1890752,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bayındır Hastanesi",
+    "lat": 39.9106628,
+    "lon": 32.8112279,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel 7 Mart Hastanesi",
+    "lat": 37.3706718,
+    "lon": 36.0961049,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Memorial Şişli Hastanesi",
+    "lat": 41.0616543,
+    "lon": 28.9727332,
+    "beds": "Unknown",
+    "operator": "Memorial"
+  },
+  {
+    "name": "Kandıra Devlet Hastanesi",
+    "lat": 41.0644028,
+    "lon": 30.1315696,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Kemal Bayındır Hastanesi",
+    "lat": 37.0477664,
+    "lon": 37.3321458,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Karaman Devlet Hastanesi Ek Binası",
+    "lat": 37.1935535,
+    "lon": 33.224164,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Karamanoğlu Mehmetbey Doğum Ve Çocuk Hastanesi",
+    "lat": 37.1579778,
+    "lon": 33.2575032,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Burdur Devlet Hastanesi",
+    "lat": 37.7240634,
+    "lon": 30.29268,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Konya Numune Hastanesi",
+    "lat": 37.8794309,
+    "lon": 32.4901026,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Liv Hospital",
+    "lat": 39.911912,
+    "lon": 32.8566825,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ankara Eğitim Ve Araştırma Hastanesi",
+    "lat": 39.9368769,
+    "lon": 32.8758314,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Güven Çayyolu Sağlık Kampüsü",
+    "lat": 39.8660218,
+    "lon": 32.6852028,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Manisa Şehzadeler Semt Polikliniği",
+    "lat": 38.6202167,
+    "lon": 27.4375596,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Sekiz Eylül Hastanesi",
+    "lat": 38.6188453,
+    "lon": 27.4363082,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dereli Devlet Hastanesi",
+    "lat": 40.7238902,
+    "lon": 38.4635299,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Salihli Devlet Hastanesi",
+    "lat": 38.4781772,
+    "lon": 28.1408997,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Salihli Hastanesi",
+    "lat": 38.4832336,
+    "lon": 28.1503645,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Can Hastanesi",
+    "lat": 38.4788644,
+    "lon": 28.1620022,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Antakya Devlet Hastanesi",
+    "lat": 36.2145194,
+    "lon": 36.1367626,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Defne Hastanesi",
+    "lat": 36.2319381,
+    "lon": 36.164069,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çanakkale Devlet Hastanesi",
+    "lat": 40.1586029,
+    "lon": 26.4201983,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel İskenderun Gelişim Hastanesi",
+    "lat": 36.5647234,
+    "lon": 36.1594026,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Atatürk Üniversitesi Aziziye Araştırma Hastanesi",
+    "lat": 39.8951956,
+    "lon": 41.2692107,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Turgutlu Yeni Devlet Hastanesi",
+    "lat": 38.4919752,
+    "lon": 27.6909273,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Adıyaman Park Hospital",
+    "lat": 37.7520056,
+    "lon": 38.2437047,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ermenek Devlet Hastanesi",
+    "lat": 36.6320566,
+    "lon": 32.9093327,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "The Martyr Khalid Hospital",
+    "lat": 36.0991101,
+    "lon": 44.6480588,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Mersin Ortadoğu Hastanesi",
+    "lat": 36.7639215,
+    "lon": 34.5482397,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Forum Yaşam Hastanesi",
+    "lat": 36.7895534,
+    "lon": 34.5877471,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İmc Hastanesi",
+    "lat": 36.7943281,
+    "lon": 34.6158734,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Develi Hatice Muammer Kocatürk Devlet Hastanesi",
+    "lat": 38.3839508,
+    "lon": 35.4876546,
+    "beds": "Unknown",
+    "operator": "Salık Bakanlığı"
+  },
+  {
+    "name": "Akşehir Devlet Hastanesi",
+    "lat": 38.3447518,
+    "lon": 31.4423366,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Söğütlü 112 Acil Sağlık Hizmetleri İstasyonu",
+    "lat": 40.8921393,
+    "lon": 30.4673725,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bakırköy Dr. Sadi Konuk Eğitim ve Araştırma Hastanesi",
+    "lat": 40.9937465,
+    "lon": 28.8653937,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Çınar Hastanesi",
+    "lat": 37.0191004,
+    "lon": 35.8236248,
+    "beds": "Unknown",
+    "operator": "Özel"
+  },
+  {
+    "name": "Kadın Doğum ve Çocuk Hastanesi",
+    "lat": 40.7732806,
+    "lon": 30.3979838,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Sakarya Vatan Hastanesi",
+    "lat": 40.7771398,
+    "lon": 30.3964375,
+    "beds": "Unknown",
+    "operator": "Özel Sakarya Vatan Hastanesi"
+  },
+  {
+    "name": "Ataşehir Memorial Hastanesi",
+    "lat": 40.9842318,
+    "lon": 29.1070501,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ناوەندی ددانی کۆیە",
+    "lat": 36.0813068,
+    "lon": 44.6268176,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kahramanmaraş Necip Fazıl Şehir Hastanesi",
+    "lat": 37.5029855,
+    "lon": 37.0043508,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ç.Ü. Hastane Balcalı",
+    "lat": 37.0557613,
+    "lon": 35.3624747,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Erzurum Bölge Eğitim Ve Araştırma Hastanesi",
+    "lat": 39.8876067,
+    "lon": 41.2365489,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Eskişehir Osmangazi Üniversitesi Tıp Fakültesi Hastanesi",
+    "lat": 39.7513001,
+    "lon": 30.4905079,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karaisalı Devlet Hastanesi",
+    "lat": 37.2540321,
+    "lon": 35.0611103,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Shaheed Dr Khalid",
+    "lat": 36.0808775,
+    "lon": 44.6273592,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Adilcevaz Devlet Hastanesi",
+    "lat": 38.799661,
+    "lon": 42.7639102,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Merzifon Karamustafa Paşa Devlet Hastanesi",
+    "lat": 40.8670849,
+    "lon": 35.4375549,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Liv Hospital Ulus",
+    "lat": 41.0608579,
+    "lon": 29.0284965,
+    "beds": "Unknown",
+    "operator": "Liv"
+  },
+  {
+    "name": "Anadolu Hastanesi",
+    "lat": 41.3664279,
+    "lon": 33.7696385,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Nefes Hastanesi",
+    "lat": 41.3807745,
+    "lon": 33.7775252,
+    "beds": "Unknown",
+    "operator": "Özel Nefes Hastanesi"
+  },
+  {
+    "name": "Ankara Üniversitesi İbni Sina Hastanesi",
+    "lat": 39.9321014,
+    "lon": 32.8589569,
+    "beds": "Unknown",
+    "operator": "Ankara Üniversitesi"
+  },
+  {
+    "name": "Yüksekova Devlet Hastanesi",
+    "lat": 37.5679696,
+    "lon": 44.2277365,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "TOBB ETÜ Hastanesi",
+    "lat": 39.9132337,
+    "lon": 32.8059016,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Keçiören Hastanesi",
+    "lat": 40.002211,
+    "lon": 32.8735609,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kazan Devlet Hastanesi Hamdi Eriş Yerleşkesi",
+    "lat": 40.2028287,
+    "lon": 32.6799812,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Etimed Hastanesi",
+    "lat": 39.9537624,
+    "lon": 32.6281642,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Veni Vidi Mamak Hastanesi",
+    "lat": 39.9199634,
+    "lon": 32.9081261,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kurtalan Devlet Hastanesi",
+    "lat": 37.9282021,
+    "lon": 41.6941435,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Dr.Hulusi Alataş Elmadağ Devlet Hastanesi",
+    "lat": 39.916914,
+    "lon": 33.2311924,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ethica Hastanesi",
+    "lat": 40.9972327,
+    "lon": 28.8726251,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Beypazarı İlçe Devlet Hastanesi",
+    "lat": 40.1625111,
+    "lon": 31.9303247,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ბათუმის სასწრაფო სამედიწინო დახმარების წენთრი",
+    "lat": 41.6404112,
+    "lon": 41.6285551,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "VM Medical Park",
+    "lat": 40.1935077,
+    "lon": 29.0604788,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "LÖSANTE Çocuk ve Yetişkin Hastanesi",
+    "lat": 39.8327075,
+    "lon": 32.719379,
+    "beds": "Unknown",
+    "operator": "LÖSEV"
+  },
+  {
+    "name": "Üsküdar Devlet Hastanesi",
+    "lat": 41.0157709,
+    "lon": 29.0389618,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gazi Üniversitesi Hastanesi",
+    "lat": 39.9338421,
+    "lon": 32.8231193,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Bingöl Hastanesi",
+    "lat": 38.8845365,
+    "lon": 40.5061531,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Van Bölge Eğitim Ve Araştırma Hastanesi",
+    "lat": 38.4611056,
+    "lon": 43.3425421,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ordu Devlet Hastanesi",
+    "lat": 40.9707579,
+    "lon": 37.8877403,
+    "beds": "Unknown",
+    "operator": "Ordu Devlet Hastanesi"
+  },
+  {
+    "name": "Özel Ordu Umut Hastanesi",
+    "lat": 40.9718951,
+    "lon": 37.8936235,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medical Park Ordu Hastanesi",
+    "lat": 40.9754149,
+    "lon": 37.9061478,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "lat": 40.9775452,
+    "lon": 37.8838151,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yaşam Hastanesi",
+    "lat": 40.9830257,
+    "lon": 27.5701908,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gülhane Eğitim ve Araştırma Hastanesi",
+    "lat": 39.968838,
+    "lon": 32.8459548,
+    "beds": "Unknown",
+    "operator": "Türkiye Cumhuriyeti Sağlık Bakanlığı"
+  },
+  {
+    "name": "Honaz Devlet Hastanesi",
+    "lat": 37.7592007,
+    "lon": 29.2666191,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Tire Devlet Hastanesi",
+    "lat": 38.1008494,
+    "lon": 27.7219569,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Patnos Devlet Hastanesi",
+    "lat": 39.1893424,
+    "lon": 42.8427083,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Güngören Hastanesi",
+    "lat": 41.0268791,
+    "lon": 28.8717621,
+    "beds": "102",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medikabil Hastanesi",
+    "lat": 40.2333184,
+    "lon": 28.9789528,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medical Park",
+    "lat": 40.9958281,
+    "lon": 28.8630524,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Havran İlçe Devlet Hastanesi",
+    "lat": 39.5517858,
+    "lon": 27.0970224,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Lider Hastanesi",
+    "lat": 37.4567923,
+    "lon": 30.5923352,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Unknown Hospital",
+    "lat": 38.459443,
+    "lon": 30.265031,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Nusaybin Devlet Hastanesi",
+    "lat": 37.091487,
+    "lon": 41.1911151,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Trabzon Kanuni Eğitim ve Araştırma Hastanesi - Kaşüstü Kampüsü",
+    "lat": 40.9552749,
+    "lon": 39.8200233,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Zekai Tahir Burak Kadın Sağlığı Eğitim ve Araştırma Hastanesi",
+    "lat": 39.9324175,
+    "lon": 32.8687683,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Mersin Toros Devlet Hastanesi",
+    "lat": 36.8062448,
+    "lon": 34.6343804,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Fırat Üniversitesi Hastanesi",
+    "lat": 38.6813899,
+    "lon": 39.2053095,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Siirt Devlet Hastanesi",
+    "lat": 37.9412249,
+    "lon": 41.9375431,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Taşova Devlet Hastanesi",
+    "lat": 40.7531598,
+    "lon": 36.34078,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Torul İlçe Devlet Hastanesi",
+    "lat": 40.5613917,
+    "lon": 39.2958121,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bilgi Hastanesi",
+    "lat": 36.7851234,
+    "lon": 31.4129501,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Mim Hastanesi",
+    "lat": 39.8761712,
+    "lon": 32.8595368,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Niğde Devlet Hastanesi",
+    "lat": 37.9680364,
+    "lon": 34.6448259,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tarsus Ortadoğu Hastanesi",
+    "lat": 36.9123965,
+    "lon": 34.8932424,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medical Park Tarsus Hastanesi",
+    "lat": 36.9085377,
+    "lon": 34.8830795,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "29 Mayıs Hastanesi",
+    "lat": 39.875679,
+    "lon": 32.8345198,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Söke Fehime Faik Kocagöz Devlet Hastanesi",
+    "lat": 37.7647693,
+    "lon": 27.4035703,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel 19 Mayıs Hastanesi",
+    "lat": 39.8752724,
+    "lon": 32.8406413,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Muradiye  Devlet Hastanesi",
+    "lat": 38.9898923,
+    "lon": 43.7595467,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Toyotasa Acil Yardım Hastanesi",
+    "lat": 40.765849,
+    "lon": 30.3736611,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bandırma Eğitim ve Araştırma Hastanesi",
+    "lat": 40.339382,
+    "lon": 27.9356095,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çerkezköy Kapaklı 82. Yıl Devlet Hastanesi",
+    "lat": 41.3144518,
+    "lon": 27.9728644,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Ataşehir Hastanesi",
+    "lat": 40.9860818,
+    "lon": 29.1756358,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kelkit İlçe Devlet Hastanesi",
+    "lat": 40.1061672,
+    "lon": 39.4566626,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Şarkışla Devlet Hastanesi",
+    "lat": 39.3524414,
+    "lon": 36.4270554,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kulu İlçe Devlet Hastanesi",
+    "lat": 39.089581,
+    "lon": 33.0705898,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "TC Trabzon Fatih Devlet Hastanesi",
+    "lat": 41.0008688,
+    "lon": 39.7018629,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ankara Etlik Şehir Hastanesi",
+    "lat": 39.9636744,
+    "lon": 32.8277855,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "İskenderun Devlet Hastanesi",
+    "lat": 36.5820749,
+    "lon": 36.1741471,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Alaca Devlet Hastahanesi",
+    "lat": 40.1758243,
+    "lon": 34.857228,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Doruk Yıldırım Hastanesi",
+    "lat": 40.1919633,
+    "lon": 29.109899,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kepsut Devlet Hastanesi",
+    "lat": 39.688535,
+    "lon": 28.1572106,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bismil Devlet Hastanesi",
+    "lat": 37.8361563,
+    "lon": 40.612282,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Ereğli Anadolu Hastanesi",
+    "lat": 41.2755404,
+    "lon": 31.4305534,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Avicenna Umut Hastanesi",
+    "lat": 40.8907056,
+    "lon": 29.1776524,
+    "beds": "58",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Echomar Hastanesi",
+    "lat": 41.2734574,
+    "lon": 31.4313973,
+    "beds": "Unknown",
+    "operator": "Özel"
+  },
+  {
+    "name": "Medicabil Hastanesi",
+    "lat": 40.191166,
+    "lon": 29.1148832,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Beştepe Devlet Hastanesi",
+    "lat": 39.9295366,
+    "lon": 32.8153922,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Batı Hastanesi",
+    "lat": 37.9458366,
+    "lon": 40.176597,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bulancak Devlet Hastanesi",
+    "lat": 40.9397709,
+    "lon": 38.2447197,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medical Park Karadeniz Hastanesi",
+    "lat": 40.999527,
+    "lon": 39.7001655,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Beytepe Murat Erdi Eker Devlet Hastanesi",
+    "lat": 39.843295,
+    "lon": 32.7291569,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ahi Evren Göğüs Kalp Damar Cerrahisi Eğitim ve Araştırma Hastanesi",
+    "lat": 40.9873259,
+    "lon": 39.6979374,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "TC Trabzon Kanuni Eğitim ve Araştırma Hastanesi - Numune Kampüsü",
+    "lat": 41.005353,
+    "lon": 39.7068974,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Çamlık Hastanesi",
+    "lat": 40.9893869,
+    "lon": 28.8700885,
+    "beds": "45",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yaşar Hastanesi",
+    "lat": 40.9837641,
+    "lon": 28.8728374,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ჯერარსი",
+    "lat": 41.7727589,
+    "lon": 44.8239373,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medical Park Göztepe",
+    "lat": 40.9900002,
+    "lon": 29.0773176,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Mersin Şehir Hastanesi Sağlık Kompleksi",
+    "lat": 36.8552794,
+    "lon": 34.608533,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Yüzüncü Yıl Hastanesi",
+    "lat": 39.8919509,
+    "lon": 32.8102784,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ufuk Üniversitesi Dr. Rıdvan Ege Hastanesi",
+    "lat": 39.9102382,
+    "lon": 32.8135068,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İmranlı Devlet Hastanesi",
+    "lat": 39.8690523,
+    "lon": 38.1183952,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Of Devlet Hastanesi",
+    "lat": 40.9430452,
+    "lon": 40.2698001,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Şanlıurfa Eğitim ve Araştırma Hastenesi",
+    "lat": 37.1160364,
+    "lon": 38.8236307,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Mardin Eğitim ve Araştırma Hastanesi",
+    "lat": 37.3372685,
+    "lon": 40.706476,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Eryaman Hastanesi",
+    "lat": 39.9718079,
+    "lon": 32.6524364,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "PARKHAYAT Afyon Hastanesi",
+    "lat": 38.7734107,
+    "lon": 30.5087575,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Afyonkarahisar Devlet Hastanesi",
+    "lat": 38.783355,
+    "lon": 30.5137007,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kaçkar Devlet Hastanesi",
+    "lat": 41.1801966,
+    "lon": 40.9431742,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medical Park Trabzon Hastanesi",
+    "lat": 41.0073056,
+    "lon": 39.6251533,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "DENİZ HASTANESİ",
+    "lat": 36.0851766,
+    "lon": 35.988718,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Siverek Devlet Hastanesi",
+    "lat": 37.6974173,
+    "lon": 39.269475,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Sevgi Hastanesi",
+    "lat": 39.6652945,
+    "lon": 27.9090939,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ALKÜ Alanya Eğitim Araştırma Hastahanesi",
+    "lat": 36.5408276,
+    "lon": 32.0439375,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Çınar Devlet Hastanesi",
+    "lat": 37.7304812,
+    "lon": 40.4059642,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Güçlükonak İlçe Devlet Hastanesi",
+    "lat": 37.4702544,
+    "lon": 41.9100885,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Eruh İlçe Devlet Hastanesi",
+    "lat": 37.7483174,
+    "lon": 42.1793235,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Samsun Gazi Devlet Hastanesi",
+    "lat": 41.2797757,
+    "lon": 36.3316631,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tokat Üniversite Hastanesi",
+    "lat": 40.3252432,
+    "lon": 36.5460006,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bayındır Devlet Hastanesi",
+    "lat": 38.2213715,
+    "lon": 27.6498088,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Γενικό Νοσοκομείο Ρόδου",
+    "lat": 36.4182528,
+    "lon": 28.1920253,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yeni Karapınar Devlet Hastanesi",
+    "lat": 37.7135006,
+    "lon": 33.5663541,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Zile Devlet Hastanesi",
+    "lat": 40.3077365,
+    "lon": 35.9026737,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medipol Mega Hastaneler Kompleksi",
+    "lat": 41.0581581,
+    "lon": 28.8433746,
+    "beds": "515",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Euromedica",
+    "lat": 36.3852318,
+    "lon": 28.2006132,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çınarcık Devlet Hastanesi",
+    "lat": 40.6432026,
+    "lon": 29.1188405,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Besni Devlet Hastanesi",
+    "lat": 37.6787709,
+    "lon": 37.8880424,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Samsat İlçe Devlet Hastanesi",
+    "lat": 37.5823016,
+    "lon": 38.4804597,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çorum Özel Hastanesi",
+    "lat": 40.5722766,
+    "lon": 34.9622667,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çamardı İlçe Devlet Hastanesi",
+    "lat": 37.8377013,
+    "lon": 34.9984779,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bahçelievler Devlet Hastanesi",
+    "lat": 41.0062437,
+    "lon": 28.844367,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bozkurt Devlet Hastanesi",
+    "lat": 41.9598204,
+    "lon": 34.0107056,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Egemed Hastanesi",
+    "lat": 37.7482716,
+    "lon": 27.4156865,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Halfeti Devlet Hastanesi",
+    "lat": 37.2299346,
+    "lon": 37.9471763,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Academic Hospital",
+    "lat": 41.0197099,
+    "lon": 29.0350121,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Medova Hastanesi",
+    "lat": 37.945134,
+    "lon": 32.5021222,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bayrampaşa Devlet Hastanesi",
+    "lat": 41.0420205,
+    "lon": 28.9020672,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Germencik Devlet Hastanesi",
+    "lat": 37.8742046,
+    "lon": 27.5918242,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Cerrahpaşa Tıp Fakültesi",
+    "lat": 41.0040181,
+    "lon": 28.9415822,
+    "beds": "Unknown",
+    "operator": "T.C. İstanbul Üniversitesi"
+  },
+  {
+    "name": "Boğazlıyan Devlet Hastanesi",
+    "lat": 39.1952615,
+    "lon": 35.2541955,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "نەخۆشخانەی ڕزگاری",
+    "lat": 36.1907339,
+    "lon": 44.0388407,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sante Plus Hastanesi",
+    "lat": 40.9984177,
+    "lon": 28.8943472,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bahat Özel Hastanesi",
+    "lat": 41.106122,
+    "lon": 28.860323,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kars Harakani Devlet Hastanesi",
+    "lat": 40.5733294,
+    "lon": 43.0913499,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Devrek Devlet Hastanesi",
+    "lat": 41.2279803,
+    "lon": 31.9706075,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kars Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "lat": 40.604602,
+    "lon": 43.0835096,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Yüzyıl Hastanesi",
+    "lat": 40.8022041,
+    "lon": 29.4401152,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İstanbul Gaziosmanpaşa Eğitim ve Araştırma Hastanesi",
+    "lat": 41.0864654,
+    "lon": 28.8980769,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Balıkesir Şehir Hastanesi",
+    "lat": 39.6113857,
+    "lon": 27.8899002,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Liv Hospital Samsun",
+    "lat": 41.3010315,
+    "lon": 36.3305089,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Suluova Yeni Devlet Hastanesi",
+    "lat": 40.8259903,
+    "lon": 35.6512545,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Silifke Devlet Hastahanesi",
+    "lat": 36.3423185,
+    "lon": 33.916221,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Şanmed Hastanesi",
+    "lat": 37.1736898,
+    "lon": 38.8136949,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gönen Devlet Hastanesi",
+    "lat": 40.1015134,
+    "lon": 27.6779445,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sancaktepe Şehit Prof.Dr. İlhan Varank Eğitim Ve Araştırma Hastanesi",
+    "lat": 41.0053544,
+    "lon": 29.1962203,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Muş Devlet Hastanesi",
+    "lat": 38.7438846,
+    "lon": 41.5190569,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Hizan Devlet Hastanesi",
+    "lat": 38.2272229,
+    "lon": 42.4239752,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Zübeyde Hanım Kadın Doğum Ve Çocuk Hastanesi",
+    "lat": 38.7817024,
+    "lon": 30.5154201,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Fatsa Devlet Hastanesi",
+    "lat": 41.036516,
+    "lon": 37.4793375,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karasu Devlet Hastanesi",
+    "lat": 41.0899789,
+    "lon": 30.7381636,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Samsun Eğitim ve Araştırma Hastanesi Atakum Polikliniği",
+    "lat": 41.3273069,
+    "lon": 36.2753671,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Safa Hastanesi",
+    "lat": 41.022723,
+    "lon": 28.8572036,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Yaman Cerrahi Tıp Merkezi",
+    "lat": 41.027416,
+    "lon": 28.8296398,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ege Üniversitesi Çocuk Hastanesi",
+    "lat": 38.4543281,
+    "lon": 27.2137863,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Biga Devlet Hastanesi",
+    "lat": 40.2397307,
+    "lon": 27.265061,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kırklareli Eğitim ve Araştırma Hastanesi",
+    "lat": 41.7444495,
+    "lon": 27.2255344,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yıldızeli Devlet Hastanesi",
+    "lat": 39.8710492,
+    "lon": 36.6158427,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ÖZel Anadolu Hastanesi",
+    "lat": 36.8697105,
+    "lon": 31.0132847,
+    "beds": "Unknown",
+    "operator": "Private Hospital"
+  },
+  {
+    "name": "Akkuş Devlet Hastanesi",
+    "lat": 40.7944581,
+    "lon": 37.0158917,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Lotus Hastanesi",
+    "lat": 37.2191505,
+    "lon": 38.7969107,
+    "beds": "Unknown",
+    "operator": "Lotus Hastanesi"
+  },
+  {
+    "name": "Özel Edremit Körfez Hastanesi",
+    "lat": 39.5991571,
+    "lon": 26.9934724,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Osm Ortadoğu Hastanesi",
+    "lat": 37.1627695,
+    "lon": 38.8172396,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Saydam Tıp Merkezi ve Cerrahi Birimi",
+    "lat": 37.8641908,
+    "lon": 27.2677014,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Fatma Hatun Hastanesi",
+    "lat": 40.7329524,
+    "lon": 31.6023811,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gaziosmanpaşa Fizik Tedavi Rehabilitasyon Eğitim ve Araştırma Hastanesi",
+    "lat": 41.0890621,
+    "lon": 28.9083256,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kocaköy Devlet Hastanesi",
+    "lat": 38.2855447,
+    "lon": 40.5024564,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel İzan Sağlık Hastanesi",
+    "lat": 37.3075056,
+    "lon": 27.7815962,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "75. Yıl Milas Eski Devlet Hastanesi",
+    "lat": 37.3330532,
+    "lon": 27.7623545,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Torbalı Devlet Hastanesi",
+    "lat": 38.1749073,
+    "lon": 27.3581269,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sakarya Korucuk Eğitim ve Araştırma Hastanesi",
+    "lat": 40.8506381,
+    "lon": 30.2909582,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tekirdağ Doktor İsmail Fehmi Cumalıoğlu Şehir Hastanesi",
+    "lat": 41.0073257,
+    "lon": 27.5252731,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Unknown Hospital",
+    "lat": 41.2944919,
+    "lon": 27.9985332,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Optimed Hastanesi",
+    "lat": 41.2946807,
+    "lon": 27.9981047,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Muğla Eğitim ve Araştırma Hastanesi",
+    "lat": 37.1655239,
+    "lon": 28.3662463,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Vakfıkebir Devlet Hastanesi",
+    "lat": 41.0474461,
+    "lon": 39.2692617,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Eskişehir Şehir Hastanesi",
+    "lat": 39.7482747,
+    "lon": 30.5954565,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Tuzla Devlet Hastahanesi",
+    "lat": 40.8443897,
+    "lon": 29.3032558,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Orhaneli Devlet Hastanesi",
+    "lat": 39.9104446,
+    "lon": 28.9865497,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kepez Devlet Hastanesi",
+    "lat": 36.9318885,
+    "lon": 30.7270359,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bursa Şehir Hastanesi",
+    "lat": 40.2689006,
+    "lon": 28.9090974,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "NEÜ Meram Tıp Fakültesi Hastanesi",
+    "lat": 37.8853165,
+    "lon": 32.4321613,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sason Devlet Hastanesi",
+    "lat": 38.3398141,
+    "lon": 41.4127591,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kafkas Üniversitesi Sağlık Araştırma ve Uygulama Hastanesi",
+    "lat": 40.5884668,
+    "lon": 43.0729785,
+    "beds": "Unknown",
+    "operator": "Kafkas Üniversitesi"
+  },
+  {
+    "name": "Anamur Devlet Hastanesi",
+    "lat": 36.0789725,
+    "lon": 32.8412734,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Burhaniye Devlet Hastanesi",
+    "lat": 39.4978289,
+    "lon": 26.9650937,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Doğuş Hastanesi",
+    "lat": 36.7948771,
+    "lon": 34.6236118,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yakacık Tıp Merkezi",
+    "lat": 40.9200673,
+    "lon": 29.2243537,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Sevgi Hastanesi",
+    "lat": 39.6186081,
+    "lon": 27.8893879,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dr. Ali Kemal Belviranlı Kadın Doğum ve Çocuk Hastalıkları Hastanesi",
+    "lat": 37.9104079,
+    "lon": 32.5008445,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Memorial Antalya Hastanesi",
+    "lat": 36.9177149,
+    "lon": 30.6934749,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İstinye Devlet Hastanesi",
+    "lat": 41.1149992,
+    "lon": 29.0554118,
+    "beds": "134",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Korkuteli Devlet Hastanesi",
+    "lat": 37.0816014,
+    "lon": 30.2021027,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "SU Hastanesi",
+    "lat": 36.8078253,
+    "lon": 34.6183915,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Ege Hastanesi",
+    "lat": 37.7810427,
+    "lon": 29.0817557,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Yaşam Hastanesi",
+    "lat": 39.8500462,
+    "lon": 33.5026784,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Lara Anadolu Hastanesi",
+    "lat": 36.8588687,
+    "lon": 30.7939378,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yüksek İhtisas Hastanesi",
+    "lat": 39.8621364,
+    "lon": 33.4817817,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ASV Yaşam Hastanesi",
+    "lat": 36.899297,
+    "lon": 30.724558,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Opera Yaşam Hastanesi",
+    "lat": 36.9017386,
+    "lon": 30.6987401,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Büyükçekmece Mimar Sinan Devlet Hastanesi",
+    "lat": 41.0171073,
+    "lon": 28.5551838,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medstar Antalya Hastanesi",
+    "lat": 36.8941274,
+    "lon": 30.6848599,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Hopa Devlet Hastanesi",
+    "lat": 41.3869913,
+    "lon": 41.4503798,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karlıova Devlet Hastanesi",
+    "lat": 39.3080766,
+    "lon": 41.0443399,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Akdeniz Şifa Hastanesi",
+    "lat": 36.9442977,
+    "lon": 30.7086997,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Vitale Kadın ve Doğum Hastanesi",
+    "lat": 36.917833,
+    "lon": 30.6751682,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Erdemli Devlet Hastanesi",
+    "lat": 36.6104372,
+    "lon": 34.3014578,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bursa Uludağ Üniversitesi Hastanesi",
+    "lat": 40.2216282,
+    "lon": 28.8698127,
+    "beds": "Unknown",
+    "operator": "Bursa Uludağ Üniversitesi"
+  },
+  {
+    "name": "İstanbul Florence Nightingale Hastanesi",
+    "lat": 41.0695583,
+    "lon": 28.983983,
+    "beds": "Unknown",
+    "operator": "Grup Florence Nightingale Hastaneleri"
+  },
+  {
+    "name": "Bower Hospital",
+    "lat": 37.9170091,
+    "lon": 40.2364999,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ordu Üniversitesi Eğitim Araştırma Hastanesi",
+    "lat": 40.9763143,
+    "lon": 37.8755862,
+    "beds": "Unknown",
+    "operator": "Ordu Üniversitesi"
+  },
+  {
+    "name": "Niksar Devlet Hastanesi",
+    "lat": 40.5747858,
+    "lon": 36.9592292,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çay Devlet Hastanesi",
+    "lat": 38.5939594,
+    "lon": 31.0029996,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Hasankeyf Devlet Hastanesi",
+    "lat": 37.7318715,
+    "lon": 41.4204694,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Maraliki hivandanoc",
+    "lat": 40.5820148,
+    "lon": 43.8691357,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Aksaray Eğitim ve Araştırma Hastanesi",
+    "lat": 38.3735509,
+    "lon": 33.983768,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Çeşme Alper Çizgenakat Devlet Hastanesi",
+    "lat": 38.3167003,
+    "lon": 26.3256971,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ünye Devlet Hastanesi",
+    "lat": 41.1072022,
+    "lon": 37.3554432,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Şereflikoçhisar Devlet Hastanesi",
+    "lat": 38.9548504,
+    "lon": 33.5284216,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "نەخۆشخانەی نەورۆز",
+    "lat": 36.227271,
+    "lon": 44.0125213,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Marmara Üniversitesi Prof. Dr. Asaf Ataseven Hastanesi",
+    "lat": 40.9506146,
+    "lon": 29.1382554,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Buca Seyfi Demirsoy Eğitim ve Araştırma Hastanesi",
+    "lat": 38.3845575,
+    "lon": 27.1630776,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "VM Medical Park Pendik",
+    "lat": 40.8806305,
+    "lon": 29.2565215,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Pendik Yüzyıl Hastanesi",
+    "lat": 40.8792473,
+    "lon": 29.2612978,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Karamürsel Devlet Hastanesi",
+    "lat": 40.6842348,
+    "lon": 29.5883555,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kozan Devlet Hastanesi",
+    "lat": 37.4650148,
+    "lon": 35.8250262,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Tufanbeyli Devlet Hastanesi",
+    "lat": 38.2574897,
+    "lon": 36.2134199,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Mutki İlçe Devlet Hastahanesi",
+    "lat": 38.4074235,
+    "lon": 41.9303936,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bahçesaray İlçe Devlet Hastanesi",
+    "lat": 38.1171133,
+    "lon": 42.8069201,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çatak İlçe Devlet Hastanesi",
+    "lat": 38.0078115,
+    "lon": 43.0614671,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gevaş İlçe Devlet Hastanesi",
+    "lat": 38.3074302,
+    "lon": 43.1104473,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Başkale Devlet Hastanesi",
+    "lat": 38.0371505,
+    "lon": 44.0211647,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sevgi Can Hastanesi",
+    "lat": 37.4641896,
+    "lon": 35.8221008,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tercan Devlet Hastanesi",
+    "lat": 39.7790244,
+    "lon": 40.378199,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Muğla Yücelen Hastanesi",
+    "lat": 37.1772116,
+    "lon": 28.3718042,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Muğla Devlet Hastanesi",
+    "lat": 37.2132465,
+    "lon": 28.3695595,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Havran İlçe Devlet Hastanesi",
+    "lat": 39.5517331,
+    "lon": 27.0969683,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gölcük Necati Çelik Devlet Hastanesi",
+    "lat": 40.7195724,
+    "lon": 29.7958616,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Elazığ Fethi Sekin Şehir Hastanesi",
+    "lat": 38.6889295,
+    "lon": 39.2703645,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medicana İnternational İzmir Hastanesi",
+    "lat": 38.4296372,
+    "lon": 27.1572795,
+    "beds": "Unknown",
+    "operator": "Medicana"
+  },
+  {
+    "name": "Elmalı Devlet Hastanesi",
+    "lat": 36.7306568,
+    "lon": 29.9394854,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Cihanpol Hastanesi",
+    "lat": 37.2140909,
+    "lon": 40.614298,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Medikent Hastanesi",
+    "lat": 41.4078856,
+    "lon": 27.3325902,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gülnar Devlet Hastanesi",
+    "lat": 36.3240074,
+    "lon": 33.4138848,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Erciş Devlet Hastanesi",
+    "lat": 39.0180031,
+    "lon": 43.350917,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çanakkale Mehmet Akif Ersoy Çanakkale Devlet Hastanesi",
+    "lat": 40.0989146,
+    "lon": 26.417277,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Akçakale Devlet Hastanesi",
+    "lat": 36.7479772,
+    "lon": 38.9490204,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Κέντρο Υγείας Καρλοβάσου",
+    "lat": 37.7945125,
+    "lon": 26.7075986,
+    "beds": "Unknown",
+    "operator": "Ε.Σ.Υ."
+  },
+  {
+    "name": "Γενικό Νοσοκομείο Σάμου",
+    "lat": 37.7617808,
+    "lon": 26.9697963,
+    "beds": "Unknown",
+    "operator": "Ε.Σ.Υ."
+  },
+  {
+    "name": "Mut Devlet Hastanesi",
+    "lat": 36.6634589,
+    "lon": 33.4220986,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Borçka Devlet Hastanesi",
+    "lat": 41.3545675,
+    "lon": 41.6802197,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Malazgirt Devlet Hastanesi",
+    "lat": 39.1531238,
+    "lon": 42.5510376,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Güroymak Devlet Hastanesi",
+    "lat": 38.5687944,
+    "lon": 42.0514114,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bulanık Devlet Hastanesi",
+    "lat": 39.0952571,
+    "lon": 42.275166,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Varto Devlet Hastanesi",
+    "lat": 39.156058,
+    "lon": 41.447417,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Erzurum Hınıs Şehit Yavuz Yürekseven Devlet Hastanesi",
+    "lat": 39.3680337,
+    "lon": 41.6989796,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karaçoban İlçe Devlet Hastanesi",
+    "lat": 39.350419,
+    "lon": 42.0938998,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tosya Devlet Hastanesi",
+    "lat": 41.0128429,
+    "lon": 34.0468623,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Baypark Hospital",
+    "lat": 41.0630229,
+    "lon": 28.8910763,
+    "beds": "77",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ankara Bilkent Şehir Hastanesi",
+    "lat": 39.9007383,
+    "lon": 32.757011,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İstanbul Onkoloji Hastanesi",
+    "lat": 40.9224101,
+    "lon": 29.1536688,
+    "beds": "Unknown",
+    "operator": "İstanbul Onkoloji Hastanesi"
+  },
+  {
+    "name": "Özel Müjde Hastanesi",
+    "lat": 38.3465023,
+    "lon": 38.3287463,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Trabzon Ağız Ve Diş Sağlığı Hastanesi",
+    "lat": 41.0053055,
+    "lon": 39.7008207,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Acıbadem Ankara Hastanesi",
+    "lat": 39.847527,
+    "lon": 32.8384537,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Sütçü İmam Üniversitesi Tıp Fakültesi",
+    "lat": 37.5879402,
+    "lon": 36.8260505,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Beyşehir Devlet Hastanesi",
+    "lat": 37.6676829,
+    "lon": 31.7371134,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Rasim Menteşe Bozdoğan İlçe Devlet Hastanesi",
+    "lat": 37.6750737,
+    "lon": 28.3175927,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gediz Devlet Hastanesi",
+    "lat": 38.9856495,
+    "lon": 29.3867035,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ბათუმის რესპუბლიკური საავადმყოფო",
+    "lat": 41.6399919,
+    "lon": 41.624424,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Güven Hastanesi",
+    "lat": 39.9045038,
+    "lon": 32.8545724,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Mihalıççık Gün Sazak Devlet Hastanesi",
+    "lat": 39.8699287,
+    "lon": 31.4889712,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sular Akademi Hastanesi",
+    "lat": 37.5655101,
+    "lon": 36.9296023,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Pervari Devlet Hastanesi",
+    "lat": 37.9339312,
+    "lon": 42.5467825,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Pazaryeri İlçe Hastanesi",
+    "lat": 40.0022872,
+    "lon": 29.9006806,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İnegöl Devlet Hastanesi",
+    "lat": 40.0810845,
+    "lon": 29.4977,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Aritmi İnegöl Hastanesi",
+    "lat": 40.0895081,
+    "lon": 29.4952378,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Cihangir Hastanesi",
+    "lat": 40.0894174,
+    "lon": 29.5062248,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Aktif Hastanesi",
+    "lat": 40.6643033,
+    "lon": 29.3202807,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Malkara Devlet Hastanesi",
+    "lat": 40.8852495,
+    "lon": 26.9296321,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Simav Doç. Dr. İsmail Karakuyu Devlet Hastanesi",
+    "lat": 39.0922014,
+    "lon": 28.9901452,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ulukışla Devlet Hastanesi",
+    "lat": 37.5511389,
+    "lon": 34.4851841,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Menemen İlçe Devlet Hastanesi",
+    "lat": 38.6073185,
+    "lon": 27.0880534,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Yozgat Şehir Hastanesi",
+    "lat": 39.8305399,
+    "lon": 34.846831,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bartın Devlet Hastanesi",
+    "lat": 41.6273916,
+    "lon": 32.3550508,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Ada Tıp Hastanesi",
+    "lat": 40.7758732,
+    "lon": 30.3539908,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sakarya Yenikent Devlet Hastanesi",
+    "lat": 40.8494504,
+    "lon": 30.3457536,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Atakent Hastanesi",
+    "lat": 40.642513,
+    "lon": 29.2582845,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Yalova Hastanesi",
+    "lat": 40.6541137,
+    "lon": 29.2751275,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bayramiç Devlet Hastanesi",
+    "lat": 39.8110413,
+    "lon": 26.6123621,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Bahçeşehir Hastanesi",
+    "lat": 41.0626694,
+    "lon": 28.6883906,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Özel Ekol Hastanesi",
+    "lat": 41.652247,
+    "lon": 26.593721,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "نەخۆشخانەی تایبەتی زانکۆ",
+    "lat": 36.1527175,
+    "lon": 44.039765,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ödemiş Devlet Hastanesi",
+    "lat": 38.2304727,
+    "lon": 27.987511,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Savur Devlet Hastanesi",
+    "lat": 37.5450712,
+    "lon": 40.8800509,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ataköy Hastanesi",
+    "lat": 40.9925302,
+    "lon": 28.8406431,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Cihanbeyli Devlet Hastanesi",
+    "lat": 38.6660299,
+    "lon": 32.9216425,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Divriği Sadık Özgür Devlet Hastanesi",
+    "lat": 39.3533065,
+    "lon": 38.1068482,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Taksim Eğitim ve Araştırma Hastanesi",
+    "lat": 41.0330912,
+    "lon": 28.9831326,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Fuar Hastanesi",
+    "lat": 38.7653113,
+    "lon": 30.5690397,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Safranbolu Devlet Hastanesi",
+    "lat": 41.2527534,
+    "lon": 32.6850838,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Dr. Halil İbrahim Özsoy Bolvadin Devlet Hastanesi",
+    "lat": 38.7305031,
+    "lon": 31.0466501,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Isparta Şehir Hastanesi",
+    "lat": 37.7769536,
+    "lon": 30.5611732,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Başakşehir Çam ve Sakura Şehir Hastanesi",
+    "lat": 41.1045261,
+    "lon": 28.7764267,
+    "beds": "2682",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karkamış Devlet Hastanesi",
+    "lat": 36.8372715,
+    "lon": 38.0020775,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İznik Devlet Hastanesi",
+    "lat": 40.4435614,
+    "lon": 29.7171802,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Avrupa Tıp Merkezi",
+    "lat": 41.0257045,
+    "lon": 28.6851857,
+    "beds": "Unknown",
+    "operator": "private"
+  },
+  {
+    "name": "Demirci Devlet Hastanesi",
+    "lat": 39.0276254,
+    "lon": 28.6416465,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Unknown Hospital",
+    "lat": 36.4058445,
+    "lon": 44.3138649,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Beytüşşebap Devlet Hastanesi",
+    "lat": 37.5699837,
+    "lon": 43.1595519,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tortum İlçe Devlet Hastanesi",
+    "lat": 40.2989327,
+    "lon": 41.5432488,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Narman Devlet Hastanesi",
+    "lat": 40.3493403,
+    "lon": 41.8573213,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sancaktepe Prof. Dr. Feriha Öz Acil Durum Hastanesi",
+    "lat": 41.0002128,
+    "lon": 29.2105858,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "İslahiye Devlet Hastanesi",
+    "lat": 37.0448365,
+    "lon": 36.6286621,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Selendi Devlet Hastanesi",
+    "lat": 38.7465257,
+    "lon": 28.8683361,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Turhal Devlet Hastanesi",
+    "lat": 40.3848449,
+    "lon": 36.0767496,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Mecitözü İlçe Devlet Hastanesi",
+    "lat": 40.5227812,
+    "lon": 35.2885696,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Birecik Devlet Hastanesi",
+    "lat": 37.0246055,
+    "lon": 37.9867957,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Darende Hulusi Efendi Devlet Hastanesi",
+    "lat": 38.5673421,
+    "lon": 37.4891368,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Diyadin Devlet Hastanesi",
+    "lat": 39.5539295,
+    "lon": 43.662829,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Banaz Devlet Hastanesi",
+    "lat": 38.7375867,
+    "lon": 29.7399967,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Şarköy Devlet Hastanesi",
+    "lat": 40.6199953,
+    "lon": 27.0941499,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Silivri Kolan Hastanesi",
+    "lat": 41.0720807,
+    "lon": 28.2584369,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Dr. Şinasi Can (Kadıköy) Hastanesi",
+    "lat": 41.00716,
+    "lon": 29.0429132,
+    "beds": "138",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Yedikule Surp Pırgiç Ermeni Hastanesi",
+    "lat": 40.9939031,
+    "lon": 28.9154024,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kurşunlu Devlet Hastanesi",
+    "lat": 40.8391493,
+    "lon": 33.2849264,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Yeşilhisar Devlet Hastanesi",
+    "lat": 38.3573413,
+    "lon": 35.0866941,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bigadiç Devlet Hastanesi",
+    "lat": 39.3999886,
+    "lon": 28.1266753,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karataş Devlet Hastanesi",
+    "lat": 36.5884859,
+    "lon": 35.3819124,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dr. Vefa Tanır Ilgın Devlet Hastanesi",
+    "lat": 38.2853032,
+    "lon": 31.8950817,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Emirdağ Devlet Hastanesi",
+    "lat": 39.0057257,
+    "lon": 31.1443784,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Hafik Hacı Esma Kocacık İlçe Hastanesi",
+    "lat": 39.8544392,
+    "lon": 37.3882397,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sarıkamıs Devlet Hastanesi",
+    "lat": 40.3337233,
+    "lon": 42.6007297,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ayancık Devlet Hastanesi",
+    "lat": 41.9271238,
+    "lon": 34.5844524,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kırıkhan Devlet Hastanesi",
+    "lat": 36.4883829,
+    "lon": 36.3360142,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dr. Yusuf Azizoğlu Silvan Devlet Hastanesi",
+    "lat": 38.1558685,
+    "lon": 40.9683708,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Manisa Alaşehir Devlet Hastanesi",
+    "lat": 38.3416873,
+    "lon": 28.5331828,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Havza Devlet Hastanesi",
+    "lat": 40.9798036,
+    "lon": 35.6771192,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dursunbey Devlet Hastanesi",
+    "lat": 39.5920245,
+    "lon": 28.6312521,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yenişehir Devlet Hastanesi",
+    "lat": 40.2670098,
+    "lon": 29.6320407,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Tınaztepe Galen Hastanesi",
+    "lat": 38.463774,
+    "lon": 27.1944378,
+    "beds": "Unknown",
+    "operator": "İzmir Tınaztepe Üniversitesi"
+  },
+  {
+    "name": "Selçuk Üniversitesi Tıp Fakültesi Hastanesi",
+    "lat": 38.0207363,
+    "lon": 32.51203,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Medical Park İzmir Hastanesi",
+    "lat": 38.4250052,
+    "lon": 27.1497698,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Beykent Üniversitesi Hastanesi",
+    "lat": 41.017533,
+    "lon": 28.6262768,
+    "beds": "Unknown",
+    "operator": "Beykent Üniversitesi"
+  },
+  {
+    "name": "Abana Devlet Hastanesi",
+    "lat": 41.9767435,
+    "lon": 34.0082986,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yalvaç Devlet Hastanesi",
+    "lat": 38.2870512,
+    "lon": 31.1810187,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Uluborlu Devlet Hastanesi",
+    "lat": 38.0777818,
+    "lon": 30.4569942,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Hacettepe Üniversitesi Hastanesi",
+    "lat": 39.9312815,
+    "lon": 32.8639524,
+    "beds": "Unknown",
+    "operator": "Hacettepe Üniversitesi"
+  },
+  {
+    "name": "Suruç Devlet Hastanesi",
+    "lat": 36.9860046,
+    "lon": 38.4215672,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Batman Batıgöz Tıp Merkezi",
+    "lat": 37.9174727,
+    "lon": 41.1416196,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Metropol Hastanesi",
+    "lat": 38.5015746,
+    "lon": 27.0526328,
+    "beds": "Unknown",
+    "operator": "Metropol Hastaneleri"
+  },
+  {
+    "name": "Kızılcahamam Devlet Hastanesi",
+    "lat": 40.4766323,
+    "lon": 32.6536251,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Elitpark Hastanesi",
+    "lat": 40.55482,
+    "lon": 34.9750016,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Mnegen İlçe Devlet Hastanesi",
+    "lat": 40.945699,
+    "lon": 32.075338,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Unknown Hospital",
+    "lat": 36.8606992,
+    "lon": 42.8370845,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "გაგუას კლინიკა",
+    "lat": 41.7736738,
+    "lon": 44.775959,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kocaeli Entegre Sağlık Kampüsü",
+    "lat": 40.7819862,
+    "lon": 29.9579801,
+    "beds": "Unknown",
+    "operator": "T.C. Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ağlasun Entegre İlçe Devlet Hastanesi",
+    "lat": 37.650959,
+    "lon": 30.5304051,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Beşiri Devlet Hastanesi",
+    "lat": 37.9212884,
+    "lon": 41.2858493,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karadeniz Ereğli Devlet Hastanesi",
+    "lat": 41.2809821,
+    "lon": 31.4920708,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gebze Fatih Devlet Hastanesi",
+    "lat": 40.790666,
+    "lon": 29.4205258,
+    "beds": "Unknown",
+    "operator": "Türkiye Cumhuriyeti Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Bandırma Royal Hastanesi",
+    "lat": 40.340672,
+    "lon": 27.9662676,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Musabeyli Entegre İlçe Devlet Hastanesi",
+    "lat": 36.883775,
+    "lon": 36.9211734,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Küçükçekmece Ağız ve Diş Sağlığı Merkezi",
+    "lat": 41.0218049,
+    "lon": 28.7902957,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Medar Hastanesi Sakarya",
+    "lat": 40.7605869,
+    "lon": 30.3621317,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Central Hospital",
+    "lat": 40.9659307,
+    "lon": 29.1003003,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Silivri Devlet Hastanesi",
+    "lat": 41.0779119,
+    "lon": 28.2500858,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sultanbeyli Devlet Hastanesi",
+    "lat": 40.9853747,
+    "lon": 29.2837113,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Konya Şehir Hastanesi",
+    "lat": 37.8582379,
+    "lon": 32.5497987,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Lüleburgaz Devlet Hastanesi",
+    "lat": 41.3981345,
+    "lon": 27.3731418,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ბორჯომის მრავალპროფილური სამედიცინო ცენტრი",
+    "lat": 41.8392941,
+    "lon": 43.3777152,
+    "beds": "Unknown",
+    "operator": "ჯეო ჰოსპიტალსი"
+  },
+  {
+    "name": "Akdağmadeni Devlet Hastanesi",
+    "lat": 39.6644453,
+    "lon": 35.8691571,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Başkent Hastanesi",
+    "lat": 37.0436944,
+    "lon": 35.2563945,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çukurova Devlet Hastanesi",
+    "lat": 37.0605063,
+    "lon": 35.2801606,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Göksun Devlet Hastanesi",
+    "lat": 38.0298365,
+    "lon": 36.5504081,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Medifema Hastanesi",
+    "lat": 38.2412118,
+    "lon": 27.2756669,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ბაუ საერთაშორისო ჰოსპიტალი",
+    "lat": 41.6318302,
+    "lon": 41.6182597,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "ახალქალაქის ჰოსპიტალი",
+    "lat": 41.3896721,
+    "lon": 43.4886901,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Genç İlçe Devlet Hastanesi",
+    "lat": 38.7487388,
+    "lon": 40.5496875,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Murgul İlçe Devlet Hastanesi",
+    "lat": 41.2771891,
+    "lon": 41.5626725,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kayseri Eğitim Ve Araştırma Hastanesi",
+    "lat": 38.7272397,
+    "lon": 35.478162,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sivas Numune Hastanesi",
+    "lat": 39.7406046,
+    "lon": 37.0397636,
+    "beds": "1070",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "სიმონ ხეჩინაშვილის სახელობის საუნივერსიტეტო კლინიკა",
+    "lat": 41.7116105,
+    "lon": 44.76196,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bayburt Devlet Hastanesi",
+    "lat": 40.2591551,
+    "lon": 40.2097792,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Akşehir Park Hayat Hastanesi",
+    "lat": 38.3654219,
+    "lon": 31.4317675,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kağızman Devlet Hastanesi",
+    "lat": 40.155709,
+    "lon": 43.1174319,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gündoğmuş Devlet Hastanesi",
+    "lat": 36.8062378,
+    "lon": 31.9996711,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Erdemli Yenişehir Hastanesi",
+    "lat": 36.6057298,
+    "lon": 34.3129347,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tutak Devlet Hastanesi",
+    "lat": 39.5355523,
+    "lon": 42.7785356,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Durağan Devlet Hastanesi",
+    "lat": 41.4211077,
+    "lon": 35.0459506,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Γενικό Νοσοκομείο Χίου \"Σκυλίτσειο\"",
+    "lat": 38.3840479,
+    "lon": 26.1376531,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Polatlı Duatepe İlçe Devlet Hastanesi",
+    "lat": 39.5886472,
+    "lon": 32.1671754,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "نەخۆشخانەی CMC",
+    "lat": 36.1999965,
+    "lon": 44.0808895,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "PAKY HOSPITAL | نەخۆشخانەی پاکی",
+    "lat": 36.1706239,
+    "lon": 43.9788535,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medical Park",
+    "lat": 41.0824558,
+    "lon": 28.2244311,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Lüleburgaz Yeni Devlet Hastanesi",
+    "lat": 41.3981969,
+    "lon": 27.3736903,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "نەخۆشخانەی پار",
+    "lat": 36.1828993,
+    "lon": 44.0265624,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Anadolu Hastanesi (Medical Park)",
+    "lat": 40.1308281,
+    "lon": 26.4118183,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kartal Kızılay Hastanesi",
+    "lat": 40.890892,
+    "lon": 29.1819778,
+    "beds": "Unknown",
+    "operator": "Kızılay"
+  },
+  {
+    "name": "Türkoğlu Dr. Kemal Beyazıt Devlet Hastanesi",
+    "lat": 37.3903997,
+    "lon": 36.8666903,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Araklı Bayram Halil Devlet Hastanesi",
+    "lat": 40.9166501,
+    "lon": 40.0437624,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Osmancık Devlet Hastanesi",
+    "lat": 40.9801344,
+    "lon": 34.8037951,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Pursaklar Devlet Hastanesi",
+    "lat": 40.049532,
+    "lon": 32.8940968,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Havsa İlçe Devlet Hastanesi",
+    "lat": 41.5506927,
+    "lon": 26.8099827,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Seyrantepe Hamidiye Etfal Eğitim ve Araştırma Hastanesi",
+    "lat": 41.1036639,
+    "lon": 28.996234,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ქობულეთის რეგიონული საავამყოფო",
+    "lat": 41.805836,
+    "lon": 41.7769532,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kent Hastanesi",
+    "lat": 40.9134614,
+    "lon": 38.3841407,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Abat Cerrahi Tıp Merkezi",
+    "lat": 40.9888677,
+    "lon": 28.6604582,
+    "beds": "Unknown",
+    "operator": "Özel Abat Cerrahi Tıp Merkezi"
+  },
+  {
+    "name": "ÖZEL TERMESSOS HASTANESİ",
+    "lat": 37.0351481,
+    "lon": 30.6035784,
+    "beds": "Unknown",
+    "operator": "ÖZEL HASTANE"
+  },
+  {
+    "name": "Eyüpsultan Devlet Hastanesi",
+    "lat": 41.0574382,
+    "lon": 28.9407454,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Çarşamba Devlet Hastanesi",
+    "lat": 41.2106789,
+    "lon": 36.7475268,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gördes Devlet Hastanesi",
+    "lat": 38.9403244,
+    "lon": 28.2797577,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Tarsus Devlet Hastanesi",
+    "lat": 36.9158824,
+    "lon": 34.9131307,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sincan Eğitim ve Araştırma Hastanesi",
+    "lat": 39.9823985,
+    "lon": 32.5723763,
+    "beds": "525",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Bölge Hastanesi",
+    "lat": 41.0056524,
+    "lon": 29.2154685,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "მედისონი",
+    "lat": 41.7825914,
+    "lon": 44.8259042,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Akedemi Hastanesi",
+    "lat": 36.7922897,
+    "lon": 34.5821683,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gaziantep Şehir Hastanesi",
+    "lat": 37.0153502,
+    "lon": 37.389645,
+    "beds": "Unknown",
+    "operator": "T.C. Sağlık Bakanlığı"
+  },
+  {
+    "name": "KDH Ruh Sağlığı Hastalıkları ve AMATEM Kliniği",
+    "lat": 38.7663862,
+    "lon": 35.4622679,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Azdavay İlçe Hastanesi",
+    "lat": 41.6320695,
+    "lon": 33.3117398,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Köse Devlet Hastanesi",
+    "lat": 40.2081279,
+    "lon": 39.6585259,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ayvacık Devlet Hastanesi",
+    "lat": 41.0026888,
+    "lon": 36.6289306,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kilis Devlet Hastanesi",
+    "lat": 36.7032416,
+    "lon": 37.1089239,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Lice Halis Toprak Vakfı Devlet Hastanesi",
+    "lat": 38.4536517,
+    "lon": 40.6430961,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "نەخۆشخانەی سەنتەری دڵ-هەولێر",
+    "lat": 36.1535978,
+    "lon": 44.0171455,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Niğde Ömer Halisdemir Ünivesitesi Eğitim ve Araştırma Hastanesi",
+    "lat": 37.9690986,
+    "lon": 34.6459139,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Zonguldak Atatürk Devlet Hastanesi",
+    "lat": 41.4600412,
+    "lon": 31.7936068,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özalp Devlet Hastanesi",
+    "lat": 38.657258,
+    "lon": 43.9714768,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "İskenderun Devlet Hastanesi",
+    "lat": 36.5685985,
+    "lon": 36.1664964,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Toprakkale Entegre İlçe Hastanesi",
+    "lat": 37.071396,
+    "lon": 36.1438088,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gölyaka Devlet Hastanesi",
+    "lat": 40.7798064,
+    "lon": 30.9936738,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Cumayeri Devlet Hastanesi",
+    "lat": 40.8563511,
+    "lon": 30.9555169,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gürgentepe Devlet Hastanesi",
+    "lat": 40.7874675,
+    "lon": 37.6029561,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Lokman Hekim Esnaf Hastanesi",
+    "lat": 36.6312535,
+    "lon": 29.120119,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Fındıklı Devlet Hastanesi",
+    "lat": 41.2665658,
+    "lon": 41.1365144,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Develi Dr. Ekrem Karakaya Devlet Hastanesi",
+    "lat": 38.4079156,
+    "lon": 35.4871077,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bayındır Hastanesi İçerenköy",
+    "lat": 40.9669337,
+    "lon": 29.1105579,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Palmiye Hastanesi",
+    "lat": 36.5557663,
+    "lon": 36.1573265,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Akçakoca Eski Devlet Hastanesi",
+    "lat": 41.0871209,
+    "lon": 31.1152605,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Giresun Üniversitesi Eğitim ve Araştırma Hastanesi",
+    "lat": 40.8980717,
+    "lon": 38.4380498,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Karaman Hastanesi",
+    "lat": 37.1811851,
+    "lon": 33.2167857,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Erzin Devlet Hastanesi",
+    "lat": 36.9415846,
+    "lon": 36.2144195,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Tomarza Yaşar Karayel İlce Devlet Hastanesi",
+    "lat": 38.4536072,
+    "lon": 35.7989938,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bodrum Devlet Hastahanesi",
+    "lat": 37.05757,
+    "lon": 27.3664777,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yatağan Devlet Hastanesi",
+    "lat": 37.3531196,
+    "lon": 28.1577207,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "მალხაზ კაციაშვილის მრავალპროფილური გადაუდებელი დახმარების ცენტრი",
+    "lat": 41.7333207,
+    "lon": 44.8234343,
+    "beds": "Unknown",
+    "operator": "Krol Medical Corporation"
+  },
+  {
+    "name": "Kumluca Devlet Hastanesi",
+    "lat": 36.3653992,
+    "lon": 30.3056858,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Saruhanlı Devlet Hastanesi",
+    "lat": 38.7333495,
+    "lon": 27.5666408,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Merkez Prime Hastanesi",
+    "lat": 40.8213661,
+    "lon": 29.4178345,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Medical Park",
+    "lat": 40.8042629,
+    "lon": 29.4397382,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Gözde Kışla Hastanesi",
+    "lat": 38.3490857,
+    "lon": 38.3228974,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Malatya Park Hastanesi",
+    "lat": 38.3448225,
+    "lon": 38.3298468,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Antakya Göz Hastanesi",
+    "lat": 36.1968384,
+    "lon": 36.1641023,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Vanadzor Medical Center",
+    "lat": 40.8045811,
+    "lon": 44.482939,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Sarıkaya Devlet Hastanesi",
+    "lat": 39.491107,
+    "lon": 35.3831958,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Hayat Hastanesi",
+    "lat": 40.191826,
+    "lon": 29.0770907,
+    "beds": "Unknown",
+    "operator": "Hayat"
+  },
+  {
+    "name": "Özel Isparta Hastanesi",
+    "lat": 37.7731221,
+    "lon": 30.5514733,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Harran Devlet Hastanesi",
+    "lat": 36.8685382,
+    "lon": 39.0237776,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ceylanpınar Devlet Hastanesi",
+    "lat": 36.8705067,
+    "lon": 40.0397564,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Aydın Atatürk Devlet Hastanesi",
+    "lat": 37.840333,
+    "lon": 27.8397977,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ortaca Devlet Hastanesi",
+    "lat": 36.8535052,
+    "lon": 28.7594705,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kocaeli Şehir Hastanesi",
+    "lat": 40.7830391,
+    "lon": 29.9601768,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Dünyapark Hastanesi",
+    "lat": 37.931091,
+    "lon": 40.150828,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Musa Gül Hastanesi",
+    "lat": 39.1488971,
+    "lon": 34.1593431,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kaman Devlet Hastanesi",
+    "lat": 39.3701935,
+    "lon": 33.7198702,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "İskilip Atıf Hoca Devlet Hastanesi",
+    "lat": 40.7273194,
+    "lon": 34.4665719,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Dörtyol Devlet Hastanesi",
+    "lat": 36.8283511,
+    "lon": 36.215465,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Almus Devlet Hastanesi",
+    "lat": 40.3747584,
+    "lon": 36.8942583,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ortaca Yücelen Hastanesi",
+    "lat": 36.8449065,
+    "lon": 28.7682949,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Oğuzeli Devlet Hastanesi",
+    "lat": 36.9630191,
+    "lon": 37.5073409,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Pütürge Devlet Hastanesi",
+    "lat": 38.1989505,
+    "lon": 38.8732178,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Vezirköprü Devlet Hastanesi",
+    "lat": 41.1173017,
+    "lon": 35.4916451,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gerze Devlet Hastanesi",
+    "lat": 41.8038514,
+    "lon": 35.1724205,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Yeşilköy Prof. Dr. Murat Dilmener Acil Durum Hastanesi",
+    "lat": 40.9702946,
+    "lon": 28.8081522,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Şuhut Devlet Hastanesi",
+    "lat": 38.5315492,
+    "lon": 30.5592257,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "İshakoğlu Çayeli Devlet Hastanesi",
+    "lat": 41.0903741,
+    "lon": 40.726827,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Hazro İlçe Entegre Devlet Hastanesi",
+    "lat": 38.2491216,
+    "lon": 40.7823245,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ვივამედი",
+    "lat": 41.8021796,
+    "lon": 44.7695394,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Unknown Hospital",
+    "lat": 36.8929426,
+    "lon": 30.6265541,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ondokuz Mayıs Devlet Hastanesi",
+    "lat": 41.4895377,
+    "lon": 36.0677024,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kürtün Devlet Hastanesi",
+    "lat": 40.7047504,
+    "lon": 39.0810841,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gölhisar Devlet Hastanesi",
+    "lat": 37.1448723,
+    "lon": 29.5079609,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Görele Dr. Ergun Özdemir Devlet Hastanesi",
+    "lat": 41.03724,
+    "lon": 38.9795139,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sivrihisar İlçe Devlet Hastanesi",
+    "lat": 39.4403388,
+    "lon": 31.5359716,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gaziantep MMT Amerikan Hastanesi",
+    "lat": 37.0595862,
+    "lon": 37.373533,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ağaçören Devlet Hastanesi",
+    "lat": 38.8746865,
+    "lon": 33.9141285,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Asarcık İlçe Devlet Hastanesi",
+    "lat": 41.0357624,
+    "lon": 36.2247533,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Keşan Devlet Hastanesi",
+    "lat": 40.8341785,
+    "lon": 26.6323239,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Yusufeli Devlet Hastanesi",
+    "lat": 40.809917,
+    "lon": 41.5332059,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çine Devlet Hastanesi",
+    "lat": 37.6076726,
+    "lon": 28.0605512,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Hassa Devlet Hastanesi",
+    "lat": 36.7932367,
+    "lon": 36.5279402,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Pazarcık Devlet Hastanesi",
+    "lat": 37.5027257,
+    "lon": 37.3231777,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gözde Hastanesi Kuşadası",
+    "lat": 37.8664056,
+    "lon": 27.2652277,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Şehit Ziya Sarpkaya Göynük İlçe Devlet Hastanesi",
+    "lat": 40.4105472,
+    "lon": 30.7809245,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ilgaz Devlet hastanesi",
+    "lat": 40.9298226,
+    "lon": 33.6219861,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Şile Devlet Hastanesi",
+    "lat": 41.1622627,
+    "lon": 29.5724151,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kaynarca Şehit Gökhan Ayder İlçe Devlet Hastanesi",
+    "lat": 41.0413131,
+    "lon": 30.3018711,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "PSP ნიუ ჰოსპიტალსი",
+    "lat": 41.6749788,
+    "lon": 44.8245792,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Unknown Hospital",
+    "lat": 36.7848936,
+    "lon": 28.8107108,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tirebolu Devlet Hastanesi",
+    "lat": 41.0038577,
+    "lon": 38.8282473,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kafr Bony PHCC",
+    "lat": 36.0578355,
+    "lon": 36.6144793,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ferizli İlçe Devlet Hastanesi",
+    "lat": 40.9562809,
+    "lon": 30.4940743,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Nizip İlçe Devlet Hastanesi",
+    "lat": 37.0085002,
+    "lon": 37.8023855,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Tavas Devlet Hastanesi",
+    "lat": 37.5653066,
+    "lon": 29.0746702,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Akçadağ Şehit Gökhan Aslan Devlet Hastanesi",
+    "lat": 38.3409235,
+    "lon": 37.964991,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kocaeli Büyükşehir Belediyesi Hastanesi",
+    "lat": 36.2282928,
+    "lon": 36.1305544,
+    "beds": "Unknown",
+    "operator": "T.C Sağlık Bakanlığı  Kocaeli Büyükşehir Belediyesi Hastanesi"
+  },
+  {
+    "name": "Bahçe Devlet Hastanesi",
+    "lat": 37.2006169,
+    "lon": 36.5701093,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Bahçelievler Medicana Hastanesi",
+    "lat": 41.0064677,
+    "lon": 28.8700779,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Bahçelievler Medicana Hastanesi",
+    "lat": 41.0067451,
+    "lon": 28.8698718,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Aktif International Hastanesi Bahçelievler",
+    "lat": 41.0071667,
+    "lon": 28.8695876,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Fethiye Devlet Hastanesi",
+    "lat": 36.6529284,
+    "lon": 29.1195534,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Osmaniye Devlet Hastanesi",
+    "lat": 37.0831642,
+    "lon": 36.2741916,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel İbn-i Sina Hastanesi",
+    "lat": 37.0810382,
+    "lon": 36.2626793,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kemalpaşa Devlet Hastanesi",
+    "lat": 38.4363569,
+    "lon": 27.4098832,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Medical Park Hastanesi",
+    "lat": 41.3334326,
+    "lon": 36.2718017,
+    "beds": "Unknown",
+    "operator": "Medical Park"
+  },
+  {
+    "name": "Polatlı Can Hastanesi",
+    "lat": 39.5788237,
+    "lon": 32.1497531,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gelibolu Devlet Hastanesi",
+    "lat": 40.4181476,
+    "lon": 26.6753063,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Çat İlçe Devlet Hastanesi",
+    "lat": 39.6134672,
+    "lon": 40.9775088,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Erdek Neyyire Sıtkı Devlet Hastanesi",
+    "lat": 40.3956935,
+    "lon": 27.7921242,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kaynaşlı Devlet Hastamesi",
+    "lat": 40.7724595,
+    "lon": 31.310246,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sütçüler Devlet Hastanesi",
+    "lat": 37.4933963,
+    "lon": 30.9722539,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Keskin İlçe Devlet Hastanesi",
+    "lat": 39.6778964,
+    "lon": 33.5999511,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Çivril Devlet Hastanesi",
+    "lat": 38.3091266,
+    "lon": 29.7407006,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Taşköprü Devlet Hastanesi",
+    "lat": 41.504159,
+    "lon": 34.213135,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Özel Keşan Hastanesi",
+    "lat": 40.8595896,
+    "lon": 26.6200855,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "İnebolu Devlet Hastanesi",
+    "lat": 41.9609647,
+    "lon": 33.7509431,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "İncesu Arif-İsrafil-Yusuf Uçurum İlçe Devlet Hastanesi",
+    "lat": 38.6237149,
+    "lon": 35.1859044,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ürgüp Devlet Hastanesi",
+    "lat": 38.6490955,
+    "lon": 34.9198063,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Amasra Devlet Hastanesi",
+    "lat": 41.7365556,
+    "lon": 32.3925803,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Derince Ağız ve Diş Sağlığı Merkezi",
+    "lat": 40.7593894,
+    "lon": 29.8123835,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karpuzlu Devlet Hastanesi",
+    "lat": 37.5562795,
+    "lon": 27.8366666,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "თბილისის ცენტრალური საავადმყოფო",
+    "lat": 41.7751494,
+    "lon": 44.7764513,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "თბილისის გულის და სასხლძარღვთა კლინიკა",
+    "lat": 41.7783922,
+    "lon": 44.7743031,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Lema Clinic",
+    "lat": 41.0525878,
+    "lon": 28.7960453,
+    "beds": "Unknown",
+    "operator": "Klinik"
+  },
+  {
+    "name": "Çankırı Devlet Hastanesi",
+    "lat": 40.6239965,
+    "lon": 33.6078343,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gölmarmara Devlet Hastanesi",
+    "lat": 38.7181776,
+    "lon": 27.9118685,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Buharkent İlçe Devlet Hastanesi",
+    "lat": 37.9698997,
+    "lon": 28.741873,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çal Devlet Hastanesi",
+    "lat": 38.0815038,
+    "lon": 29.3925599,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Pamukova İlçe Devlet Hastanesi",
+    "lat": 40.5055727,
+    "lon": 30.1822246,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sakarya Yenikent Devlet Hastanesi Tozlu Polikliniği",
+    "lat": 40.7801668,
+    "lon": 30.4018006,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Biga Can Hastanesi",
+    "lat": 40.2334105,
+    "lon": 27.2598451,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Aralık Devlet Hastanesi",
+    "lat": 39.8678371,
+    "lon": 44.5113261,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kırşehir Şehit Polis Hayrettin Yılmaz Ağız ve Diş Sağlığı Merkezi",
+    "lat": 39.1565749,
+    "lon": 34.1602628,
+    "beds": "Unknown",
+    "operator": "Diş Hastanesi"
+  },
+  {
+    "name": "Ankara Eğitim ve Araştırma Hastanesi Hüseyingazi Semt Polikliniği",
+    "lat": 39.9684373,
+    "lon": 32.9618981,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "İrmet Hastanesi",
+    "lat": 41.2936194,
+    "lon": 27.9951153,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Lalapaşa İlçe Devlet Hastanesi",
+    "lat": 41.8394608,
+    "lon": 26.7315737,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Burdur Devlet Hastanesi",
+    "lat": 37.7132539,
+    "lon": 30.2301852,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Defne Devlet Hastanesi",
+    "lat": 36.16205,
+    "lon": 36.1249054,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Eğil İlçe Devlet Hastanesi",
+    "lat": 38.2581678,
+    "lon": 40.0854996,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Saimbeyli Şehit Uzman Çavuş Adem Ambarcı İlçe Devlet Hastanesi",
+    "lat": 37.9804329,
+    "lon": 36.0831841,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Başakşehir Devlet Hastanesi",
+    "lat": 41.1184999,
+    "lon": 28.8086893,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Urla Devlet Hastanesi",
+    "lat": 38.3305773,
+    "lon": 26.7462388,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kumru Devlet Hastanesi",
+    "lat": 40.8727918,
+    "lon": 37.2689144,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Antalya Şehir Hastanesi",
+    "lat": 36.9533887,
+    "lon": 30.6651853,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Datça Devlet Hastanesi",
+    "lat": 36.7436269,
+    "lon": 27.6702827,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Yalova Eğitim ve Araştırma Hastanesi",
+    "lat": 40.6317697,
+    "lon": 29.2658406,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ahlat Devlet Hastanesi",
+    "lat": 38.7480224,
+    "lon": 42.4778776,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Yerköy Devlet Hastanesi",
+    "lat": 39.6580362,
+    "lon": 34.4956605,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Devlet Hastanesi",
+    "lat": 40.1191458,
+    "lon": 36.2983474,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Սպիտակի բժշկական կենտրոն",
+    "lat": 40.819869,
+    "lon": 44.2369504,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "S life hastanesi",
+    "lat": 41.0398546,
+    "lon": 28.6521867,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Maslak Hastanesi",
+    "lat": 41.1273992,
+    "lon": 29.0251976,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Vize Devlet Hastanesi",
+    "lat": 41.584371,
+    "lon": 27.7537548,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Erdem Hastanesi",
+    "lat": 41.0401293,
+    "lon": 28.8254441,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Bakırköy Prof. Dr. Mazhar Osman Ruh Sağlığı ve Sinir Hastalıkları Eğitim ve Araştırma Hastanesi",
+    "lat": 40.9890179,
+    "lon": 28.8619676,
+    "beds": "Unknown",
+    "operator": "Bakırköy Prof. Dr. Mazhar Osman Ruh Sağlığı ve Sinir Hastalıkları Eğitim ve Araştırma Hastanesi"
+  },
+  {
+    "name": "Susurluk Devlet Hastanesi",
+    "lat": 39.9010964,
+    "lon": 28.1602385,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Gülşehir İlçe Devlet Hastanesi",
+    "lat": 38.7480682,
+    "lon": 34.6221362,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Yenipazar İlçe Devlet Hastanesi",
+    "lat": 40.1767203,
+    "lon": 30.5183404,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Hani Devlet Hastanesi",
+    "lat": 38.407514,
+    "lon": 40.4026942,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "ახალი სამშობიარო ცენტრი",
+    "lat": 41.6897764,
+    "lon": 44.8298299,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Andırın Devlet Hastanesi",
+    "lat": 37.5677665,
+    "lon": 36.3470282,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Esenler Kadın Doğum Hastanesi",
+    "lat": 41.0558065,
+    "lon": 28.8691387,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "İzmir Bergama Necla - Mithat Öztüre Devlet Hastanesi",
+    "lat": 39.1183514,
+    "lon": 27.1979398,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Acıbadem Kartal Hastanesi",
+    "lat": 40.886381,
+    "lon": 29.2072506,
+    "beds": "Unknown",
+    "operator": "Acıbadem"
+  },
+  {
+    "name": "Medipol Üniversitesi Çamlıca Hastanesi",
+    "lat": 41.0233174,
+    "lon": 29.082057,
+    "beds": "Unknown",
+    "operator": "Medipol Üniversitesi"
+  },
+  {
+    "name": "Ayvalık Devlet Hastanesi",
+    "lat": 39.3211797,
+    "lon": 26.7080531,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Erzurum Hınıs Şehit Yavuz Yürekseven Devlet Hastanesi",
+    "lat": 39.3679663,
+    "lon": 41.6992792,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "İzmir Bergama Necla - Mithat Öztüre Devlet Hastanesi",
+    "lat": 39.1179666,
+    "lon": 27.1973912,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bünyan Devlet Hastanesi",
+    "lat": 38.8464385,
+    "lon": 35.8725371,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Zara Devlet Hastanesi",
+    "lat": 39.8928238,
+    "lon": 37.7493872,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Balıkesir Üniversitesi Sağlık Uygulama ve Araştırma Hastanesi",
+    "lat": 39.5489207,
+    "lon": 27.9999527,
+    "beds": "Unknown",
+    "operator": "Balıkesir Üniversitesi"
+  },
+  {
+    "name": "Pertek İlçe Devlet Hastanesi",
+    "lat": 38.8682194,
+    "lon": 39.3250594,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Pertek İlçe Devlet Hastanesi",
+    "lat": 38.8682678,
+    "lon": 39.3252067,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Pendik Medipol Üniversitesi Hastanesi",
+    "lat": 40.8845604,
+    "lon": 29.2351303,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Saimbeyli Şehit Uzman Çavuş Adem Ambarcı İlçe Devlet Hastanesi",
+    "lat": 37.9804798,
+    "lon": 36.0831692,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Feke İlçe Devlet Hastanesi",
+    "lat": 37.8160315,
+    "lon": 35.9205195,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Feke İlçe Devlet Hastanesi",
+    "lat": 37.8160046,
+    "lon": 35.9205725,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Keles Devlet Hastanesi",
+    "lat": 39.9127244,
+    "lon": 29.2306493,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çat İlçe Devlet Hastanesi",
+    "lat": 39.6134379,
+    "lon": 40.9775618,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Espiye İlçe Devlet Hastanesi",
+    "lat": 40.9618301,
+    "lon": 38.7404118,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Giresun Kadın Doğum ve Çocuk Hastalıkları Eğitim ve Araştırma Hastanesi",
+    "lat": 40.9102832,
+    "lon": 38.3492977,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sındırgı Devlet Hastanesi",
+    "lat": 39.246313,
+    "lon": 28.1764689,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Düziçi Devlet Hastanesi",
+    "lat": 37.2564804,
+    "lon": 36.4549775,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Ruhi Tingiz Devlet Hastanesi",
+    "lat": 40.6485295,
+    "lon": 35.8321521,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Bozova Devlet Hastanesi",
+    "lat": 37.3613278,
+    "lon": 38.5143748,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Karamanlı Devlet Hastanesi",
+    "lat": 37.3682195,
+    "lon": 29.817895,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Diş Hastanesi",
+    "lat": 40.1310433,
+    "lon": 29.9804261,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Edremit Devlet Hastanesi",
+    "lat": 39.5766318,
+    "lon": 27.0430004,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Tekirdağ Namık Kemal Üniversitesi Hastanesi",
+    "lat": 40.9969185,
+    "lon": 27.5872456,
+    "beds": "Unknown",
+    "operator": "Tekirdağ Namık Kemal Üniversitesi"
+  },
+  {
+    "name": "Ortaköy Devlet Hastanesi",
+    "lat": 38.7555223,
+    "lon": 34.0704971,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Araban İlçe Devlet Hastanesi",
+    "lat": 37.4180303,
+    "lon": 37.6809358,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Köprüköy Devlet Hastanesi",
+    "lat": 39.9663321,
+    "lon": 41.8657104,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sivaslı 1 Nolu 112 ASHİ",
+    "lat": 38.5031008,
+    "lon": 29.6855332,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Sivaslı Devlet Hastanesi",
+    "lat": 38.4944921,
+    "lon": 29.6927511,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Çavdır İlçe Devlet Hastanesi",
+    "lat": 37.1565992,
+    "lon": 29.688988,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gazi Hastanesi",
+    "lat": 38.4293802,
+    "lon": 27.1517675,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Mamak Devlet Hastanesi",
+    "lat": 39.914002,
+    "lon": 32.9552842,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Aydın Adnan Menderes Üniversitesi Hastanesi",
+    "lat": 37.8542846,
+    "lon": 27.8597361,
+    "beds": "Unknown",
+    "operator": "Aydın Adnan Menderes Üniversitesi"
+  },
+  {
+    "name": "Özel Ege Şehir Hastanesi",
+    "lat": 38.4240977,
+    "lon": 27.1684298,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Özel Gözde İzmir Hastanesi",
+    "lat": 38.4247393,
+    "lon": 27.1681833,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Afyonkarahisar Sağlık Bilimleri Üniversitesi Hastanesi",
+    "lat": 38.7849497,
+    "lon": 30.4671011,
+    "beds": "Unknown",
+    "operator": "Afyonkarahisar Sağlık Bilimleri Üniversitesi"
+  },
+  {
+    "name": "İSTÜN Şişli Kolan International Hospital",
+    "lat": 41.0648306,
+    "lon": 28.9804088,
+    "beds": "Unknown",
+    "operator": "Kolan Hospital Group"
+  },
+  {
+    "name": "Türkiye Hastanesi",
+    "lat": 41.0659503,
+    "lon": 28.9812954,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Acıbadem Taksim Hastanesi",
+    "lat": 41.0414739,
+    "lon": 28.9822634,
+    "beds": "Unknown",
+    "operator": "Acıbadem Sağlık Grubu"
+  },
+  {
+    "name": "Hilvan Devlet Hastanesi",
+    "lat": 37.5994756,
+    "lon": 38.9788029,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Yeni Horasan İlçe Hastanesi",
+    "lat": 40.0288093,
+    "lon": 42.1485124,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Biruni Üniversitesi Tıp Fakültesi Hastanesi",
+    "lat": 40.9989504,
+    "lon": 28.7955989,
+    "beds": "Unknown",
+    "operator": "Biruni Üniversitesi"
+  },
+  {
+    "name": "Արտաշատի հիվանդանոց",
+    "lat": 39.9569221,
+    "lon": 44.5360998,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Dr. Sait Molu Acil Servisi",
+    "lat": 38.7046436,
+    "lon": 35.5244201,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kayseri Eğitim ve Araştırma Hastanesi",
+    "lat": 38.7676073,
+    "lon": 35.4087825,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Gazipaşa Devlet Hastanesi",
+    "lat": 36.2735709,
+    "lon": 32.3031431,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tell Abiad Hospital",
+    "lat": 36.6880184,
+    "lon": 38.944307,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Uşak Eğitim ve Araştırma Hastanesi",
+    "lat": 38.6756875,
+    "lon": 29.4501328,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Akyurt Devlet Hastanesi",
+    "lat": 40.128605,
+    "lon": 33.0880205,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Araştırma ve Uygulama Hastanesi",
+    "lat": 39.7785428,
+    "lon": 34.7916874,
+    "beds": "Unknown",
+    "operator": "Bozok Üniversitesi"
+  },
+  {
+    "name": "Çumra Devlet Hastanesi",
+    "lat": 37.5724079,
+    "lon": 32.7455535,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Validebağ Devlet Hastanesi",
+    "lat": 41.0122275,
+    "lon": 29.0408363,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Ceyhan Devlet Hastanesi",
+    "lat": 37.0261912,
+    "lon": 35.8196086,
+    "beds": "Unknown",
+    "operator": "Government"
+  },
+  {
+    "name": "Özel Bir Nefes Hastanesi",
+    "lat": 41.3931613,
+    "lon": 27.3589761,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Çelikhan Devlet Hastanesi",
+    "lat": 38.0338903,
+    "lon": 38.2526216,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Köyceğiz Devlet Hastanesi",
+    "lat": 36.9805614,
+    "lon": 28.6803338,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Halil Şıvgın Çubuk Devlet Hastanesi",
+    "lat": 40.230384,
+    "lon": 33.0329568,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Kahramankazan Devlet Hastanesi",
+    "lat": 40.195468,
+    "lon": 32.6777457,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Şehitkamil Devlet Hastanesi",
+    "lat": 37.0894785,
+    "lon": 37.3640535,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Körfez Devlet Hastanesi",
+    "lat": 40.7757103,
+    "lon": 29.7828546,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Haymana Devlet Hastanesi",
+    "lat": 39.4341726,
+    "lon": 32.5117915,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Kemah İlçe Devlet Hastanesi",
+    "lat": 39.6011296,
+    "lon": 39.0317302,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  },
+  {
+    "name": "Tepecik Eğitim ve Araştırma Hastanesi",
+    "lat": 38.4228995,
+    "lon": 27.1662448,
+    "beds": "Unknown",
+    "operator": "Sağlık Bakanlığı"
+  },
+  {
+    "name": "Behçet Uz Çocuk Hastanesi",
+    "lat": 38.4274413,
+    "lon": 27.138646,
+    "beds": "Unknown",
+    "operator": "Unknown"
+  }
+]

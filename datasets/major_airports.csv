@@ -1,0 +1,21 @@
+iata_code,airport_name,city,country,latitude,longitude,annual_passengers_millions,runways,evacuation_capacity_per_day
+ATL,Hartsfield-Jackson Atlanta,Atlanta,USA,33.64,-84.43,110,5,150000
+PEK,Beijing Capital,Beijing,China,40.08,116.58,100,3,130000
+DXB,Dubai International,Dubai,UAE,25.25,55.36,89,2,100000
+LAX,Los Angeles International,Los Angeles,USA,33.94,-118.41,88,4,120000
+HND,Tokyo Haneda,Tokyo,Japan,35.55,139.78,87,4,100000
+ORD,Chicago O'Hare,Chicago,USA,41.97,-87.9,84,8,120000
+LHR,London Heathrow,London,UK,51.47,-0.46,80,2,100000
+PVG,Shanghai Pudong,Shanghai,China,31.14,121.81,76,5,100000
+CDG,Paris Charles de Gaulle,Paris,France,49.01,2.55,76,4,100000
+DFW,Dallas/Fort Worth,Dallas,USA,32.9,-97.04,75,7,100000
+CAN,Guangzhou Baiyun,Guangzhou,China,23.39,113.3,73,3,90000
+AMS,Amsterdam Schiphol,Amsterdam,Netherlands,52.31,4.77,72,6,90000
+FRA,Frankfurt Airport,Frankfurt,Germany,50.03,8.57,70,4,90000
+IST,Istanbul Airport,Istanbul,Turkey,41.26,28.74,64,5,90000
+DEL,Indira Gandhi International,Delhi,India,28.56,77.1,63,3,80000
+JFK,John F. Kennedy,New York,USA,40.64,-73.78,62,4,80000
+SIN,Singapore Changi,Singapore,Singapore,1.36,103.99,62,2,80000
+ICN,Incheon International,Seoul,South Korea,37.46,126.44,62,4,80000
+DEN,Denver International,Denver,USA,39.86,-104.67,58,6,75000
+BKK,Suvarnabhumi Bangkok,Bangkok,Thailand,13.69,100.75,57,2,70000

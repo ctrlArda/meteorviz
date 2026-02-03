@@ -1,0 +1,21 @@
+crater_name,location,latitude,longitude,diameter_km,age_myr,impactor_diameter_km,impact_energy_mt,extinction_event
+Chicxulub,Mexico,21.4,-89.5,180.0,66.0,10.0,100000000.0,True
+Vredefort,South Africa,-27.0,27.5,300.0,2023.0,15.0,500000000.0,False
+Sudbury,Canada,46.6,-81.2,250.0,1850.0,12.0,200000000.0,False
+Popigai,Russia,71.7,111.0,100.0,35.7,5.0,10000000.0,False
+Manicouagan,Canada,51.4,-68.7,100.0,214.0,5.0,10000000.0,False
+Acraman,Australia,-32.0,135.5,90.0,580.0,4.0,5000000.0,True
+Morokweng,South Africa,-26.5,23.5,70.0,145.0,4.0,3000000.0,False
+Kara,Russia,69.1,65.0,65.0,70.3,3.0,2000000.0,False
+Siljan,Sweden,61.0,14.9,52.0,377.0,3.0,2000000.0,False
+Charlevoix,Canada,47.5,-70.3,54.0,342.0,3.0,2000000.0,False
+Araguainha,Brazil,-16.8,-53.0,40.0,254.0,2.0,1000000.0,True
+Chesapeake Bay,USA,37.3,-76.0,40.0,35.5,2.0,1000000.0,False
+Puchezh-Katunki,Russia,57.0,43.7,40.0,167.0,2.0,1000000.0,False
+Ries,Germany,48.9,10.6,24.0,14.8,1.5,100000.0,False
+Rochechouart,France,45.8,0.8,23.0,201.0,1.5,80000.0,False
+Mjolnir,Norway,73.8,29.7,40.0,142.0,2.0,1000000.0,False
+Meteor Crater,USA,35.0,-111.0,1.2,0.05,0.05,10.0,False
+Bosumtwi,Ghana,6.5,-1.4,10.5,1.07,0.5,50000.0,False
+Lonar,India,19.9,76.5,1.8,0.052,0.06,3.0,False
+Tswaing,South Africa,-25.4,28.1,1.1,0.22,0.03,0.5,False

@@ -1,0 +1,21 @@
+dam_name,country,latitude,longitude,height_m,reservoir_km3,capacity_mw,downstream_population_millions,failure_flood_risk
+Three Gorges,China,30.82,111.0,181,39.3,22500,6.0,Extreme
+Itaipu,Brazil/Paraguay,-25.41,-54.59,196,29.0,14000,0.5,High
+Guri,Venezuela,7.76,-63.0,162,135.0,10235,0.2,Medium
+Tucuruí,Brazil,-3.83,-49.65,76,45.5,8370,0.3,High
+Grand Coulee,USA,47.95,-118.98,168,11.9,6809,0.1,High
+Sayano-Shushenskaya,Russia,52.83,91.37,242,31.3,6400,0.05,High
+Longtan,China,25.03,107.05,216,27.3,6426,0.5,High
+Krasnoyarsk,Russia,55.93,92.3,124,73.3,6000,0.2,Medium
+Robert-Bourassa,Canada,53.78,-77.45,162,61.7,5616,0.01,Low
+Churchill Falls,Canada,53.53,-64.3,32,32.6,5428,0.01,Low
+Bratsk,Russia,56.45,101.78,124,169.3,4500,0.1,Medium
+Kariba,Zambia/Zimbabwe,-16.52,28.76,128,185.0,1830,0.5,Extreme
+Aswan High,Egypt,23.97,32.88,111,132.0,2100,10.0,Extreme
+Akosombo,Ghana,6.3,0.06,134,150.0,1020,0.1,Medium
+Hoover,USA,36.02,-114.74,221,35.2,2080,0.3,High
+Glen Canyon,USA,36.94,-111.48,216,33.3,1320,0.1,High
+Oroville,USA,39.54,-121.48,235,4.4,819,0.2,High
+Atatürk,Turkey,37.51,38.32,169,48.7,2400,2.0,Extreme
+Nurek,Tajikistan,38.37,69.35,300,10.5,3000,0.5,High
+Rogun,Tajikistan,38.73,69.17,335,13.3,3600,0.5,Extreme

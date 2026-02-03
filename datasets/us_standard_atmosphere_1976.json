@@ -1,0 +1,66 @@
+{
+  "description": "US Standard Atmosphere 1976 - Idealized Steady State",
+  "layers": [
+    {
+      "name": "Troposphere",
+      "base_altitude_km": 0,
+      "lapse_rate_k_km": -6.5,
+      "base_temp_k": 288.15,
+      "base_pressure_pa": 101325.0,
+      "base_density_kgm3": 1.225
+    },
+    {
+      "name": "Tropopause",
+      "base_altitude_km": 11,
+      "lapse_rate_k_km": 0.0,
+      "base_temp_k": 216.65,
+      "base_pressure_pa": 22632.1,
+      "base_density_kgm3": 0.36391
+    },
+    {
+      "name": "Stratosphere 1",
+      "base_altitude_km": 20,
+      "lapse_rate_k_km": 1.0,
+      "base_temp_k": 216.65,
+      "base_pressure_pa": 5474.89,
+      "base_density_kgm3": 0.08803
+    },
+    {
+      "name": "Stratosphere 2",
+      "base_altitude_km": 32,
+      "lapse_rate_k_km": 2.8,
+      "base_temp_k": 228.65,
+      "base_pressure_pa": 868.019,
+      "base_density_kgm3": 0.01322
+    },
+    {
+      "name": "Stratopause",
+      "base_altitude_km": 47,
+      "lapse_rate_k_km": 0.0,
+      "base_temp_k": 270.65,
+      "base_pressure_pa": 110.906,
+      "base_density_kgm3": 0.00143
+    },
+    {
+      "name": "Mesosphere 1",
+      "base_altitude_km": 51,
+      "lapse_rate_k_km": -2.8,
+      "base_temp_k": 270.65,
+      "base_pressure_pa": 66.9389,
+      "base_density_kgm3": 0.00086
+    },
+    {
+      "name": "Mesosphere 2",
+      "base_altitude_km": 71,
+      "lapse_rate_k_km": -2.0,
+      "base_temp_k": 214.65,
+      "base_pressure_pa": 3.95642,
+      "base_density_kgm3": 6.4e-05
+    }
+  ],
+  "constants": {
+    "R_gas_constant": 8.31432,
+    "g0_gravity": 9.80665,
+    "M_air_molar_mass": 0.0289644
+  }
+}

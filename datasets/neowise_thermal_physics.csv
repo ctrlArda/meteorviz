@@ -1,0 +1,6 @@
+spectral_type,albedo_avg,thermal_inertia_avg,yarkovsky_susceptibility
+C,0.06,400,High
+S,0.22,600,Medium
+M,0.18,800,Low
+V,0.35,550,Medium
+D,0.04,250,Very High

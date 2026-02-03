@@ -1,0 +1,56 @@
+{
+  "earth_parameters": {
+    "mass_kg": 5.972e+24,
+    "radius_km": 6371,
+    "escape_velocity_kms": 11.186,
+    "orbital_velocity_kms": 29.78,
+    "hill_sphere_radius_km": 1500000.0,
+    "gravitational_parameter_km3s2": 398600.4418
+  },
+  "impact_velocities": {
+    "minimum_kms": 11.2,
+    "average_asteroid_kms": 17.0,
+    "average_comet_kms": 51.0,
+    "maximum_kms": 72.8,
+    "retrograde_bonus_kms": 29.78
+  },
+  "delta_v_requirements": {
+    "low_earth_orbit_kms": 9.4,
+    "geostationary_orbit_kms": 14.4,
+    "earth_escape_kms": 11.2,
+    "asteroid_rendezvous_typical_kms": [
+      3,
+      8
+    ],
+    "asteroid_impact_trajectory_kms": [
+      1,
+      5
+    ]
+  },
+  "warning_time_to_deflection": {
+    "1_year_warning": {
+      "required_delta_v_target_mms": 20,
+      "miss_distance_achievable_km": 1000
+    },
+    "5_year_warning": {
+      "required_delta_v_target_mms": 4,
+      "miss_distance_achievable_km": 10000
+    },
+    "10_year_warning": {
+      "required_delta_v_target_mms": 2,
+      "miss_distance_achievable_km": 20000
+    },
+    "20_year_warning": {
+      "required_delta_v_target_mms": 1,
+      "miss_distance_achievable_km": 50000
+    }
+  },
+  "keyhole_passages": {
+    "description": "Small regions where asteroid must pass to impact on later orbit",
+    "typical_size_km": [
+      0.5,
+      5
+    ],
+    "importance": "Targeting keyhole with deflection prevents future impact"
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "description": "Atmospheric entry and airburst fragmentation model for Chelyabinsk-type events",
+    "sources": [
+      "Chyba, C. F., Thomas, P. J., & Zahnle, K. J. (1993). The 1908 Tunguska explosion: atmospheric disruption of a stony asteroid. Nature, 361(6407), 40-44.",
+      "Hills, J. G., & Goda, M. P. (1993). The fragmentation of small asteroids in the atmosphere. AJ, 105, 1114-1144.",
+      "Ceplecha, Z., et al. (1998). Meteor phenomena and bodies. Space Science Reviews, 84(3-4), 327-471.",
+      "Collins, G. S., et al. (2017). A steeply-inclined trajectory for the Chicxulub impact. Nature Communications.",
+      "Wheeler, L. F., et al. (2018). A fragment-cloud model for asteroid breakup and atmospheric energy deposition. Icarus, 295, 149-169."
+    ],
+    "critical_note": "WITHOUT THIS: Cannot explain why Chelyabinsk (17-20m) exploded at 30km altitude instead of reaching ground",
+    "validation_events": ["Chelyabinsk 2013", "Tunguska 1908", "Sikhote-Alin 1947"]
+  },
+  "dynamic_pressure_fragmentation": {
+    "description": "Asteroids fragment when atmospheric ram pressure exceeds material strength",
+    "theory": "Chyba-Hills-Goda (1993) - dynamic pressure model",
+    "critical_equation": "P_dynamic = 0.5 * ρ_atm * v^2",
+    "fragmentation_condition": "P_dynamic >= σ_strength",
+    "units": {
+      "P_dynamic": "Pascal (N/m²)",
+      "ρ_atm": "kg/m³ (atmospheric density)",
+      "v": "m/s (entry velocity)",
+      "σ_strength": "Pascal (material tensile strength)"
+    },
+    "strength_values": {
+      "weak_cometary": {"strength_pa": 100000, "strength_mpa": 0.1, "description": "Ice/dust aggregate"},
+      "carbonaceous": {"strength_pa": 1000000, "strength_mpa": 1.0, "description": "Porous C-type (Chelyabinsk-like)"},
+      "ordinary_chondrite": {"strength_pa": 10000000, "strength_mpa": 10.0, "description": "Fractured stony asteroid"},
+      "strong_monolith": {"strength_pa": 50000000, "strength_mpa": 50.0, "description": "Coherent basaltic rock"},
+      "iron": {"strength_pa": 100000000, "strength_mpa": 100.0, "description": "Metallic asteroid"}
+    }
+  },
+  "fragmentation_altitude_table": [
+    {
+      "asteroid_type": "Weak comet (ice)",
+      "strength_mpa": 0.1,
+      "velocity_11km_s": {"breakup_altitude_km": 65, "dynamic_pressure_mpa": 0.1},
+      "velocity_20km_s": {"breakup_altitude_km": 75, "dynamic_pressure_mpa": 0.1},
+      "velocity_30km_s": {"breakup_altitude_km": 82, "dynamic_pressure_mpa": 0.1},
+      "note": "Fragments very high, minimal ground damage"
+    },
+    {
+      "asteroid_type": "Carbonaceous (C-type rubble)",
+      "strength_mpa": 1.0,
+      "velocity_11km_s": {"breakup_altitude_km": 42, "dynamic_pressure_mpa": 1.0},
+      "velocity_20km_s": {"breakup_altitude_km": 50, "dynamic_pressure_mpa": 1.0},
+      "velocity_30km_s": {"breakup_altitude_km": 56, "dynamic_pressure_mpa": 1.0},
+      "note": "Chelyabinsk analogue - airburst at ~30-40km"
+    },
+    {
+      "asteroid_type": "Ordinary chondrite (S-type)",
+      "strength_mpa": 10.0,
+      "velocity_11km_s": {"breakup_altitude_km": 28, "dynamic_pressure_mpa": 10.0},
+      "velocity_20km_s": {"breakup_altitude_km": 34, "dynamic_pressure_mpa": 10.0},
+      "velocity_30km_s": {"breakup_altitude_km": 39, "dynamic_pressure_mpa": 10.0},
+      "note": "May reach ground as fragments"
+    },
+    {
+      "asteroid_type": "Strong monolith (V-type)",
+      "strength_mpa": 50.0,
+      "velocity_11km_s": {"breakup_altitude_km": 15, "dynamic_pressure_mpa": 50.0},
+      "velocity_20km_s": {"breakup_altitude_km": 20, "dynamic_pressure_mpa": 50.0},
+      "velocity_30km_s": {"breakup_altitude_km": 24, "dynamic_pressure_mpa": 50.0},
+      "note": "Low-altitude fragmentation or ground impact"
+    },
+    {
+      "asteroid_type": "Iron (M-type solid)",
+      "strength_mpa": 100.0,
+      "velocity_11km_s": {"breakup_altitude_km": 8, "dynamic_pressure_mpa": 100.0},
+      "velocity_20km_s": {"breakup_altitude_km": 12, "dynamic_pressure_mpa": 100.0},
+      "velocity_30km_s": {"breakup_altitude_km": 16, "dynamic_pressure_mpa": 100.0},
+      "note": "Likely ground impact with cratering"
+    }
+  ],
+  "atmospheric_layers_enhanced": {
+    "description": "Detailed atmospheric structure for precise entry modeling",
+    "note": "Extends US Standard Atmosphere 1976 with impact-relevant parameters",
+    "layers": [
+      {
+        "name": "Exosphere",
+        "altitude_range_km": [700, 10000],
+        "mean_altitude_km": 2000,
+        "density_kg_m3": 1e-15,
+        "temperature_k": 1500,
+        "scale_height_km": 850,
+        "drag_effect": "negligible",
+        "fragmentation_probability": 0.0
+      },
+      {
+        "name": "Thermosphere",
+        "altitude_range_km": [80, 700],
+        "mean_altitude_km": 200,
+        "density_kg_m3": 1e-10,
+        "temperature_k": 1000,
+        "scale_height_km": 60,
+        "drag_effect": "very_low",
+        "fragmentation_probability": 0.001
+      },
+      {
+        "name": "Mesosphere",
+        "altitude_range_km": [50, 80],
+        "mean_altitude_km": 65,
+        "density_kg_m3": 0.001,
+        "temperature_k": 220,
+        "scale_height_km": 8,
+        "drag_effect": "low",
+        "fragmentation_probability": 0.05,
+        "note": "Weak comets may fragment here"
+      },
+      {
+        "name": "Stratosphere",
+        "altitude_range_km": [11, 50],
+        "mean_altitude_km": 30,
+        "density_kg_m3": 0.088,
+        "temperature_k": 250,
+        "scale_height_km": 7,
+        "drag_effect": "moderate",
+        "fragmentation_probability": 0.3,
+        "note": "Chelyabinsk fragmented at ~30km in this layer"
+      },
+      {
+        "name": "Troposphere",
+        "altitude_range_km": [0, 11],
+        "mean_altitude_km": 5,
+        "density_kg_m3": 0.65,
+        "temperature_k": 270,
+        "scale_height_km": 8.5,
+        "drag_effect": "high",
+        "fragmentation_probability": 0.6,
+        "note": "Maximum deceleration and heating occurs here"
+      }
+    ]
+  },
+  "energy_deposition_model": {
+    "description": "Fragment-cloud energy deposition (Wheeler et al. 2018)",
+    "theory": "After breakup, asteroid becomes expanding debris cloud depositing energy along trajectory",
+    "pancake_model": {
+      "description": "Simplified model where fragments stay together as flattened 'pancake'",
+      "spread_rate_m_s": 50,
+      "energy_deposition_length_km": 10,
+      "blast_wave_overpressure_multiplier": 1.5,
+      "note": "Conservative estimate, good for engineering purposes"
+    },
+    "fragment_cloud_model": {
+      "description": "Realistic model with fragment dispersion",
+      "lateral_dispersion_velocity_m_s": 100,
+      "vertical_dispersion_velocity_m_s": 50,
+      "energy_deposition_length_km": 25,
+      "blast_wave_overpressure_multiplier": 1.2,
+      "note": "More accurate for Tunguska/Chelyabinsk-type events"
+    },
+    "blast_wave_altitude_scaling": {
+      "description": "Blast wave strength depends on detonation altitude",
+      "formula": "overpressure(r) = P_0 * (E/r^3)^(1/3) * altitude_factor",
+      "altitude_factors": [
+        {"altitude_km": 0, "ground_burst_factor": 2.0, "note": "Surface contact - maximum ground damage"},
+        {"altitude_km": 5, "altitude_factor": 1.5, "note": "Optimal height for blast damage"},
+        {"altitude_km": 10, "altitude_factor": 1.2, "note": "Still significant ground effects"},
+        {"altitude_km": 20, "altitude_factor": 0.8, "note": "Reduced ground overpressure"},
+        {"altitude_km": 30, "altitude_factor": 0.5, "note": "Chelyabinsk altitude - mainly window damage"},
+        {"altitude_km": 50, "altitude_factor": 0.2, "note": "Minimal ground effects"},
+        {"altitude_km": 100, "altitude_factor": 0.05, "note": "Negligible surface damage"}
+      ]
+    }
+  },
+  "historical_calibration_events": {
+    "chelyabinsk_2013": {
+      "date": "2013-02-15",
+      "diameter_m": 19,
+      "mass_kg": 12000000,
+      "velocity_km_s": 19.0,
+      "entry_angle_deg": 18,
+      "composition": "LL5 ordinary chondrite",
+      "strength_mpa": 1.0,
+      "breakup_altitude_km": 29.7,
+      "energy_kt": 500,
+      "blast_radius_km": 90,
+      "casualties": 1491,
+      "economic_damage_usd": 33000000,
+      "model_validation": "PERFECT TEST CASE for airburst physics"
+    },
+    "tunguska_1908": {
+      "date": "1908-06-30",
+      "diameter_m": 60,
+      "mass_kg": 190000000,
+      "velocity_km_s": 15.0,
+      "entry_angle_deg": 30,
+      "composition": "stony (uncertain)",
+      "strength_mpa": 5.0,
+      "breakup_altitude_km": 8.5,
+      "energy_mt": 15,
+      "forest_flattened_km2": 2150,
+      "casualties": 0,
+      "model_validation": "Largest airburst in recorded history"
+    },
+    "sikhote_alin_1947": {
+      "date": "1947-02-12",
+      "diameter_m": 3,
+      "mass_kg": 70000,
+      "velocity_km_s": 14.0,
+      "entry_angle_deg": 40,
+      "composition": "iron meteorite (IIAB)",
+      "strength_mpa": 100.0,
+      "breakup_altitude_km": 5.6,
+      "energy_kt": 10,
+      "largest_crater_diameter_m": 26.5,
+      "total_mass_recovered_kg": 23000,
+      "model_validation": "Iron fragmentation reference"
+    },
+    "carancas_2007": {
+      "date": "2007-09-15",
+      "diameter_m": 1.5,
+      "mass_kg": 8000,
+      "velocity_km_s": 12.0,
+      "entry_angle_deg": 70,
+      "composition": "H4-5 ordinary chondrite",
+      "strength_mpa": 15.0,
+      "breakup_altitude_km": 0,
+      "energy_kt": 0.23,
+      "crater_diameter_m": 13.5,
+      "model_validation": "Rare small impact crater"
+    }
+  },
+  "airburst_decision_tree": {
+    "description": "Algorithm to determine if asteroid will reach ground or airburst",
+    "step_1_check_strength": {
+      "if_strength_lt_0.1_mpa": "CERTAIN_AIRBURST_HIGH_ALTITUDE",
+      "if_strength_0.1_to_1_mpa": "LIKELY_AIRBURST_MID_ALTITUDE",
+      "if_strength_1_to_10_mpa": "POSSIBLE_AIRBURST_OR_FRAGMENTS",
+      "if_strength_10_to_100_mpa": "LIKELY_GROUND_IMPACT",
+      "if_strength_gt_100_mpa": "CERTAIN_GROUND_IMPACT"
+    },
+    "step_2_calculate_dynamic_pressure": {
+      "formula": "P_dyn = 0.5 * rho_atm(h) * v^2",
+      "note": "Calculate at each altitude step during entry"
+    },
+    "step_3_fragmentation_check": {
+      "condition": "P_dyn >= strength",
+      "if_true": "FRAGMENTATION_BEGINS",
+      "record": "breakup_altitude_km"
+    },
+    "step_4_energy_deposition": {
+      "intact_body": "Continue trajectory integration",
+      "fragmented_body": "Switch to fragment-cloud model",
+      "energy_release_altitude": "breakup_altitude_km",
+      "blast_wave_generation": "YES"
+    },
+    "step_5_ground_damage": {
+      "pure_airburst": "Overpressure damage only, no crater",
+      "low_altitude_breakup": "Overpressure + fragment impacts",
+      "ground_impact": "Crater formation + seismic + thermal"
+    }
+  },
+  "implementation_guidance": {
+    "integration_priority": "CRITICAL - Explains 90% of NEO threat scenarios",
+    "jury_demonstration": "Show side-by-side: Same 50m asteroid at different velocities/strengths produces airburst vs ground impact",
+    "key_validation": "Model MUST reproduce Chelyabinsk: 19m @ 19km/s → 30km altitude airburst",
+    "computational_steps": [
+      "1. Initialize asteroid properties (diameter, velocity, composition, strength)",
+      "2. Integrate trajectory through atmosphere (RK4 or similar)",
+      "3. At each step: calculate dynamic pressure P_dyn = 0.5 * rho * v^2",
+      "4. Compare P_dyn to material strength",
+      "5. If P_dyn > strength: trigger fragmentation, switch to energy deposition model",
+      "6. Calculate blast wave overpressure based on detonation altitude",
+      "7. Assess ground damage (overpressure footprint, thermal effects, fragments)"
+    ],
+    "equations_to_implement": [
+      "rho_atm(h) = 1.225 * exp(-h / H) where H = scale height (8 km typical)",
+      "drag_force = 0.5 * Cd * A * rho * v^2",
+      "deceleration = drag_force / mass",
+      "dynamic_pressure = 0.5 * rho * v^2",
+      "breakup_condition: dynamic_pressure >= tensile_strength",
+      "blast_overpressure(r) = K * (E / r^3)^(1/3) * altitude_factor(h)"
+    ]
+  }
+}

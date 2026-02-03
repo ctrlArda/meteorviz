@@ -1,0 +1,53 @@
+{
+  "mission_info": {
+    "name": "Double Asteroid Redirection Test (DART)",
+    "launch_date": "2021-11-24",
+    "impact_date": "2022-09-26T23:14:00Z",
+    "target": "Dimorphos (S/2003 (65803) 1)",
+    "parent_body": "Didymos (65803)",
+    "agency": "NASA/APL"
+  },
+  "impact_parameters": {
+    "spacecraft_mass_kg": 570,
+    "impact_velocity_kms": 6.6,
+    "impact_velocity_ms": 6600,
+    "impact_angle_deg": 73,
+    "kinetic_energy_joules": 12400000000.0,
+    "kinetic_energy_tnt_tons": 2.96
+  },
+  "target_properties": {
+    "dimorphos_diameter_m": 151,
+    "dimorphos_mass_kg": 4300000000.0,
+    "original_orbital_period_hours": 11.92,
+    "original_orbital_period_seconds": 42912
+  },
+  "deflection_results": {
+    "orbital_period_change_minutes": -32,
+    "orbital_period_change_seconds": -1920,
+    "new_orbital_period_hours": 11.37,
+    "semi_major_axis_change_m": -37,
+    "beta_momentum_enhancement": 3.6,
+    "beta_uncertainty": 0.2,
+    "total_ejected_mass_kg": 10000000.0,
+    "ejecta_velocity_kms": 0.5
+  },
+  "scaling_laws": {
+    "momentum_transfer_formula": "p_total = p_spacecraft * beta",
+    "beta_definition": "Total momentum / Spacecraft momentum",
+    "delta_v_formula": "delta_v = p_total / target_mass",
+    "typical_beta_rubble_pile": [
+      2.0,
+      5.0
+    ],
+    "typical_beta_monolithic": [
+      1.0,
+      1.5
+    ]
+  },
+  "deflection_efficiency": {
+    "delta_v_achieved_mms": 2.7,
+    "delta_v_per_kg_spacecraft": 4.7e-06,
+    "warning_time_years_for_1m_deflection": 10,
+    "mission_success": true
+  }
+}

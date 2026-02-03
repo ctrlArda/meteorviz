@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "description": "Measurement uncertainties and parameter distributions for robust impact prediction",
+    "sources": [
+      "JPL Small-Body Database - Orbital covariance matrices",
+      "Minor Planet Center (MPC) - Observation uncertainty tables",
+      "Chesley et al. (2002) - Quantifying the risk posed by NEOs",
+      "Milani et al. (2005) - Orbit determination with very short arcs",
+      "Vereš et al. (2017) - Absolute magnitudes and slope parameters for NEAs"
+    ],
+    "critical_value": "WITHOUT THIS: Single-point estimates are meaningless. WITH THIS: 'Our prediction is X ± Y with 95% confidence'",
+    "jury_impact": "DRAMATIC - Separates naive calculators from statistical scientists"
+  },
+  "orbital_parameter_uncertainties": {
+    "description": "Uncertainties in asteroid orbital elements propagate to impact prediction uncertainty",
+    "typical_uncertainties_by_observation_arc": [
+      {
+        "observation_arc_days": 1,
+        "arc_quality": "very_short",
+        "semi_major_axis_sigma_au": 0.5,
+        "eccentricity_sigma": 0.3,
+        "inclination_sigma_deg": 10,
+        "velocity_uncertainty_km_s": 5,
+        "impact_probability_uncertainty": "essentially_unknown",
+        "note": "Typical for newly discovered objects"
+      },
+      {
+        "observation_arc_days": 7,
+        "arc_quality": "short",
+        "semi_major_axis_sigma_au": 0.1,
+        "eccentricity_sigma": 0.05,
+        "inclination_sigma_deg": 2,
+        "velocity_uncertainty_km_s": 2,
+        "impact_probability_uncertainty": "order_of_magnitude",
+        "note": "Minimum for rough trajectory"
+      },
+      {
+        "observation_arc_days": 30,
+        "arc_quality": "moderate",
+        "semi_major_axis_sigma_au": 0.01,
+        "eccentricity_sigma": 0.01,
+        "inclination_sigma_deg": 0.5,
+        "velocity_uncertainty_km_s": 0.5,
+        "impact_probability_uncertainty": "factor_of_2",
+        "note": "Typical for impact risk assessment"
+      },
+      {
+        "observation_arc_days": 365,
+        "arc_quality": "good",
+        "semi_major_axis_sigma_au": 0.001,
+        "eccentricity_sigma": 0.001,
+        "inclination_sigma_deg": 0.05,
+        "velocity_uncertainty_km_s": 0.1,
+        "impact_probability_uncertainty": "within_20_percent",
+        "note": "Multi-opposition orbit"
+      },
+      {
+        "observation_arc_days": 3650,
+        "arc_quality": "excellent",
+        "semi_major_axis_sigma_au": 0.0001,
+        "eccentricity_sigma": 0.0001,
+        "inclination_sigma_deg": 0.01,
+        "velocity_uncertainty_km_s": 0.01,
+        "impact_probability_uncertainty": "within_5_percent",
+        "note": "Decade+ observation baseline"
+      }
+    ]
+  },
+  "physical_parameter_uncertainties": {
+    "diameter_uncertainty": {
+      "description": "Asteroid diameter often poorly constrained",
+      "measurement_methods": {
+        "absolute_magnitude_only": {
+          "uncertainty_factor": 2.0,
+          "typical_sigma_percent": 50,
+          "note": "Assumes albedo, huge uncertainty"
+        },
+        "radar_ranging": {
+          "uncertainty_factor": 1.2,
+          "typical_sigma_percent": 20,
+          "note": "Only for close approaches"
+        },
+        "occultation": {
+          "uncertainty_factor": 1.1,
+          "typical_sigma_percent": 10,
+          "note": "Rare but accurate"
+        },
+        "infrared_thermal": {
+          "uncertainty_factor": 1.3,
+          "typical_sigma_percent": 30,
+          "note": "NEOWISE, model-dependent"
+        },
+        "spacecraft_imaging": {
+          "uncertainty_factor": 1.01,
+          "typical_sigma_percent": 1,
+          "note": "Gold standard, very rare"
+        }
+      },
+      "default_assumptions": {
+        "mean_albedo_assumed": 0.15,
+        "albedo_uncertainty_range": [0.03, 0.50],
+        "resulting_diameter_uncertainty_factor": 2.5,
+        "note": "Dark vs bright asteroid with same magnitude → 2.5x diameter difference"
+      }
+    },
+    "mass_uncertainty": {
+      "description": "Mass depends on both diameter and density",
+      "formula": "mass = (4/3) * π * r³ * density",
+      "uncertainty_sources": {
+        "diameter_uncertainty": {
+          "contribution": "cubic",
+          "note": "Error in diameter → cubed error in mass"
+        },
+        "density_uncertainty": {
+          "contribution": "linear",
+          "typical_range_kg_m3": [1000, 8000],
+          "mean_assumed": 2600,
+          "note": "Comet vs iron meteorite = 8x density difference"
+        }
+      },
+      "typical_mass_uncertainty_factor": 5.0,
+      "note": "Combined diameter + density uncertainty → factor of 5 mass uncertainty typical"
+    },
+    "composition_uncertainty": {
+      "description": "Spectral classification often ambiguous",
+      "taxonomic_confidence": {
+        "high_confidence": {
+          "spectral_snr": ">50",
+          "bands_measured": "UBVRI + NIR",
+          "classification_accuracy": 0.90,
+          "examples": ["Well-studied NEAs with spacecraft visits"]
+        },
+        "moderate_confidence": {
+          "spectral_snr": "10-50",
+          "bands_measured": "UBVRI",
+          "classification_accuracy": 0.70,
+          "examples": ["Typical cataloged NEAs"]
+        },
+        "low_confidence": {
+          "spectral_snr": "<10",
+          "bands_measured": "VR only",
+          "classification_accuracy": 0.40,
+          "examples": ["Newly discovered small NEAs"]
+        },
+        "unknown": {
+          "spectral_snr": "none",
+          "bands_measured": "none",
+          "classification_accuracy": 0.0,
+          "note": "Default to S-type (most common) but could be anything"
+        }
+      }
+    },
+    "entry_angle_uncertainty": {
+      "description": "Impact angle affects damage distribution",
+      "typical_uncertainty_deg": 15,
+      "shallow_vs_steep": {
+        "shallow_15_deg": {
+          "damage_pattern": "elongated ellipse",
+          "crater_efficiency": 0.7,
+          "atmospheric_fragmentation": "enhanced"
+        },
+        "steep_60_deg": {
+          "damage_pattern": "circular",
+          "crater_efficiency": 1.0,
+          "atmospheric_fragmentation": "reduced"
+        }
+      },
+      "uncertainty_impact": "±15° angle uncertainty → 30% crater size uncertainty"
+    }
+  },
+  "monte_carlo_sampling_distributions": {
+    "description": "Probability distributions for Monte Carlo uncertainty propagation",
+    "velocity_distribution": {
+      "distribution_type": "normal",
+      "mean_from_orbit": "calculated",
+      "sigma_formula": "sigma_v = f(observation_arc, eccentricity)",
+      "typical_values": {
+        "1_week_arc": {"mean_km_s": 20, "sigma_km_s": 5},
+        "1_month_arc": {"mean_km_s": 20, "sigma_km_s": 2},
+        "1_year_arc": {"mean_km_s": 20, "sigma_km_s": 0.5}
+      }
+    },
+    "diameter_distribution": {
+      "distribution_type": "log_normal",
+      "mean_from_magnitude": "D = 1329 / sqrt(albedo) * 10^(-H/5)",
+      "sigma_geometric": 1.5,
+      "note": "Log-normal because diameter cannot be negative"
+    },
+    "density_distribution": {
+      "distribution_type": "normal_truncated",
+      "bounds": [500, 8500],
+      "by_type": {
+        "C_type": {"mean_kg_m3": 1380, "sigma_kg_m3": 300},
+        "S_type": {"mean_kg_m3": 2700, "sigma_kg_m3": 500},
+        "M_type": {"mean_kg_m3": 5300, "sigma_kg_m3": 1000},
+        "unknown": {"mean_kg_m3": 2600, "sigma_kg_m3": 1500}
+      }
+    },
+    "entry_angle_distribution": {
+      "distribution_type": "sin_cos_weighted",
+      "mean_deg": 45,
+      "sigma_deg": 15,
+      "note": "Geometric probability: sin(angle) weighting for random impacts"
+    },
+    "impact_location_distribution": {
+      "distribution_type": "spherical_uniform",
+      "land_probability": 0.29,
+      "ocean_probability": 0.71,
+      "population_weighting": "optional for risk calculation"
+    }
+  },
+  "covariance_matrices": {
+    "description": "Parameter correlations matter for uncertainty propagation",
+    "velocity_angle_correlation": {
+      "correlation_coefficient": -0.6,
+      "explanation": "Faster asteroids tend to have steeper entry angles (geometric)",
+      "impact": "Ignoring correlation → overestimate uncertainty"
+    },
+    "diameter_density_correlation": {
+      "correlation_coefficient": 0.3,
+      "explanation": "Larger asteroids tend to be more compacted (lower porosity)",
+      "impact": "Moderate correlation"
+    },
+    "example_5d_covariance": {
+      "parameters": ["velocity", "angle", "diameter", "density", "latitude"],
+      "covariance_matrix_note": "Full 5×5 matrix needed for proper Monte Carlo",
+      "simplified_assumption": "Often treated as independent (conservative)"
+    }
+  },
+  "observational_error_budget": {
+    "description": "Where does measurement uncertainty come from?",
+    "astrometry_errors": {
+      "ground_telescope_typical_arcsec": 0.5,
+      "space_telescope_typical_arcsec": 0.05,
+      "impact_on_orbit": "Limits trajectory prediction horizon"
+    },
+    "photometry_errors": {
+      "magnitude_uncertainty_typical": 0.2,
+      "impact_on_diameter": "20% magnitude error → 50% diameter error"
+    },
+    "timing_errors": {
+      "exposure_midpoint_uncertainty_sec": 30,
+      "impact_on_velocity": "Minimal for slow asteroids, significant for fast flybys"
+    },
+    "atmospheric_effects": {
+      "seeing_degradation": "Ground observations limited to ~1 arcsec",
+      "extinction_uncertainty": "Photometry ±0.1 mag",
+      "note": "Why space-based surveys are superior"
+    }
+  },
+  "uncertainty_propagation_examples": {
+    "example_1_chelyabinsk_uncertainty": {
+      "description": "What if we had 1 week warning for Chelyabinsk?",
+      "known_parameters": {
+        "diameter_m": 19,
+        "velocity_km_s": 19,
+        "angle_deg": 18
+      },
+      "hypothetical_1_week_uncertainties": {
+        "diameter_sigma_m": 10,
+        "velocity_sigma_km_s": 5,
+        "angle_sigma_deg": 15
+      },
+      "resulting_energy_uncertainty": {
+        "mean_kt": 500,
+        "sigma_kt": 300,
+        "range_95_confidence": [100, 1100],
+        "note": "Factor of 10 uncertainty in energy!"
+      },
+      "damage_prediction_uncertainty": {
+        "casualties_mean": 1500,
+        "casualties_95_ci": [500, 5000],
+        "note": "Cannot make precise casualty prediction with short observation arc"
+      }
+    },
+    "example_2_well_observed_asteroid": {
+      "description": "Apophis after 20 years of observation",
+      "diameter_uncertainty_percent": 5,
+      "velocity_uncertainty_percent": 1,
+      "impact_prediction_confidence": "high",
+      "note": "Long observation baseline → tight constraints"
+    }
+  },
+  "confidence_interval_calculation": {
+    "description": "How to report uncertainty in predictions",
+    "methods": {
+      "monte_carlo": {
+        "description": "Sample parameter distributions N times, run model each time",
+        "typical_n_samples": 10000,
+        "output": "Distribution of outcomes",
+        "confidence_intervals": "Directly from percentiles of distribution"
+      },
+      "linear_error_propagation": {
+        "description": "Linearize model around mean values",
+        "formula": "sigma_output² = Σ (∂f/∂x_i)² * sigma_x_i²",
+        "limitation": "Only valid for small uncertainties, linear models",
+        "advantage": "Fast, analytical"
+      },
+      "bayesian_inference": {
+        "description": "Update probability distributions with observations",
+        "advantage": "Rigorous statistical framework",
+        "limitation": "Computationally expensive",
+        "note": "Gold standard for serious impact risk assessment"
+      }
+    }
+  },
+  "reporting_uncertainty": {
+    "description": "How to communicate uncertainty to decision-makers",
+    "bad_example": "The impact will cause 10,000 casualties",
+    "good_example": "The impact will cause 10,000 casualties (95% CI: 5,000-20,000)",
+    "excellent_example": "The impact will cause 10,000 casualties (95% CI: 5,000-20,000). Based on 30-day observation arc. Confidence increases with longer observation.",
+    "visualization": "Error bars, confidence bands, probability density functions",
+    "key_message": "Uncertainty is not weakness—it's scientific honesty"
+  },
+  "systematic_vs_random_errors": {
+    "random_errors": {
+      "description": "Noise in measurements, varies between observations",
+      "examples": ["Atmospheric seeing", "Photon noise", "Timing jitter"],
+      "mitigation": "Average multiple observations",
+      "impact": "Decreases as sqrt(N_observations)"
+    },
+    "systematic_errors": {
+      "description": "Consistent biases in measurements or models",
+      "examples": [
+        "Catalog star position errors",
+        "Albedo assumptions",
+        "Atmospheric model errors",
+        "Crater scaling law uncertainties"
+      ],
+      "mitigation": "Hard to remove, requires independent measurements",
+      "impact": "Does NOT decrease with more observations",
+      "note": "Often dominant for impact prediction"
+    }
+  },
+  "model_parameter_sensitivity": {
+    "description": "Which parameters matter most for damage prediction?",
+    "sensitivity_ranking": [
+      {
+        "parameter": "impact_velocity",
+        "energy_sensitivity": "v²",
+        "damage_sensitivity": "very_high",
+        "note": "Energy ∝ v², so velocity errors critical"
+      },
+      {
+        "parameter": "diameter",
+        "energy_sensitivity": "d³",
+        "damage_sensitivity": "very_high",
+        "note": "Mass ∝ d³, so diameter errors cubed"
+      },
+      {
+        "parameter": "density",
+        "energy_sensitivity": "ρ",
+        "damage_sensitivity": "high",
+        "note": "Linear impact on energy"
+      },
+      {
+        "parameter": "entry_angle",
+        "energy_sensitivity": "minimal",
+        "damage_sensitivity": "moderate",
+        "note": "Affects damage distribution, not total energy"
+      },
+      {
+        "parameter": "composition",
+        "energy_sensitivity": "minimal",
+        "damage_sensitivity": "high",
+        "note": "Affects airburst altitude → damage pattern"
+      }
+    ]
+  },
+  "risk_quantification": {
+    "description": "Probability × Consequence = Risk",
+    "impact_probability": {
+      "formula": "P_impact = N_virtual_impactors / N_monte_carlo_trials",
+      "typical_values": {
+        "newly_discovered_pho": "10^-6 to 10^-2",
+        "sentry_listed_object": "10^-5 to 10^-1",
+        "confirmed_impactor": "1.0"
+      }
+    },
+    "expected_casualties": {
+      "formula": "E[casualties] = Σ P(scenario_i) × casualties(scenario_i)",
+      "note": "Integrate over all uncertain parameters"
+    },
+    "palermo_technical_scale": {
+      "description": "Logarithmic risk scale used by astronomers",
+      "formula": "P = log10(P_impact × E_impact / (f_background × T_years))",
+      "interpretation": {
+        "P_less_than_minus_2": "No concern",
+        "P_minus_2_to_0": "Merits monitoring",
+        "P_greater_than_0": "Concerning, requires attention",
+        "P_greater_than_2": "Threatening, requires urgent action"
+      }
+    },
+    "torino_scale": {
+      "description": "Public communication scale (0-10)",
+      "categories": {
+        "0": "No hazard (white)",
+        "1": "Normal (green)",
+        "2_4": "Merits attention (yellow)",
+        "5_7": "Threatening (orange)",
+        "8_10": "Certain collision (red)"
+      },
+      "note": "Simplified for public, includes both probability and energy"
+    }
+  },
+  "implementation_guidance": {
+    "basic_uncertainty_analysis": {
+      "step_1": "Identify all uncertain input parameters",
+      "step_2": "Assign probability distributions to each (normal, log-normal, uniform)",
+      "step_3": "Sample N=10,000 times from distributions",
+      "step_4": "Run impact model for each sample",
+      "step_5": "Calculate percentiles of output distribution (5%, 50%, 95%)",
+      "step_6": "Report: 'Casualties: 10,000 (95% CI: 5,000-20,000)'"
+    },
+    "advanced_uncertainty_analysis": {
+      "include_correlations": "Use full covariance matrix",
+      "systematic_errors": "Model parameter uncertainties (crater scaling, atmospheric density, etc.)",
+      "validation": "Compare uncertainty bands to historical events",
+      "sensitivity_analysis": "Which parameters dominate uncertainty?"
+    },
+    "jury_demonstration": {
+      "scenario": "Show same asteroid with different observation arcs",
+      "1_day_arc": "Casualties: 10,000 ± 9,000 (huge uncertainty)",
+      "30_day_arc": "Casualties: 10,000 ± 3,000 (narrowing)",
+      "1_year_arc": "Casualties: 10,000 ± 1,000 (reliable)",
+      "message": "More observations → tighter predictions → better decisions"
+    }
+  }
+}

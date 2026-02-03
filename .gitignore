@@ -1,0 +1,51 @@
+# Environment variables and API keys - NEVER COMMIT!
+.env
+*.env
+.env.local
+.env.*.local
+
+# Python cache
+__pycache__/
+*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Test outputs
+test_output*.txt
+validation_result.txt
+demo_output.txt
+test_api_results.txt
+greens_law_test_output.txt
+
+# Large files
+*.pkl
+*.tif
+ppp_2020_1km_Aggregated.tif
+gebco_*.tif
+
+# Node modules
+node_modules/
+dist/

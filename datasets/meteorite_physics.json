@@ -1,0 +1,22 @@
+{
+  "Iron (Gibeon)": {
+    "tensile_strength_mpa": 350,
+    "weibull_modulus": 15
+  },
+  "Stony-Iron (Pallasite)": {
+    "tensile_strength_mpa": 60,
+    "weibull_modulus": 8
+  },
+  "Chondrite (L5)": {
+    "tensile_strength_mpa": 25,
+    "weibull_modulus": 6
+  },
+  "Carbonaceous Chondrite": {
+    "tensile_strength_mpa": 5,
+    "weibull_modulus": 3
+  },
+  "Cometary Ice": {
+    "tensile_strength_mpa": 0.1,
+    "weibull_modulus": 2
+  }
+}

@@ -1,0 +1,10 @@
+layer,depth_km,density_gcm3,v_p_kms,v_s_kms
+Upper Crust,15.0,2.6,5.8,3.2
+Lower Crust,24.4,2.9,6.8,3.9
+Upper Mantle (Lid),80.0,3.38,8.1,4.5
+Low Velocity Zone,220.0,3.3,7.9,4.3
+Transition Zone,400.0,3.5,9.0,5.0
+Lower Mantle,670.0,4.4,10.7,5.9
+Outer Core (Liquid),2891.0,9.9,8.1,0.0
+Inner Core (Solid),5150.0,12.8,11.0,3.5
+Center,6371.0,13.1,11.3,3.7

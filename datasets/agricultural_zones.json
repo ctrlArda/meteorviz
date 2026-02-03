@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Corn Belt",
+    "region": "USA/Midwest",
+    "crop": "Corn",
+    "harvest_month": 9,
+    "lat_min": 37,
+    "lat_max": 43,
+    "lon_min": -97,
+    "lon_max": -80,
+    "output_share": 0.35
+  },
+  {
+    "name": "Wheat Belt",
+    "region": "Russia/Ukraine",
+    "crop": "Wheat",
+    "harvest_month": 7,
+    "lat_min": 45,
+    "lat_max": 55,
+    "lon_min": 30,
+    "lon_max": 50,
+    "output_share": 0.2
+  },
+  {
+    "name": "Rice Bowl",
+    "region": "Southeast Asia",
+    "crop": "Rice",
+    "harvest_month": 10,
+    "lat_min": 10,
+    "lat_max": 30,
+    "lon_min": 100,
+    "lon_max": 120,
+    "output_share": 0.3
+  },
+  {
+    "name": "Soybean Corridor",
+    "region": "Brazil",
+    "crop": "Soybean",
+    "harvest_month": 3,
+    "lat_min": -25,
+    "lat_max": -10,
+    "lon_min": -60,
+    "lon_max": -45,
+    "output_share": 0.25
+  },
+  {
+    "name": "Central Anatolia Cereal",
+    "region": "Turkey",
+    "crop": "Wheat/Barley",
+    "harvest_month": 7,
+    "lat_min": 37,
+    "lat_max": 40,
+    "lon_min": 30,
+    "lon_max": 36,
+    "output_share": 0.02
+  }
+]

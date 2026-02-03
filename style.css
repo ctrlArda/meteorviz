@@ -1,0 +1,53 @@
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* --- CSS Variables for Simple Dark Theme --- */
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --color-bg: #111827; /* gray-900 */
+    --color-text: #f3f4f6; /* gray-100 */
+    --color-accent: #3b82f6; /* blue-500 */
+    --border-radius: 8px;
+    --color-panel-bg: #1f2937; /* gray-800 */
+    --color-border: #374151; /* gray-700 */
+}
+
+/* --- Global Styles & Resets --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* --- Map Styling --- */
+#map {
+    height: 450px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    z-index: 1;
+}
+
+/* --- Simple Scrollbar --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #4b5563; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6b7280; 
+}

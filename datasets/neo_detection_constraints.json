@@ -1,0 +1,360 @@
+{
+  "metadata": {
+    "description": "NEO detection probability and survey coverage constraints",
+    "sources": [
+      "Pan-STARRS (Panoramic Survey Telescope and Rapid Response System)",
+      "Catalina Sky Survey (CSS)",
+      "NEOWISE (Near-Earth Object Wide-field Infrared Survey Explorer)",
+      "Spacewatch, LINEAR, NEAT survey data",
+      "Mainzer et al. (2011) - NEOWISE observations of NEOs",
+      "Harris & D'Abramo (2015) - NEO detection completeness"
+    ],
+    "critical_insight": "NOT ALL ASTEROIDS ARE DETECTED - This adds early warning realism to your model",
+    "note": "Juries love this: Shows you understand detection is part of the problem"
+  },
+  "detection_surveys": {
+    "pan_starrs": {
+      "full_name": "Panoramic Survey Telescope and Rapid Response System",
+      "location": "Haleakala, Hawaii",
+      "telescope_diameter_m": 1.8,
+      "field_of_view_deg2": 7,
+      "limiting_magnitude": 24.0,
+      "survey_cadence_days": 3,
+      "coverage": {
+        "sky_fraction": 0.75,
+        "declination_range": [-30, 90],
+        "optimal_detection_range_au": [0.05, 1.5]
+      },
+      "detection_efficiency": {
+        "h_magnitude_10": 0.99,
+        "h_magnitude_15": 0.95,
+        "h_magnitude_20": 0.65,
+        "h_magnitude_25": 0.15,
+        "h_magnitude_30": 0.01
+      },
+      "operational_since": 2010
+    },
+    "catalina_sky_survey": {
+      "full_name": "Catalina Sky Survey",
+      "location": "Mount Lemmon, Arizona",
+      "telescope_diameter_m": 1.5,
+      "field_of_view_deg2": 5,
+      "limiting_magnitude": 21.5,
+      "survey_cadence_days": 1,
+      "coverage": {
+        "sky_fraction": 0.6,
+        "declination_range": [-75, 70],
+        "optimal_detection_range_au": [0.1, 2.0]
+      },
+      "detection_efficiency": {
+        "h_magnitude_15": 0.90,
+        "h_magnitude_20": 0.45,
+        "h_magnitude_25": 0.05
+      },
+      "operational_since": 1998,
+      "note": "Longest-running NEO survey"
+    },
+    "neowise": {
+      "full_name": "Near-Earth Object Wide-field Infrared Survey Explorer",
+      "platform": "space-based",
+      "orbit": "sun-synchronous polar orbit",
+      "wavelength_bands": ["W1: 3.4 μm", "W2: 4.6 μm"],
+      "field_of_view_deg2": 47,
+      "limiting_magnitude_w1": 17,
+      "survey_cadence_days": 0.5,
+      "coverage": {
+        "sky_fraction": 1.0,
+        "all_sky_coverage": true,
+        "optimal_detection_range_au": [0.5, 4.0]
+      },
+      "unique_capability": "Detects asteroids by thermal emission, independent of albedo",
+      "detection_efficiency": {
+        "diameter_1km_pv_0.05": 0.95,
+        "diameter_100m_pv_0.05": 0.30,
+        "diameter_50m_pv_0.05": 0.05,
+        "note": "Better for dark, low-albedo asteroids"
+      },
+      "operational_since": 2013
+    },
+    "atlas": {
+      "full_name": "Asteroid Terrestrial-impact Last Alert System",
+      "location": "Hawaii (2 telescopes)",
+      "telescope_diameter_m": 0.5,
+      "field_of_view_deg2": 30,
+      "limiting_magnitude": 19.5,
+      "survey_cadence_hours": 24,
+      "coverage": {
+        "sky_fraction": 1.0,
+        "all_sky_survey": true
+      },
+      "warning_time": {
+        "10m_asteroid": "1 day",
+        "50m_asteroid": "3 weeks",
+        "140m_asteroid": "3 months"
+      },
+      "operational_since": 2015,
+      "purpose": "Imminent impact warning system"
+    }
+  },
+  "detection_probability_factors": {
+    "solar_elongation": {
+      "description": "Angular distance from Sun - critical detection constraint",
+      "blind_zone_deg": [0, 50],
+      "difficult_zone_deg": [50, 90],
+      "optimal_zone_deg": [90, 180],
+      "detection_probability": {
+        "elongation_30_deg": 0.01,
+        "elongation_60_deg": 0.15,
+        "elongation_90_deg": 0.75,
+        "elongation_120_deg": 0.95,
+        "elongation_180_deg": 1.0
+      },
+      "note": "Asteroids approaching from Sun direction are nearly impossible to detect"
+    },
+    "albedo_effect": {
+      "description": "Surface reflectivity determines brightness",
+      "albedo_ranges": {
+        "very_dark_c_type": {"albedo": 0.03, "detection_difficulty": "extreme"},
+        "dark_carbonaceous": {"albedo": 0.05, "detection_difficulty": "very_high"},
+        "moderate_s_type": {"albedo": 0.15, "detection_difficulty": "moderate"},
+        "bright_v_type": {"albedo": 0.30, "detection_difficulty": "low"},
+        "very_bright_metal": {"albedo": 0.50, "detection_difficulty": "very_low"}
+      },
+      "magnitude_formula": "H = -2.5 * log10(albedo * diameter^2)",
+      "visual_surveys_bias": "Optical surveys miss dark asteroids; NEOWISE does not"
+    },
+    "phase_angle": {
+      "description": "Sun-asteroid-Earth angle affects apparent brightness",
+      "opposition_surge": "Asteroids brightest at phase angle ~0° (opposition)",
+      "typical_phase_angles_deg": [15, 30, 45, 60],
+      "brightness_reduction": {
+        "phase_15_deg": 1.0,
+        "phase_30_deg": 0.63,
+        "phase_45_deg": 0.40,
+        "phase_60_deg": 0.25
+      }
+    },
+    "orbital_geometry": {
+      "description": "Some orbits harder to detect than others",
+      "aten_asteroids": {
+        "orbit": "a < 1.0 AU, mostly inside Earth orbit",
+        "detection_difficulty": "EXTREME",
+        "completeness": 0.15,
+        "note": "Spend most time in solar glare"
+      },
+      "apollo_asteroids": {
+        "orbit": "a > 1.0 AU, cross Earth orbit",
+        "detection_difficulty": "MODERATE",
+        "completeness": 0.65,
+        "note": "Most dangerous, relatively easy to detect"
+      },
+      "amor_asteroids": {
+        "orbit": "Mars-crossers, outside Earth orbit",
+        "detection_difficulty": "LOW",
+        "completeness": 0.85,
+        "note": "Spend more time in dark sky"
+      }
+    },
+    "size_dependent_completeness": {
+      "description": "Larger asteroids are nearly all known; small ones are not",
+      "data": [
+        {
+          "diameter_km": 10,
+          "absolute_magnitude_h": 14,
+          "estimated_total_population": 10,
+          "discovered": 10,
+          "completeness": 1.0,
+          "note": "All Chicxulub-scale asteroids known"
+        },
+        {
+          "diameter_km": 1.0,
+          "absolute_magnitude_h": 17.75,
+          "estimated_total_population": 1000,
+          "discovered": 950,
+          "completeness": 0.95,
+          "note": "Global devastators - nearly complete"
+        },
+        {
+          "diameter_m": 500,
+          "absolute_magnitude_h": 20.25,
+          "estimated_total_population": 10000,
+          "discovered": 5000,
+          "completeness": 0.50,
+          "note": "Regional devastators - half unknown"
+        },
+        {
+          "diameter_m": 140,
+          "absolute_magnitude_h": 22.0,
+          "estimated_total_population": 25000,
+          "discovered": 10000,
+          "completeness": 0.40,
+          "note": "Congressional mandate: find 90% by 2030"
+        },
+        {
+          "diameter_m": 100,
+          "absolute_magnitude_h": 22.75,
+          "estimated_total_population": 50000,
+          "discovered": 10000,
+          "completeness": 0.20,
+          "note": "City-killers - mostly unknown"
+        },
+        {
+          "diameter_m": 50,
+          "absolute_magnitude_h": 24.25,
+          "estimated_total_population": 200000,
+          "discovered": 5000,
+          "completeness": 0.025,
+          "note": "Tunguska-scale - 97.5% unknown"
+        },
+        {
+          "diameter_m": 20,
+          "absolute_magnitude_h": 26.0,
+          "estimated_total_population": 2000000,
+          "discovered": 500,
+          "completeness": 0.00025,
+          "note": "Chelyabinsk-scale - essentially blind"
+        },
+        {
+          "diameter_m": 10,
+          "absolute_magnitude_h": 27.5,
+          "estimated_total_population": 10000000,
+          "discovered": 50,
+          "completeness": 0.000005,
+          "note": "Impractical to detect until weeks before"
+        }
+      ]
+    }
+  },
+  "warning_time_estimation": {
+    "description": "How much advance warning we get depends on detection efficiency",
+    "scenarios": [
+      {
+        "asteroid_size_m": 10,
+        "detection_range_au": 0.01,
+        "typical_warning_days": 1,
+        "warning_category": "imminent",
+        "note": "ATLAS might catch it day-of"
+      },
+      {
+        "asteroid_size_m": 20,
+        "detection_range_au": 0.05,
+        "typical_warning_days": 7,
+        "warning_category": "emergency",
+        "note": "Week warning if lucky (Chelyabinsk was not detected)"
+      },
+      {
+        "asteroid_size_m": 50,
+        "detection_range_au": 0.2,
+        "typical_warning_days": 60,
+        "warning_category": "urgent",
+        "note": "2 months to evacuate"
+      },
+      {
+        "asteroid_size_m": 100,
+        "detection_range_au": 0.5,
+        "typical_warning_days": 180,
+        "warning_category": "adequate",
+        "note": "6 months - time for planning"
+      },
+      {
+        "asteroid_size_m": 300,
+        "detection_range_au": 2.0,
+        "typical_warning_days": 3650,
+        "warning_category": "long_term",
+        "note": "10 years - time for deflection mission"
+      },
+      {
+        "asteroid_size_km": 1.0,
+        "detection_range_au": 5.0,
+        "typical_warning_days": 18250,
+        "warning_category": "multi_decade",
+        "note": "50 years - ample time for defense"
+      }
+    ]
+  },
+  "blind_spot_scenarios": {
+    "description": "Dangerous approach geometries that evade detection",
+    "daylight_fireball": {
+      "condition": "Asteroid approaching from Sun direction",
+      "solar_elongation_deg": 30,
+      "detection_probability": 0.01,
+      "historical_example": "Chelyabinsk approached from <20° solar elongation",
+      "mitigation": "Space-based telescopes at L1 point could help"
+    },
+    "long_period_comet": {
+      "condition": "First-time visitor from Oort cloud",
+      "approach_velocity_km_s": 50,
+      "typical_warning_days": 365,
+      "detection_difficulty": "very_high",
+      "note": "Fast-moving, unpredictable trajectories"
+    },
+    "dormant_comet": {
+      "condition": "Extinct comet nucleus (dark, no coma)",
+      "albedo": 0.03,
+      "detection_difficulty": "extreme",
+      "historical_example": "3200 Phaethon (Geminid meteor parent)"
+    }
+  },
+  "survey_coverage_gaps": {
+    "southern_hemisphere": {
+      "description": "Fewer telescopes in southern hemisphere",
+      "coverage_reduction": 0.3,
+      "gap_declination": "< -30°",
+      "note": "Surveys biased toward northern sky"
+    },
+    "galactic_plane": {
+      "description": "Dense star fields make asteroid detection harder",
+      "galactic_latitude_deg": [-10, 10],
+      "detection_efficiency_reduction": 0.4,
+      "note": "Background confusion from millions of stars"
+    },
+    "full_moon": {
+      "description": "Bright moonlight reduces survey sensitivity",
+      "magnitude_loss": 2.0,
+      "survey_downtime_percentage": 30,
+      "note": "~10 days per month lost to moonlight"
+    },
+    "weather_clouds": {
+      "description": "Ground-based telescopes affected by weather",
+      "annual_uptime_percentage": 60,
+      "note": "Hawaii and Arizona sites have best weather"
+    }
+  },
+  "next_generation_surveys": {
+    "vera_rubin_observatory_lsst": {
+      "full_name": "Vera C. Rubin Observatory - Legacy Survey of Space and Time",
+      "telescope_diameter_m": 8.4,
+      "field_of_view_deg2": 9.6,
+      "limiting_magnitude": 24.5,
+      "operational_date": 2025,
+      "predicted_improvement": {
+        "140m_completeness": 0.9,
+        "50m_completeness": 0.3,
+        "note": "Will revolutionize NEO detection"
+      }
+    },
+    "neo_surveyor": {
+      "full_name": "Near-Earth Object Surveyor",
+      "platform": "space-based infrared",
+      "launch_date": 2027,
+      "wavelength_bands": ["4-5 μm", "6-10 μm"],
+      "predicted_improvement": {
+        "140m_completeness": 0.95,
+        "dark_asteroid_detection": "excellent",
+        "note": "Will find asteroids hidden in solar glare"
+      }
+    }
+  },
+  "integration_guidance": {
+    "jury_impact": "Shows understanding that 'seeing the asteroid' is part of the threat",
+    "key_message": "Small asteroids like Chelyabinsk are essentially impossible to detect until impact",
+    "realism_factor": "Add 'surprise event' probability to your risk assessment",
+    "demonstration": "Show two scenarios: (1) Detected 10 years early (deflection possible), (2) Detected day-of (evacuation only)",
+    "equations": [
+      "detection_probability = f(diameter, albedo, solar_elongation, survey_coverage)",
+      "warning_time = detection_range_au / relative_velocity_au_per_day",
+      "response_options = f(warning_time): {deflection, evacuation, none}"
+    ],
+    "priority": "VALUABLE - Adds sophistication, shows you understand full problem"
+  }
+}

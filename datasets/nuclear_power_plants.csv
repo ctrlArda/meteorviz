@@ -1,0 +1,21 @@
+plant_name,country,latitude,longitude,capacity_mw,reactors,status,tsunami_risk,seismic_risk
+Kashiwazaki-Kariwa,Japan,37.43,138.6,7965,7,Operational,High,High
+Zaporizhzhia,Ukraine,47.51,34.59,5700,6,Operational,Low,Medium
+Bruce,Canada,44.33,-81.6,6384,8,Operational,Low,Low
+Hanbit,South Korea,35.42,126.42,5875,6,Operational,Medium,Medium
+Hanul,South Korea,37.09,129.38,5881,6,Operational,Medium,Medium
+Gravelines,France,51.01,2.11,5460,6,Operational,Low,Low
+Paluel,France,49.86,0.63,5320,4,Operational,Low,Low
+Cattenom,France,49.41,6.22,5200,4,Operational,Low,Low
+Tricastin,France,44.33,4.73,3660,4,Operational,Low,Low
+Fukushima Daini,Japan,37.32,141.02,4400,4,Operational,High,High
+Koeberg,South Africa,-33.67,18.43,1860,2,Operational,Medium,Low
+Barakah,UAE,23.95,52.23,5380,4,Operational,Low,Low
+Vogtle,USA,33.14,-81.76,4540,4,Operational,Low,Low
+South Texas,USA,28.8,-96.05,2708,2,Operational,Low,Low
+Palo Verde,USA,33.39,-112.86,3942,3,Operational,Low,Medium
+Taishan,China,21.91,112.98,3500,2,Operational,Medium,Medium
+Yangjiang,China,21.71,111.98,6000,6,Operational,Medium,Medium
+Hongyanhe,China,39.8,121.48,4500,6,Operational,Low,Low
+Fangchenggang,China,21.64,108.53,4060,6,Operational,Medium,Medium
+Tianwan,China,34.69,119.46,4600,6,Operational,Medium,Medium

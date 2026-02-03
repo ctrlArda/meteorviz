@@ -1,0 +1,127 @@
+{
+  "observed_impacts": [
+    {
+      "name": "Chelyabinsk",
+      "date": "2013-02-15",
+      "location": "Russia",
+      "latitude": 54.82,
+      "longitude": 61.12,
+      "diameter_m": 20,
+      "velocity_kms": 19.16,
+      "entry_angle_deg": 18.3,
+      "airburst_altitude_km": 29.7,
+      "energy_kt": 500,
+      "injuries": 1500,
+      "buildings_damaged": 7200,
+      "economic_damage_usd": 33000000,
+      "warning_time": "None"
+    },
+    {
+      "name": "Tunguska",
+      "date": "1908-06-30",
+      "location": "Siberia, Russia",
+      "latitude": 60.89,
+      "longitude": 101.89,
+      "diameter_m": 60,
+      "velocity_kms": 15,
+      "airburst_altitude_km": 8,
+      "energy_mt": 12,
+      "trees_flattened": 80000000,
+      "area_devastated_km2": 2150,
+      "casualties": 0
+    },
+    {
+      "name": "Sikhote-Alin",
+      "date": "1947-02-12",
+      "location": "Russia",
+      "latitude": 46.16,
+      "longitude": 134.65,
+      "type": "Iron meteorite fall",
+      "total_mass_kg": 23000,
+      "craters_formed": 120,
+      "largest_crater_m": 26
+    },
+    {
+      "name": "2008 TC3 (Almahata Sitta)",
+      "date": "2008-10-07",
+      "location": "Sudan",
+      "latitude": 20.77,
+      "longitude": 32.56,
+      "diameter_m": 4,
+      "warning_time_hours": 19,
+      "significance": "First asteroid tracked before impact",
+      "meteorites_recovered": 600
+    },
+    {
+      "name": "2014 AA",
+      "date": "2014-01-02",
+      "location": "Atlantic Ocean",
+      "diameter_m": 3,
+      "warning_time_hours": 21,
+      "energy_kt": 1
+    },
+    {
+      "name": "2018 LA",
+      "date": "2018-06-02",
+      "location": "Botswana",
+      "diameter_m": 2,
+      "warning_time_hours": 8,
+      "meteorites_recovered": "Yes"
+    },
+    {
+      "name": "2019 MO",
+      "date": "2019-06-22",
+      "location": "Caribbean Sea",
+      "diameter_m": 5,
+      "warning_time_hours": 0,
+      "energy_kt": 6
+    },
+    {
+      "name": "2022 EB5",
+      "date": "2022-03-11",
+      "location": "Norwegian Sea",
+      "diameter_m": 2,
+      "warning_time_hours": 2
+    },
+    {
+      "name": "2023 CX1",
+      "date": "2023-02-13",
+      "location": "English Channel",
+      "diameter_m": 1,
+      "warning_time_hours": 7
+    },
+    {
+      "name": "2024 BX1",
+      "date": "2024-01-21",
+      "location": "Germany",
+      "diameter_m": 1,
+      "warning_time_hours": 3,
+      "meteorites_recovered": "Yes"
+    }
+  ],
+  "near_misses": [
+    {
+      "name": "2019 OK",
+      "date": "2019-07-25",
+      "diameter_m": 100,
+      "miss_distance_km": 72000,
+      "warning_time": "Hours",
+      "discovery": "Day of closest approach"
+    },
+    {
+      "name": "Apophis (2029)",
+      "date": "2029-04-13",
+      "diameter_m": 370,
+      "miss_distance_km": 31000,
+      "significance": "Will pass within geosynchronous orbit",
+      "visible_naked_eye": true
+    },
+    {
+      "name": "2020 QG",
+      "date": "2020-08-16",
+      "diameter_m": 6,
+      "miss_distance_km": 2950,
+      "discovery": "After closest approach"
+    }
+  ]
+}

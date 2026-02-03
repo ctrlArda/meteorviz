@@ -1,0 +1,12 @@
+class_id,class_name,fire_risk,thermal_absorption,blast_amplification,population_density_factor,infrastructure_density,ejecta_mobility
+10,Tree cover,very_high,0.85,0.7,0.1,low,0.6
+20,Shrubland,high,0.82,0.8,0.05,very_low,0.7
+30,Grassland,medium,0.78,0.9,0.2,low,0.8
+40,Cropland,high,0.8,0.85,0.3,medium,0.75
+50,Built-up,low,0.9,1.2,5.0,very_high,0.5
+60,Bare/sparse vegetation,very_low,0.65,1.0,0.01,very_low,0.9
+70,Snow and ice,none,0.25,0.95,0.001,none,0.85
+80,Permanent water bodies,none,0.06,0.5,0.0,none,0.3
+90,Herbaceous wetland,low,0.75,0.6,0.05,very_low,0.4
+95,Mangroves,medium,0.8,0.65,0.02,low,0.5
+100,Moss and lichen,low,0.7,0.85,0.001,none,0.75

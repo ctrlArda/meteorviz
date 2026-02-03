@@ -1,0 +1,127 @@
+{
+  "kinetic_impactor": {
+    "name": "Kinetic Impactor",
+    "description": "High-speed spacecraft collision",
+    "technology_readiness_level": 9,
+    "demonstrated": true,
+    "example_mission": "DART",
+    "typical_delta_v_mms": [
+      0.1,
+      10
+    ],
+    "warning_time_required_years": [
+      1,
+      20
+    ],
+    "effectiveness_vs_size": {
+      "10m": "Very High",
+      "100m": "High",
+      "500m": "Medium",
+      "1km": "Low",
+      "10km": "Negligible"
+    },
+    "cost_estimate_billion_usd": [
+      0.3,
+      1.0
+    ]
+  },
+  "gravity_tractor": {
+    "name": "Gravity Tractor",
+    "description": "Spacecraft hovers near asteroid, uses gravity to slowly pull",
+    "technology_readiness_level": 5,
+    "demonstrated": false,
+    "typical_delta_v_mms": [
+      0.001,
+      0.1
+    ],
+    "warning_time_required_years": [
+      10,
+      50
+    ],
+    "effectiveness_vs_size": {
+      "10m": "Overkill",
+      "100m": "High",
+      "500m": "Medium",
+      "1km": "Low",
+      "10km": "Very Low"
+    },
+    "advantages": [
+      "Precise control",
+      "Works on rubble piles",
+      "No contact needed"
+    ]
+  },
+  "ion_beam_deflection": {
+    "name": "Ion Beam Deflection",
+    "description": "Spacecraft fires ion thruster at asteroid surface",
+    "technology_readiness_level": 4,
+    "demonstrated": false,
+    "typical_delta_v_mms": [
+      0.01,
+      1
+    ],
+    "warning_time_required_years": [
+      5,
+      30
+    ],
+    "advantages": [
+      "Continuous thrust",
+      "No contact needed",
+      "Adjustable"
+    ]
+  },
+  "nuclear_standoff": {
+    "name": "Nuclear Standoff Explosion",
+    "description": "Detonation near asteroid surface to vaporize and deflect",
+    "technology_readiness_level": 6,
+    "demonstrated": false,
+    "typical_delta_v_mms": [
+      1,
+      1000
+    ],
+    "warning_time_required_years": [
+      0.5,
+      5
+    ],
+    "effectiveness_vs_size": {
+      "10m": "Overkill",
+      "100m": "Very High",
+      "500m": "High",
+      "1km": "High",
+      "10km": "Medium"
+    },
+    "considerations": [
+      "Last resort",
+      "Space treaty concerns",
+      "Fragmentation risk"
+    ]
+  },
+  "solar_sail": {
+    "name": "Enhanced Solar Radiation Pressure",
+    "description": "Attach reflective surface to increase solar pressure",
+    "technology_readiness_level": 3,
+    "demonstrated": false,
+    "typical_delta_v_mms": [
+      0.0001,
+      0.01
+    ],
+    "warning_time_required_years": [
+      20,
+      100
+    ]
+  },
+  "mass_driver": {
+    "name": "Mass Driver",
+    "description": "Land on asteroid and eject material as propulsion",
+    "technology_readiness_level": 3,
+    "demonstrated": false,
+    "typical_delta_v_mms": [
+      0.1,
+      100
+    ],
+    "warning_time_required_years": [
+      5,
+      20
+    ]
+  }
+}

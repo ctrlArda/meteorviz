@@ -1,0 +1,346 @@
+{
+  "metadata": {
+    "description": "Global digital elevation model (DEM) derivatives for impact damage propagation",
+    "sources": [
+      "SRTM (Shuttle Radar Topography Mission) 90m resolution",
+      "GEBCO (General Bathymetric Chart of the Oceans) for ocean floor",
+      "ASTER GDEM for enhanced coverage",
+      "ETOPO1 Global Relief Model"
+    ],
+    "critical_note": "Without slope/aspect: tsunami, debris flows, and shock wave propagation are unrealistic",
+    "derivatives": ["slope_percent", "slope_degrees", "aspect_degrees", "roughness", "curvature"]
+  },
+  "slope_calculation_method": {
+    "description": "Surface slope calculation from DEM using Horn's method (1981)",
+    "formula": "slope = arctan(sqrt(dz/dx)^2 + (dz/dy)^2)",
+    "units": {
+      "slope_degrees": "0° (flat) to 90° (vertical cliff)",
+      "slope_percent": "0% (flat) to infinity (vertical)",
+      "conversion": "slope_percent = tan(slope_degrees) * 100"
+    },
+    "implementation": "Use 3x3 kernel convolution on DEM raster"
+  },
+  "aspect_calculation": {
+    "description": "Direction of maximum slope (compass bearing)",
+    "formula": "aspect = arctan2(dz/dy, dz/dx)",
+    "units": "degrees (0-360°)",
+    "compass_directions": {
+      "0": "North",
+      "45": "Northeast", 
+      "90": "East",
+      "135": "Southeast",
+      "180": "South",
+      "225": "Southwest",
+      "270": "West",
+      "315": "Northwest",
+      "360": "North (same as 0)"
+    },
+    "flat_terrain": "aspect = -1 (undefined for slope = 0)"
+  },
+  "terrain_classification_by_slope": {
+    "flat": {
+      "slope_range_percent": [0, 2],
+      "slope_range_degrees": [0, 1.15],
+      "tsunami_amplification": 1.0,
+      "debris_flow_probability": 0.0,
+      "shock_wave_attenuation": 1.0,
+      "description": "Plains, plateaus, gentle valleys"
+    },
+    "gentle": {
+      "slope_range_percent": [2, 5],
+      "slope_range_degrees": [1.15, 2.86],
+      "tsunami_amplification": 1.1,
+      "debris_flow_probability": 0.05,
+      "shock_wave_attenuation": 0.98,
+      "description": "Gentle hills, agricultural land"
+    },
+    "moderate": {
+      "slope_range_percent": [5, 10],
+      "slope_range_degrees": [2.86, 5.71],
+      "tsunami_amplification": 1.3,
+      "debris_flow_probability": 0.15,
+      "shock_wave_attenuation": 0.95,
+      "description": "Rolling hills, urban residential"
+    },
+    "moderately_steep": {
+      "slope_range_percent": [10, 20],
+      "slope_range_degrees": [5.71, 11.31],
+      "tsunami_amplification": 1.6,
+      "debris_flow_probability": 0.35,
+      "shock_wave_attenuation": 0.90,
+      "description": "Foothills, steep urban areas"
+    },
+    "steep": {
+      "slope_range_percent": [20, 40],
+      "slope_range_degrees": [11.31, 21.80],
+      "tsunami_amplification": 2.0,
+      "debris_flow_probability": 0.60,
+      "shock_wave_attenuation": 0.80,
+      "description": "Mountain slopes, escarpments"
+    },
+    "very_steep": {
+      "slope_range_percent": [40, 70],
+      "slope_range_degrees": [21.80, 34.99],
+      "tsunami_amplification": 2.5,
+      "debris_flow_probability": 0.85,
+      "shock_wave_attenuation": 0.65,
+      "description": "Mountain faces, coastal cliffs"
+    },
+    "cliff": {
+      "slope_range_percent": [70, 200],
+      "slope_range_degrees": [34.99, 63.43],
+      "tsunami_amplification": 3.5,
+      "debris_flow_probability": 0.95,
+      "shock_wave_attenuation": 0.50,
+      "description": "Cliffs, canyon walls"
+    },
+    "vertical": {
+      "slope_range_percent": [200, 999],
+      "slope_range_degrees": [63.43, 90],
+      "tsunami_amplification": 5.0,
+      "debris_flow_probability": 1.0,
+      "shock_wave_attenuation": 0.30,
+      "description": "Near-vertical walls, overhangs"
+    }
+  },
+  "tsunami_run_up_slope_effects": {
+    "description": "Tsunami wave height amplification based on coastal slope (Green's Law)",
+    "theory": "Wave height increases as water depth decreases: H ∝ h^(-1/4)",
+    "slope_dependency": "Gentler slopes → longer run-up distance but moderate height amplification",
+    "equations": {
+      "greens_law": "H_final / H_initial = (h_initial / h_final)^(1/4)",
+      "run_up_distance": "R = H * slope^(-1) * roughness_factor",
+      "max_inundation_height": "Z = R * sin(slope_angle)"
+    },
+    "coastal_slope_scenarios": [
+      {
+        "slope_percent": 0.5,
+        "slope_degrees": 0.29,
+        "coastal_type": "Very flat shore (e.g., Bangladesh, Netherlands)",
+        "run_up_distance_km": 15,
+        "wave_height_amplification": 1.8,
+        "inundation_severity": "EXTREME",
+        "population_at_risk_multiplier": 5.0
+      },
+      {
+        "slope_percent": 1.0,
+        "slope_degrees": 0.57,
+        "coastal_type": "Flat coastal plain (e.g., Gulf Coast, Maldives)",
+        "run_up_distance_km": 8,
+        "wave_height_amplification": 2.2,
+        "inundation_severity": "VERY_HIGH",
+        "population_at_risk_multiplier": 3.5
+      },
+      {
+        "slope_percent": 2.0,
+        "slope_degrees": 1.15,
+        "coastal_type": "Gentle beach (typical sandy beach)",
+        "run_up_distance_km": 4,
+        "wave_height_amplification": 2.8,
+        "inundation_severity": "HIGH",
+        "population_at_risk_multiplier": 2.0
+      },
+      {
+        "slope_percent": 5.0,
+        "slope_degrees": 2.86,
+        "coastal_type": "Moderate beach slope",
+        "run_up_distance_km": 1.5,
+        "wave_height_amplification": 3.5,
+        "inundation_severity": "MODERATE",
+        "population_at_risk_multiplier": 1.2
+      },
+      {
+        "slope_percent": 10.0,
+        "slope_degrees": 5.71,
+        "coastal_type": "Steep beach (gravel/cobble)",
+        "run_up_distance_km": 0.6,
+        "wave_height_amplification": 4.5,
+        "inundation_severity": "LOW",
+        "population_at_risk_multiplier": 0.6
+      },
+      {
+        "slope_percent": 20.0,
+        "slope_degrees": 11.31,
+        "coastal_type": "Rocky coast / sea cliff",
+        "run_up_distance_km": 0.2,
+        "wave_height_amplification": 6.0,
+        "inundation_severity": "MINIMAL",
+        "population_at_risk_multiplier": 0.2,
+        "note": "High local wave but limited inland penetration"
+      }
+    ]
+  },
+  "debris_flow_susceptibility": {
+    "description": "Slope-dependent landslide and debris flow probability after impact",
+    "trigger_mechanisms": ["seismic_shaking", "ground_shaking", "atmospheric_overpressure"],
+    "critical_slopes": {
+      "angle_of_repose": 35,
+      "stable_slope_max_deg": 20,
+      "unstable_slope_deg": 30,
+      "failure_threshold_deg": 40
+    },
+    "failure_probability": {
+      "formula": "P_failure = 1 / (1 + exp(-k * (slope - critical_angle)))",
+      "parameters": {
+        "k": 0.2,
+        "critical_angle": 35,
+        "note": "Logistic function for smooth transition"
+      }
+    },
+    "volume_estimation": {
+      "description": "Potential debris volume based on slope and area",
+      "formula": "V_debris = A * depth * sin(slope) * failure_probability",
+      "typical_failure_depth_m": 3,
+      "runout_distance_formula": "L = H / tan(friction_angle)",
+      "friction_angle_deg": 15
+    }
+  },
+  "shock_wave_terrain_interaction": {
+    "description": "Blast wave overpressure modification by terrain",
+    "flat_terrain_baseline": 1.0,
+    "effects": {
+      "valley_channeling": {
+        "description": "Blast waves channeled through valleys",
+        "amplification_factor": 1.5,
+        "condition": "valley_axis_aligned_with_blast_direction"
+      },
+      "ridge_shadowing": {
+        "description": "Mountains block blast waves",
+        "attenuation_factor": 0.3,
+        "condition": "ridge_between_impact_and_target"
+      },
+      "slope_reflection": {
+        "description": "Blast reflects off steep slopes",
+        "amplification_factor": 1.3,
+        "condition": "steep_slope_facing_blast"
+      },
+      "urban_canyon": {
+        "description": "City streets channel overpressure",
+        "amplification_factor": 1.8,
+        "condition": "street_aligned_with_blast"
+      }
+    }
+  },
+  "curvature_and_roughness": {
+    "profile_curvature": {
+      "description": "Curvature in direction of slope (affects flow acceleration)",
+      "convex_negative": "Flow accelerates (dangerous)",
+      "concave_positive": "Flow decelerates (safer)",
+      "formula": "curvature = d²z/dx²"
+    },
+    "planform_curvature": {
+      "description": "Curvature perpendicular to slope (affects flow convergence)",
+      "convergent": "Flow concentrates (higher damage)",
+      "divergent": "Flow spreads (lower damage)"
+    },
+    "terrain_roughness_index": {
+      "description": "Surface irregularity measure (TRI)",
+      "formula": "TRI = mean(|z_center - z_neighbors|)",
+      "smooth_terrain_tri": 0.0,
+      "moderate_terrain_tri": 5.0,
+      "rough_terrain_tri": 15.0,
+      "very_rough_terrain_tri": 30.0,
+      "effect_on_tsunami": "Rough terrain increases energy dissipation",
+      "effect_on_debris": "Rough terrain increases deposition"
+    }
+  },
+  "regional_slope_statistics": {
+    "description": "Pre-calculated slope statistics for major regions",
+    "note": "Use for rapid assessment without full DEM processing",
+    "regions": [
+      {
+        "name": "Himalayas",
+        "mean_slope_degrees": 28,
+        "max_slope_degrees": 65,
+        "ruggedness": "extreme",
+        "tsunami_risk": "none",
+        "landslide_risk": "extreme"
+      },
+      {
+        "name": "Ganges Plain",
+        "mean_slope_degrees": 0.5,
+        "max_slope_degrees": 2,
+        "ruggedness": "minimal",
+        "tsunami_risk": "extreme",
+        "landslide_risk": "minimal"
+      },
+      {
+        "name": "US Great Plains",
+        "mean_slope_degrees": 1.2,
+        "max_slope_degrees": 8,
+        "ruggedness": "low",
+        "tsunami_risk": "none",
+        "landslide_risk": "low"
+      },
+      {
+        "name": "Pacific Ring of Fire coasts",
+        "mean_slope_degrees": 12,
+        "max_slope_degrees": 45,
+        "ruggedness": "high",
+        "tsunami_risk": "very_high",
+        "landslide_risk": "high"
+      },
+      {
+        "name": "Sahara Desert",
+        "mean_slope_degrees": 2.5,
+        "max_slope_degrees": 15,
+        "ruggedness": "moderate",
+        "tsunami_risk": "none",
+        "landslide_risk": "low"
+      },
+      {
+        "name": "Amazon Basin",
+        "mean_slope_degrees": 3.0,
+        "max_slope_degrees": 25,
+        "ruggedness": "moderate",
+        "tsunami_risk": "none",
+        "landslide_risk": "moderate"
+      }
+    ]
+  },
+  "bathymetry_for_ocean_impacts": {
+    "description": "Ocean floor slope critical for tsunami generation",
+    "data_source": "GEBCO_2023 15 arc-second resolution",
+    "importance": "Tsunami amplitude depends on water depth gradient",
+    "continental_shelf": {
+      "slope_degrees": 0.1,
+      "tsunami_amplification": "LOW",
+      "note": "Gradual depth change"
+    },
+    "continental_slope": {
+      "slope_degrees": 4.0,
+      "tsunami_amplification": "MODERATE",
+      "note": "Transition zone"
+    },
+    "submarine_canyon": {
+      "slope_degrees": 15.0,
+      "tsunami_amplification": "HIGH",
+      "note": "Channeling effect"
+    },
+    "abyssal_plain": {
+      "slope_degrees": 0.05,
+      "tsunami_amplification": "VERY_LOW",
+      "note": "Nearly flat deep ocean"
+    },
+    "mid_ocean_ridge": {
+      "slope_degrees": 8.0,
+      "tsunami_amplification": "MODERATE",
+      "note": "Can focus wave energy"
+    }
+  },
+  "implementation_guide": {
+    "data_acquisition": "Use SRTM 90m DEM (freely available from USGS Earth Explorer)",
+    "processing_steps": [
+      "1. Load DEM raster (GeoTIFF format)",
+      "2. Calculate slope using 3x3 Horn's method kernel",
+      "3. Calculate aspect using arctan2(dz/dy, dz/dx)",
+      "4. Calculate curvature using second derivatives",
+      "5. Calculate TRI (roughness) from neighborhood variance",
+      "6. Classify terrain by slope ranges",
+      "7. Store as lookup tables or raster layers"
+    ],
+    "python_libraries": ["rasterio", "numpy", "scipy", "gdal"],
+    "performance_note": "Pre-calculate slope/aspect grids at initialization, not per-impact",
+    "jury_demonstration": "Show tsunami run-up comparison: flat coast (Bangladesh) vs steep coast (Chile) for same impact"
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "metadata": {
+    "description": "Critical infrastructure interdependencies and cascading failure analysis",
+    "sources": [
+      "OpenStreetMap infrastructure data",
+      "DHS NIPP (National Infrastructure Protection Plan)",
+      "Rinaldi et al. (2001) - Modeling and simulating critical infrastructures",
+      "FEMA Infrastructure Systems Recovery",
+      "Eusgeld et al. (2011) - System-of-systems failures"
+    ],
+    "critical_insight": "Infrastructure doesn't fail in isolation - one failure cascades to others",
+    "jury_value": "Shows sophisticated understanding: 'One power plant down → hospitals, water, internet all fail'"
+  },
+  "infrastructure_sectors": {
+    "energy": {
+      "types": ["power_plants", "substations", "transmission_lines", "oil_refineries", "natural_gas"],
+      "criticality": "EXTREME",
+      "note": "Master dependency - almost everything requires electricity"
+    },
+    "water": {
+      "types": ["treatment_plants", "pumping_stations", "reservoirs", "distribution_pipes"],
+      "criticality": "EXTREME",
+      "depends_on": ["energy"],
+      "note": "Water pumps need electricity"
+    },
+    "telecommunications": {
+      "types": ["cell_towers", "data_centers", "internet_exchanges", "submarine_cables"],
+      "criticality": "HIGH",
+      "depends_on": ["energy"],
+      "note": "No power = no communication"
+    },
+    "transportation": {
+      "types": ["airports", "seaports", "rail_hubs", "major_bridges", "tunnels"],
+      "criticality": "HIGH",
+      "depends_on": ["energy", "telecommunications"],
+      "note": "Modern transport requires fuel distribution + traffic control"
+    },
+    "healthcare": {
+      "types": ["hospitals", "emergency_clinics", "blood_banks", "pharmacies"],
+      "criticality": "EXTREME",
+      "depends_on": ["energy", "water", "telecommunications", "transportation"],
+      "note": "Hospitals need all services to function"
+    },
+    "food_supply": {
+      "types": ["food_distribution_centers", "supermarkets", "cold_storage"],
+      "criticality": "HIGH",
+      "depends_on": ["energy", "transportation"],
+      "note": "Refrigeration + supply chain"
+    },
+    "financial": {
+      "types": ["banks", "stock_exchanges", "payment_processors"],
+      "criticality": "HIGH",
+      "depends_on": ["energy", "telecommunications"],
+      "note": "Digital economy collapses without power/internet"
+    },
+    "government": {
+      "types": ["emergency_operations_centers", "police_stations", "fire_stations"],
+      "criticality": "EXTREME",
+      "depends_on": ["energy", "telecommunications", "transportation"],
+      "note": "Emergency response coordination requires all infrastructure"
+    }
+  },
+  "dependency_graph": {
+    "description": "Directed graph of infrastructure dependencies",
+    "nodes": [
+      {"id": "power", "type": "energy", "recovery_time_days": 7},
+      {"id": "water", "type": "water", "recovery_time_days": 3},
+      {"id": "telecom", "type": "telecommunications", "recovery_time_days": 2},
+      {"id": "transport", "type": "transportation", "recovery_time_days": 5},
+      {"id": "hospital", "type": "healthcare", "recovery_time_days": 1},
+      {"id": "food", "type": "food_supply", "recovery_time_days": 4},
+      {"id": "finance", "type": "financial", "recovery_time_days": 3},
+      {"id": "emergency", "type": "government", "recovery_time_days": 1}
+    ],
+    "edges": [
+      {"from": "power", "to": "water", "dependency_type": "essential", "coupling_strength": 1.0},
+      {"from": "power", "to": "telecom", "dependency_type": "essential", "coupling_strength": 0.95},
+      {"from": "power", "to": "transport", "dependency_type": "important", "coupling_strength": 0.6},
+      {"from": "power", "to": "hospital", "dependency_type": "critical", "coupling_strength": 0.9},
+      {"from": "power", "to": "food", "dependency_type": "essential", "coupling_strength": 0.8},
+      {"from": "power", "to": "finance", "dependency_type": "essential", "coupling_strength": 1.0},
+      {"from": "power", "to": "emergency", "dependency_type": "critical", "coupling_strength": 0.85},
+      {"from": "water", "to": "hospital", "dependency_type": "critical", "coupling_strength": 0.95},
+      {"from": "water", "to": "food", "dependency_type": "important", "coupling_strength": 0.5},
+      {"from": "telecom", "to": "hospital", "dependency_type": "important", "coupling_strength": 0.7},
+      {"from": "telecom", "to": "transport", "dependency_type": "important", "coupling_strength": 0.6},
+      {"from": "telecom", "to": "finance", "dependency_type": "essential", "coupling_strength": 1.0},
+      {"from": "telecom", "to": "emergency", "dependency_type": "critical", "coupling_strength": 0.9},
+      {"from": "transport", "to": "hospital", "dependency_type": "critical", "coupling_strength": 0.8},
+      {"from": "transport", "to": "food", "dependency_type": "essential", "coupling_strength": 1.0},
+      {"from": "transport", "to": "emergency", "dependency_type": "critical", "coupling_strength": 0.85}
+    ]
+  },
+  "cascading_failure_scenarios": {
+    "scenario_1_power_plant_destroyed": {
+      "trigger": "Impact destroys major power plant",
+      "immediate_effects": {
+        "power_outage_radius_km": 50,
+        "population_affected": 5000000,
+        "outage_duration_hours": 168
+      },
+      "cascade_timeline": [
+        {
+          "time_hours": 0,
+          "event": "Power plant destroyed",
+          "services_affected": ["electricity"]
+        },
+        {
+          "time_hours": 0.5,
+          "event": "Cell towers on battery backup",
+          "services_affected": ["electricity", "telecommunications_degraded"]
+        },
+        {
+          "time_hours": 2,
+          "event": "Water pumps fail, pressure drops",
+          "services_affected": ["electricity", "telecommunications_degraded", "water_pressure_low"]
+        },
+        {
+          "time_hours": 4,
+          "event": "Cell towers batteries dead, communication lost",
+          "services_affected": ["electricity", "telecommunications", "water_pressure_low"]
+        },
+        {
+          "time_hours": 8,
+          "event": "Hospitals switch to emergency generators",
+          "services_affected": ["electricity", "telecommunications", "water_pressure_low", "hospitals_generator_mode"]
+        },
+        {
+          "time_hours": 12,
+          "event": "Fuel for generators running low",
+          "services_affected": ["electricity", "telecommunications", "water", "hospitals_fuel_critical"]
+        },
+        {
+          "time_hours": 24,
+          "event": "Traffic lights fail, transportation gridlock",
+          "services_affected": ["electricity", "telecommunications", "water", "transportation", "hospitals_degraded"]
+        },
+        {
+          "time_hours": 48,
+          "event": "Food spoilage in refrigeration, stores closed",
+          "services_affected": ["electricity", "telecommunications", "water", "transportation", "food_supply", "hospitals_degraded"]
+        },
+        {
+          "time_hours": 72,
+          "event": "Some hospitals evacuate patients due to fuel shortage",
+          "services_affected": ["electricity", "telecommunications", "water", "transportation", "food_supply", "hospitals_partial_collapse"]
+        },
+        {
+          "time_hours": 168,
+          "event": "Power restored, cascade reversal begins",
+          "services_affected": ["recovery_phase"]
+        }
+      ],
+      "total_casualty_multiplier": 2.5,
+      "economic_loss_multiplier": 5.0,
+      "note": "Direct impact casualties × 2.5 due to infrastructure failure"
+    },
+    "scenario_2_submarine_cable_cut": {
+      "trigger": "Ocean impact damages submarine internet cable",
+      "immediate_effects": {
+        "internet_outage": "regional",
+        "population_affected": 50000000,
+        "outage_duration_days": 14
+      },
+      "cascade_effects": {
+        "financial_markets": "halted",
+        "emergency_coordination": "degraded",
+        "supply_chain": "disrupted",
+        "economic_loss_per_day_usd": 500000000
+      },
+      "note": "Modern economy critically dependent on data connectivity"
+    },
+    "scenario_3_bridge_destruction": {
+      "trigger": "Impact near major bridge causes structural failure",
+      "immediate_effects": {
+        "transportation_severed": true,
+        "alternate_route_distance_km": 200,
+        "travel_time_increase_hours": 4
+      },
+      "cascade_effects": {
+        "emergency_response_delayed": true,
+        "supply_delivery_disrupted": true,
+        "economic_loss_per_day_usd": 50000000
+      },
+      "recovery_time_months": 24,
+      "note": "Bridges are single-point-of-failure for transportation"
+    },
+    "scenario_4_multi_sector_collapse": {
+      "trigger": "Major urban impact destroys multiple infrastructure nodes",
+      "simultaneous_failures": ["power", "water", "telecom", "hospitals"],
+      "cascade_description": "Complete urban system collapse",
+      "evacuation_required": true,
+      "population_displaced": 10000000,
+      "recovery_time_years": 5,
+      "note": "Catastrophic - city becomes uninhabitable temporarily"
+    }
+  },
+  "infrastructure_vulnerability_factors": {
+    "single_point_of_failure": {
+      "description": "Critical nodes whose loss disables entire network",
+      "examples": [
+        "Major power plant serving entire region",
+        "Main bridge connecting isolated area",
+        "Central internet exchange hub"
+      ],
+      "vulnerability_score": 10,
+      "mitigation": "Redundancy and distributed systems"
+    },
+    "geographic_concentration": {
+      "description": "Multiple critical facilities in same location",
+      "example": "All hospitals in downtown area",
+      "vulnerability_score": 8,
+      "impact_scenario": "Single impact can destroy all hospitals"
+    },
+    "aging_infrastructure": {
+      "description": "Old systems more fragile to shock",
+      "vulnerability_score": 7,
+      "note": "Developed nations often have older, brittle infrastructure"
+    },
+    "just_in_time_supply": {
+      "description": "No buffer stocks, immediate shortage on disruption",
+      "examples": ["food supply", "medical supplies", "fuel"],
+      "vulnerability_score": 9,
+      "note": "Modern efficiency creates fragility"
+    }
+  },
+  "resilience_factors": {
+    "redundancy": {
+      "description": "Backup systems can take over",
+      "examples": ["Multiple power plants", "Emergency generators", "Alternate routes"],
+      "resilience_score": 8,
+      "note": "Costs more but reduces cascade risk"
+    },
+    "distributed_systems": {
+      "description": "No single point of failure",
+      "examples": ["Solar panels + batteries", "Mesh networks", "Local food production"],
+      "resilience_score": 9,
+      "note": "Expensive but highly resilient"
+    },
+    "stockpiles": {
+      "description": "Buffer supplies for disruption",
+      "examples": ["Strategic petroleum reserve", "Medical supply caches", "Food storage"],
+      "resilience_score": 6,
+      "note": "Limited by storage capacity and shelf life"
+    },
+    "rapid_repair_capability": {
+      "description": "Pre-positioned repair equipment and trained personnel",
+      "resilience_score": 7,
+      "note": "Reduces recovery time from weeks to days"
+    }
+  },
+  "regional_vulnerability_assessment": {
+    "developed_countries": {
+      "infrastructure_density": "high",
+      "interdependency": "extreme",
+      "redundancy": "moderate",
+      "cascade_risk": "high",
+      "recovery_capacity": "high",
+      "note": "Complex infrastructure = complex failure modes"
+    },
+    "developing_countries": {
+      "infrastructure_density": "low",
+      "interdependency": "moderate",
+      "redundancy": "low",
+      "cascade_risk": "moderate",
+      "recovery_capacity": "low",
+      "note": "Less infrastructure = less cascade, but slower recovery"
+    },
+    "remote_areas": {
+      "infrastructure_density": "very_low",
+      "interdependency": "low",
+      "redundancy": "minimal",
+      "cascade_risk": "low",
+      "recovery_capacity": "very_low",
+      "note": "Self-sufficient but minimal services"
+    }
+  },
+  "quantitative_cascade_model": {
+    "description": "Mathematical model of cascade propagation",
+    "failure_propagation_probability": {
+      "formula": "P_fail(B|A) = coupling_strength(A→B) * severity(A)",
+      "parameters": {
+        "coupling_strength": "0.0 (independent) to 1.0 (fully dependent)",
+        "severity": "0.0 (no damage) to 1.0 (complete destruction)"
+      }
+    },
+    "functionality_level": {
+      "formula": "F(t) = F_0 * exp(-damage) + (1 - exp(-recovery_rate * t))",
+      "interpretation": "Infrastructure recovers exponentially over time",
+      "typical_recovery_rates": {
+        "power_per_day": 0.15,
+        "water_per_day": 0.3,
+        "telecom_per_day": 0.5,
+        "transport_per_day": 0.2
+      }
+    },
+    "economic_loss_from_infrastructure": {
+      "formula": "Loss = Σ (sector_GDP * outage_duration * criticality)",
+      "typical_values": {
+        "power_gdp_per_day": 0.001,
+        "water_gdp_per_day": 0.0005,
+        "telecom_gdp_per_day": 0.002,
+        "transport_gdp_per_day": 0.003
+      }
+    }
+  },
+  "implementation_guide": {
+    "data_sources": {
+      "openstreetmap": "Power plants, hospitals, major infrastructure (free)",
+      "gridkit": "Electrical transmission network data",
+      "glide": "Global earthquake and disaster database",
+      "fema_hazus": "Infrastructure vulnerability models (US-specific)"
+    },
+    "computational_approach": {
+      "step_1": "Identify all critical infrastructure within impact radius",
+      "step_2": "Assess direct damage to each node",
+      "step_3": "Propagate failures through dependency graph",
+      "step_4": "Calculate cascade timeline",
+      "step_5": "Estimate total economic and casualty impact"
+    },
+    "visualization": "Network graph showing infrastructure nodes and dependencies, with cascade animation",
+    "jury_demonstration": {
+      "scenario": "Show impact destroying power plant → cascade diagram shows hospitals, water, telecom failing in sequence",
+      "message": "Direct casualties 1000, but infrastructure cascade adds 2500 more deaths over next week",
+      "impact": "DRAMATIC - Shows systems thinking, not just physics"
+    }
+  },
+  "critical_infrastructure_database_schema": {
+    "description": "Recommended structure for infrastructure tracking",
+    "fields": {
+      "id": "unique identifier",
+      "type": "power_plant | hospital | bridge | etc",
+      "location": {"lat": "float", "lon": "float"},
+      "capacity": "MW | beds | vehicles_per_day",
+      "population_served": "integer",
+      "dependencies": ["array of infrastructure IDs this depends on"],
+      "backup_systems": "boolean or object describing redundancy",
+      "recovery_time_days": "float",
+      "criticality_score": "1-10",
+      "replacement_cost_usd": "float"
+    }
+  }
+}

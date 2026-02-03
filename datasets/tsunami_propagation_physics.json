@@ -1,0 +1,364 @@
+{
+  "metadata": {
+    "description": "Tsunami generation, propagation, and run-up physics for ocean impacts",
+    "sources": [
+      "Ward, S. N., & Asphaug, E. (2000). Asteroid impact tsunami. Geophysical Journal International.",
+      "Wünnemann, K., & Weiss, R. (2015). The Eltanin impact and its tsunami. Impact Cratering.",
+      "NOAA NCEI Global Historical Tsunami Database",
+      "GEBCO (General Bathymetric Chart of the Oceans) 2023",
+      "Green's Law for tsunami shoaling",
+      "Shallow Water Wave Equations"
+    ],
+    "critical_note": "Simple 'tsunami exists' flag is not enough - need PHYSICS of wave propagation",
+    "validation": "Must match historical tsunami run-up data"
+  },
+  "tsunami_generation_physics": {
+    "description": "Ocean impact creates displacement wave, not explosion wave",
+    "theory": "Volume displacement creates radial tsunami with wavelength ~ crater diameter",
+    "key_insight": "Tsunami energy depends on water depth vs projectile diameter",
+    "generation_regimes": {
+      "shallow_water_impact": {
+        "condition": "water_depth < projectile_diameter",
+        "crater_formation": "reaches seafloor",
+        "tsunami_efficiency": 0.05,
+        "wave_generation": "strong initial wave, high energy",
+        "note": "Efficient tsunami generation, dangerous for coasts"
+      },
+      "intermediate_depth_impact": {
+        "condition": "projectile_diameter < water_depth < 10 * diameter",
+        "crater_formation": "partial seafloor contact",
+        "tsunami_efficiency": 0.02,
+        "wave_generation": "moderate tsunami",
+        "note": "Most common scenario for continental shelf impacts"
+      },
+      "deep_water_impact": {
+        "condition": "water_depth > 10 * projectile_diameter",
+        "crater_formation": "transient cavity in water",
+        "tsunami_efficiency": 0.001,
+        "wave_generation": "weak initial wave, energy disperses",
+        "note": "Deep ocean impacts less dangerous than intuition suggests"
+      }
+    }
+  },
+  "tsunami_initial_amplitude": {
+    "description": "Initial wave height at generation point",
+    "formula": "H_0 = efficiency * (projectile_diameter * velocity^2 / (g * water_depth))^0.5",
+    "parameters": {
+      "efficiency": "0.001 to 0.05 (depth-dependent)",
+      "projectile_diameter": "meters",
+      "velocity": "m/s (impact velocity)",
+      "g": "9.81 m/s² (gravity)",
+      "water_depth": "meters (bathymetry)"
+    },
+    "example_calculations": [
+      {
+        "scenario": "100m asteroid @ 20 km/s in 1000m deep water",
+        "diameter_m": 100,
+        "velocity_m_s": 20000,
+        "water_depth_m": 1000,
+        "efficiency": 0.02,
+        "initial_wave_height_m": 89,
+        "note": "Dangerous tsunami"
+      },
+      {
+        "scenario": "100m asteroid @ 20 km/s in 4000m deep ocean",
+        "diameter_m": 100,
+        "velocity_m_s": 20000,
+        "water_depth_m": 4000,
+        "efficiency": 0.001,
+        "initial_wave_height_m": 6,
+        "note": "Attenuates significantly before reaching coast"
+      },
+      {
+        "scenario": "1km asteroid @ 20 km/s in 4000m deep ocean",
+        "diameter_km": 1,
+        "velocity_m_s": 20000,
+        "water_depth_m": 4000,
+        "efficiency": 0.01,
+        "initial_wave_height_m": 707,
+        "note": "Mega-tsunami, transoceanic devastation"
+      }
+    ]
+  },
+  "shallow_water_wave_equations": {
+    "description": "Tsunami propagates as shallow-water wave (wavelength >> depth)",
+    "wave_speed_formula": "c = sqrt(g * h)",
+    "wave_speed_examples": [
+      {"water_depth_m": 10, "wave_speed_km_h": 36, "wave_speed_m_s": 10},
+      {"water_depth_m": 100, "wave_speed_km_h": 113, "wave_speed_m_s": 31},
+      {"water_depth_m": 1000, "wave_speed_km_h": 356, "wave_speed_m_s": 99},
+      {"water_depth_m": 4000, "wave_speed_km_h": 713, "wave_speed_m_s": 198},
+      {"water_depth_m": 6000, "wave_speed_km_h": 873, "wave_speed_m_s": 242}
+    ],
+    "travel_time_calculation": {
+      "description": "Time for tsunami to cross ocean basin",
+      "pacific_ocean_width_km": 15000,
+      "travel_time_hours": 21,
+      "atlantic_ocean_width_km": 6000,
+      "travel_time_hours": 8.4,
+      "note": "Provides warning time for distant coasts"
+    }
+  },
+  "greens_law_shoaling": {
+    "description": "Wave height amplification as tsunami approaches shallow water",
+    "theory": "Energy conservation: as depth decreases, wave height increases",
+    "formula": "H_final / H_initial = (h_initial / h_final)^(1/4)",
+    "explanation": "Wave slows down and piles up as it reaches shallow water",
+    "shoaling_examples": [
+      {
+        "deep_ocean_depth_m": 4000,
+        "coastal_depth_m": 10,
+        "amplification_factor": 4.5,
+        "deep_ocean_height_m": 1,
+        "coastal_height_m": 4.5,
+        "note": "Why tsunamis seem small at sea but huge at coast"
+      },
+      {
+        "deep_ocean_depth_m": 4000,
+        "coastal_depth_m": 2,
+        "amplification_factor": 6.7,
+        "deep_ocean_height_m": 1,
+        "coastal_height_m": 6.7,
+        "note": "Very shallow water = extreme amplification"
+      },
+      {
+        "deep_ocean_depth_m": 1000,
+        "coastal_depth_m": 10,
+        "amplification_factor": 3.2,
+        "deep_ocean_height_m": 2,
+        "coastal_height_m": 6.4
+      }
+    ]
+  },
+  "run_up_calculation": {
+    "description": "Maximum inland penetration and vertical elevation of tsunami",
+    "run_up_height_formula": "R = H * (1 / tan(slope))^0.5 * roughness_factor",
+    "run_up_distance_formula": "L = R / sin(slope)",
+    "parameters": {
+      "H": "wave height at shore (meters)",
+      "slope": "coastal slope (radians)",
+      "roughness_factor": "0.5 (urban) to 1.0 (smooth beach) to 2.0 (vegetation)",
+      "R": "vertical run-up height (meters)",
+      "L": "horizontal inundation distance (meters)"
+    },
+    "coastal_scenarios": [
+      {
+        "coastal_type": "Flat alluvial plain (Bangladesh, Maldives)",
+        "slope_percent": 0.5,
+        "slope_degrees": 0.29,
+        "wave_height_at_shore_m": 10,
+        "roughness_factor": 1.2,
+        "run_up_height_m": 17,
+        "inundation_distance_km": 3.4,
+        "population_impact": "EXTREME"
+      },
+      {
+        "coastal_type": "Gentle sandy beach (Gulf Coast)",
+        "slope_percent": 2.0,
+        "slope_degrees": 1.15,
+        "wave_height_at_shore_m": 10,
+        "roughness_factor": 1.0,
+        "run_up_height_m": 11,
+        "inundation_distance_km": 0.55,
+        "population_impact": "HIGH"
+      },
+      {
+        "coastal_type": "Moderate beach slope (California)",
+        "slope_percent": 5.0,
+        "slope_degrees": 2.86,
+        "wave_height_at_shore_m": 10,
+        "roughness_factor": 0.8,
+        "run_up_height_m": 7,
+        "inundation_distance_km": 0.14,
+        "population_impact": "MODERATE"
+      },
+      {
+        "coastal_type": "Rocky cliffs (Chilean coast)",
+        "slope_percent": 20.0,
+        "slope_degrees": 11.31,
+        "wave_height_at_shore_m": 10,
+        "roughness_factor": 0.5,
+        "run_up_height_m": 4,
+        "inundation_distance_km": 0.02,
+        "population_impact": "LOW"
+      }
+    ]
+  },
+  "wave_attenuation": {
+    "description": "Energy loss during propagation",
+    "factors": {
+      "geometric_spreading": {
+        "description": "Wave energy spreads over increasing circumference",
+        "formula": "amplitude ∝ 1 / sqrt(distance)",
+        "note": "Energy per unit length decreases as 1/r"
+      },
+      "bottom_friction": {
+        "description": "Seafloor roughness dissipates energy",
+        "attenuation_coefficient": 0.001,
+        "formula": "H(r) = H_0 * exp(-k * r)",
+        "note": "More important in shallow continental shelves"
+      },
+      "refraction_focusing": {
+        "description": "Bathymetry can focus or defocus tsunami energy",
+        "submarine_ridges": "focus energy (dangerous)",
+        "submarine_canyons": "can channel energy",
+        "seamounts": "scatter energy (protective)",
+        "example": "Hawaiian islands focus tsunami energy from Alaska"
+      }
+    },
+    "distance_attenuation_table": [
+      {"distance_km": 100, "amplitude_ratio": 1.00, "energy_ratio": 1.00},
+      {"distance_km": 500, "amplitude_ratio": 0.45, "energy_ratio": 0.20},
+      {"distance_km": 1000, "amplitude_ratio": 0.32, "energy_ratio": 0.10},
+      {"distance_km": 5000, "amplitude_ratio": 0.14, "energy_ratio": 0.02},
+      {"distance_km": 10000, "amplitude_ratio": 0.10, "energy_ratio": 0.01}
+    ]
+  },
+  "historical_tsunami_validation": {
+    "description": "Real tsunami events for model calibration",
+    "events": [
+      {
+        "event": "2004 Indian Ocean Tsunami (Sumatra earthquake)",
+        "trigger": "Mw 9.1 earthquake (not impact, but physics same)",
+        "initial_displacement_m": 10,
+        "max_run_up_m": 30,
+        "inundation_distance_km": 3,
+        "casualties": 230000,
+        "affected_countries": 14,
+        "energy_mt": 5,
+        "note": "Validates transoceanic propagation models"
+      },
+      {
+        "event": "2011 Tohoku Tsunami (Japan earthquake)",
+        "trigger": "Mw 9.0 earthquake",
+        "initial_displacement_m": 8,
+        "max_run_up_m": 40,
+        "inundation_distance_km": 10,
+        "casualties": 18000,
+        "energy_mt": 2,
+        "note": "Modern measurement, excellent validation data"
+      },
+      {
+        "event": "1755 Lisbon Earthquake & Tsunami",
+        "trigger": "Mw 8.5 earthquake",
+        "max_run_up_m": 15,
+        "casualties": 60000,
+        "note": "Historical reference"
+      },
+      {
+        "event": "Eltanin Impact (hypothetical but studied)",
+        "trigger": "1-2 km asteroid impact in South Pacific, 2.5 Ma",
+        "impact_location": "deep ocean",
+        "water_depth_m": 5000,
+        "estimated_wave_height_deep_ocean_m": 300,
+        "estimated_coastal_run_up_m": 1000,
+        "note": "Model reference for large ocean impact"
+      }
+    ]
+  },
+  "coastal_vulnerability_classification": {
+    "description": "Classify coastlines by tsunami vulnerability",
+    "type_1_extreme_risk": {
+      "characteristics": "Flat, low-elevation, densely populated",
+      "slope_percent": "<1%",
+      "examples": ["Bangladesh", "Maldives", "Netherlands", "US Gulf Coast"],
+      "population_at_risk_multiplier": 5.0,
+      "inundation_distance_km": ">5",
+      "evacuation_difficulty": "extreme"
+    },
+    "type_2_high_risk": {
+      "characteristics": "Gentle slopes, coastal cities",
+      "slope_percent": "1-3%",
+      "examples": ["Japan", "Indonesia", "Philippines"],
+      "population_at_risk_multiplier": 3.0,
+      "inundation_distance_km": "1-5",
+      "evacuation_difficulty": "high"
+    },
+    "type_3_moderate_risk": {
+      "characteristics": "Moderate slopes, some elevation",
+      "slope_percent": "3-10%",
+      "examples": ["California", "New Zealand", "Italy"],
+      "population_at_risk_multiplier": 1.5,
+      "inundation_distance_km": "0.5-1",
+      "evacuation_difficulty": "moderate"
+    },
+    "type_4_low_risk": {
+      "characteristics": "Steep coasts, cliffs",
+      "slope_percent": ">10%",
+      "examples": ["Chile", "Norway", "Scotland"],
+      "population_at_risk_multiplier": 0.5,
+      "inundation_distance_km": "<0.5",
+      "evacuation_difficulty": "low"
+    }
+  },
+  "tsunami_warning_time": {
+    "description": "Time available for evacuation",
+    "local_tsunami": {
+      "origin_distance_km": 100,
+      "arrival_time_minutes": 15,
+      "warning_systems_effective": false,
+      "evacuation_feasible": "marginal",
+      "note": "Nearby ocean impacts most dangerous"
+    },
+    "regional_tsunami": {
+      "origin_distance_km": 1000,
+      "arrival_time_hours": 3,
+      "warning_systems_effective": true,
+      "evacuation_feasible": "yes",
+      "note": "Sufficient time for coastal evacuation"
+    },
+    "transoceanic_tsunami": {
+      "origin_distance_km": 10000,
+      "arrival_time_hours": 14,
+      "warning_systems_effective": true,
+      "evacuation_feasible": "yes",
+      "note": "Ample warning for Pacific Rim from mid-ocean impact"
+    }
+  },
+  "damage_mechanisms": {
+    "hydrodynamic_force": {
+      "description": "Moving water exerts drag force on structures",
+      "formula": "F = 0.5 * Cd * rho_water * v^2 * A",
+      "drag_coefficient": 2.0,
+      "failure_thresholds": {
+        "wood_frame_building": {"velocity_m_s": 3, "pressure_kpa": 9},
+        "unreinforced_masonry": {"velocity_m_s": 5, "pressure_kpa": 25},
+        "reinforced_concrete": {"velocity_m_s": 10, "pressure_kpa": 100}
+      }
+    },
+    "debris_impact": {
+      "description": "Floating debris (cars, boats, trees) impacts structures",
+      "damage_multiplier": 2.0,
+      "note": "Often more destructive than water itself"
+    },
+    "scour_foundation": {
+      "description": "Water erodes soil beneath foundations",
+      "critical_velocity_m_s": 2,
+      "note": "Buildings can collapse even if withstanding hydrodynamic force"
+    },
+    "inundation_duration": {
+      "description": "Long-duration flooding causes secondary damage",
+      "typical_duration_hours": 4,
+      "effects": ["water damage", "mold", "structural weakening"]
+    }
+  },
+  "implementation_guide": {
+    "computational_approach": "Shallow-water wave equations on bathymetry grid",
+    "required_data": [
+      "GEBCO bathymetry (15 arc-second resolution)",
+      "Coastal slope from DEM",
+      "Coastal population density"
+    ],
+    "simplifications_for_real_time": {
+      "full_hydrodynamic_model": "Computationally expensive (hours)",
+      "empirical_formulas": "Use Green's Law + run-up equations (seconds)",
+      "recommendation": "Empirical for UI, full model for validation"
+    },
+    "jury_demonstration": {
+      "show": "Same 300m asteroid impacting (1) deep Pacific vs (2) shallow continental shelf",
+      "result": "Deep impact: moderate distant tsunamis. Shallow: catastrophic local tsunami",
+      "message": "Location matters as much as size"
+    },
+    "validation_test": "Model 2004 Indian Ocean tsunami: 10m initial → 30m run-up in Indonesia"
+  }
+}

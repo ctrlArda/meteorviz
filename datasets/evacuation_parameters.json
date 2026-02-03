@@ -1,0 +1,75 @@
+{
+  "warning_time_response": {
+    "hours_1-24": {
+      "evacuation_radius_km": 50,
+      "evacuation_rate_percent": 30,
+      "shelter_in_place_recommended": true,
+      "transportation_modes": [
+        "Private vehicles",
+        "Emergency buses"
+      ]
+    },
+    "days_1-7": {
+      "evacuation_radius_km": 200,
+      "evacuation_rate_percent": 70,
+      "mass_transit_activated": true,
+      "transportation_modes": [
+        "All ground transport",
+        "Rail",
+        "Short-haul flights"
+      ]
+    },
+    "weeks_1-4": {
+      "evacuation_radius_km": 500,
+      "evacuation_rate_percent": 90,
+      "international_coordination": true,
+      "transportation_modes": [
+        "All available",
+        "International flights",
+        "Ships"
+      ]
+    },
+    "months_1-12": {
+      "evacuation_radius_km": 2000,
+      "evacuation_rate_percent": 99,
+      "permanent_relocation_possible": true,
+      "infrastructure_preparation": true
+    }
+  },
+  "impact_size_protocols": {
+    "airburst_10m": {
+      "affected_radius_km": 20,
+      "evacuation_type": "Shelter in place",
+      "expected_casualties_without_warning": 1000
+    },
+    "small_crater_50m": {
+      "affected_radius_km": 50,
+      "evacuation_type": "Local evacuation",
+      "expected_casualties_without_warning": 50000
+    },
+    "medium_impact_200m": {
+      "affected_radius_km": 200,
+      "evacuation_type": "Regional evacuation",
+      "expected_casualties_without_warning": 500000
+    },
+    "large_impact_1km": {
+      "affected_radius_km": 1000,
+      "evacuation_type": "Continental evacuation",
+      "expected_casualties_without_warning": 50000000,
+      "global_effects": true
+    }
+  },
+  "evacuation_capacity_per_hour": {
+    "major_highway_lane": 2000,
+    "metro_line": 30000,
+    "train_line": 10000,
+    "large_airport": 5000,
+    "ferry_terminal": 3000
+  },
+  "shelter_requirements": {
+    "space_per_person_m2": 4.5,
+    "water_per_person_liters_per_day": 3,
+    "food_per_person_kcal_per_day": 2000,
+    "medical_staff_ratio": 0.01
+  }
+}

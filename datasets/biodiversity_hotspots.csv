@@ -1,0 +1,14 @@
+name,continent,lat,lon,endemic_plants,threat_level,type
+Tropical Andes,South America,-10,-75,30000.0,Critical,
+Mesoamerica,North/South America,15,-90,5000.0,High,
+Caribbean Islands,North America,18,-70,6550.0,High,
+Atlantic Forest,South America,-20,-45,8000.0,Critical,
+Mediterranean Basin,Europe/Africa/Asia,38,15,11700.0,High,
+Madagascar,Africa,-20,47,11600.0,Critical,
+Sundaland,Asia,0,110,15000.0,Critical,
+Philippines,Asia,12,122,6000.0,Critical,
+Indo-Burma,Asia,18,100,7000.0,High,
+Western Ghats & Sri Lanka,Asia,10,76,3000.0,High,
+New Zealand,Oceania,-42,174,1865.0,High,
+Polynesia-Micronesia,Oceania,-10,-160,3000.0,Critical,
+Great Barrier Reef,Oceania,-18,147,,Critical,Marine

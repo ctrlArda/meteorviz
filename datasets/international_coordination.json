@@ -1,0 +1,67 @@
+{
+  "planetary_defense_organizations": {
+    "nasa_pdco": {
+      "name": "NASA Planetary Defense Coordination Office",
+      "established": 2016,
+      "budget_usd_millions": 150,
+      "responsibilities": [
+        "NEO detection",
+        "Impact warning",
+        "Deflection coordination"
+      ],
+      "location": "Washington, DC, USA"
+    },
+    "esa_sst_neo": {
+      "name": "ESA Space Safety - Near-Earth Objects",
+      "location": "Frascati, Italy",
+      "responsibilities": [
+        "European NEO coordination",
+        "Hera mission",
+        "Risk assessment"
+      ]
+    },
+    "iawn": {
+      "name": "International Asteroid Warning Network",
+      "established": 2013,
+      "members": 17,
+      "purpose": "International coordination for NEO observations and impact warnings"
+    },
+    "smpag": {
+      "name": "Space Mission Planning Advisory Group",
+      "established": 2014,
+      "purpose": "Coordinate international deflection mission planning"
+    },
+    "un_copuos": {
+      "name": "UN Committee on Peaceful Uses of Outer Space",
+      "purpose": "International governance of planetary defense"
+    }
+  },
+  "notification_protocols": {
+    "detection_to_warning_hours": 1,
+    "national_agency_notification": "Immediate",
+    "un_notification_threshold_torino": 4,
+    "public_communication_threshold_torino": 1
+  },
+  "international_missions": {
+    "dart": {
+      "status": "Complete",
+      "agency": "NASA",
+      "year": 2022
+    },
+    "hera": {
+      "status": "En route",
+      "agency": "ESA",
+      "arrival": 2026
+    },
+    "neo_surveyor": {
+      "status": "In development",
+      "agency": "NASA",
+      "launch": 2028
+    },
+    "neomir": {
+      "status": "Proposed",
+      "agency": "ESA",
+      "purpose": "Sun-side detection"
+    }
+  }
+}

@@ -1,0 +1,401 @@
+﻿{
+    "atmospheric_entry":  {
+                              "breakup_altitude_m":  19522.0,
+                              "energy_loss_percent":  28.08,
+                              "entry_energy_mt":  1439.46,
+                              "entry_mass_kg":  73290000000.0,
+                              "entry_velocity_kms":  12.82,
+                              "impact_mass_kg":  59202781729.43,
+                              "impact_velocity_kms":  12.1,
+                              "is_airburst":  false
+                          },
+    "data_sources":  {
+                         "agriculture":  {
+                                             "source":  "FAO GAEZ / EarthStat (Mock)",
+                                             "zones":  5
+                                         },
+                         "asteroid_data":  {
+                                               "local_dataset_file":  "nasa_impact_dataset.csv",
+                                               "local_dataset_size":  40764,
+                                               "primary_source":  "NASA NeoWs API + JPL SBDB"
+                                           },
+                         "bathymetry":  {
+                                            "depth_at_impact_m":  0,
+                                            "depth_source":  "gebco_2025_tile",
+                                            "fallback_available":  true,
+                                            "source":  "GEBCO 2025 High Resolution",
+                                            "tiles_loaded":  8
+                                        },
+                         "cables_data":  {
+                                             "source":  "Telegeography Submarine Cable Map",
+                                             "total_cables":  687
+                                         },
+                         "energy_validation":  {
+                                                   "components":  {
+                                                                      "airblast_pct":  5.0,
+                                                                      "crater_pct":  70.0,
+                                                                      "seismic_pct":  0.1,
+                                                                      "thermal_pct":  25.0,
+                                                                      "tsunami_pct":  0.0
+                                                                  },
+                                                   "conservation_principle":  "Energy Conservation Verified",
+                                                   "status":  "validated",
+                                                   "total_percent":  100.0
+                                               },
+                         "health_data":  {
+                                             "source":  "Global Healthsites Mapping Project",
+                                             "total_sites":  1047
+                                         },
+                         "historical_impacts":  {
+                                                    "available":  true,
+                                                    "source":  "Earth Impact Database (PASSC)",
+                                                    "total_craters":  20
+                                                },
+                         "infrastructure":  {
+                                                "affected_plants":  4,
+                                                "source":  "Global Power Plant Database (WRI)",
+                                                "total_plants":  34936
+                                            },
+                         "jpl_sentry":  {
+                                            "api_url":  "https://ssd-api.jpl.nasa.gov/sentry.api",
+                                            "available":  true,
+                                            "source":  "NASA/JPL Sentry Impact Monitoring",
+                                            "total_threats":  2063
+                                        },
+                         "land_cover":  {
+                                            "available":  true,
+                                            "source":  "ESA WorldCover 2021 (10m Resolution)",
+                                            "total_classes":  11
+                                        },
+                         "lithology":  {
+                                           "available":  true,
+                                           "source":  "GLiM - Global Lithological Map (Hartmann \u0026 Moosdorf 2012)",
+                                           "total_rock_types":  15
+                                       },
+                         "physics_model":  {
+                                               "atmospheric_entry":  "RK4 Integration (meteor_physics.py)",
+                                               "crater_scaling":  "Pi-Scaling (Holsapple-style)",
+                                               "seismic":  "Moment Magnitude (Mw) from Energy",
+                                               "thermal":  "Glasstone \u0026 Dolan (1977)",
+                                               "tsunami":  "Ward \u0026 Asphaug (2000) + Green\u0027s Law"
+                                           },
+                         "population":  {
+                                            "available":  true,
+                                            "file":  "ppp_2020_1km_Aggregated.tif",
+                                            "source":  "WorldPop 2020 (1km Resolution)"
+                                        },
+                         "spectral_taxonomy":  {
+                                                   "available":  true,
+                                                   "source":  "SMASS II (Bus \u0026 Binzel 2002)",
+                                                   "total_classes":  25
+                                               }
+                     },
+    "historical_comparison":  [
+
+                              ],
+    "human_impact_assessment":  {
+                                    "analysis_location":  {
+                                                              "elevation_m":  10.0,
+                                                              "latitude":  40.9833,
+                                                              "longitude":  29.0333,
+                                                              "type":  "Land"
+                                                          },
+                                    "estimated_population_in_burn_radius":  17345502,
+                                    "infrastructure_impact":  [
+                                                                  {
+                                                                      "capacity_mw":  1432.0,
+                                                                      "country":  "Turkey",
+                                                                      "distance_km":  76.59,
+                                                                      "lat":  40.2952,
+                                                                      "lon":  29.0736,
+                                                                      "name":  "Bursa Doğalgaz Santrali",
+                                                                      "primary_fuel":  "Gas"
+                                                                  },
+                                                                  {
+                                                                      "capacity_mw":  1351.0,
+                                                                      "country":  "Turkey",
+                                                                      "distance_km":  28.64,
+                                                                      "lat":  40.9834,
+                                                                      "lon":  28.6921,
+                                                                      "name":  "Ambarlı B Doğalgaz Santrali",
+                                                                      "primary_fuel":  "Gas"
+                                                                  },
+                                                                  {
+                                                                      "capacity_mw":  816.0,
+                                                                      "country":  "Turkey",
+                                                                      "distance_km":  28.03,
+                                                                      "lat":  40.9793,
+                                                                      "lon":  28.6994,
+                                                                      "name":  "Ambarlı A Doğalgaz Santrali",
+                                                                      "primary_fuel":  "Gas"
+                                                                  },
+                                                                  {
+                                                                      "capacity_mw":  630.0,
+                                                                      "country":  "Turkey",
+                                                                      "distance_km":  28.04,
+                                                                      "lat":  40.9787,
+                                                                      "lon":  28.6993,
+                                                                      "name":  "EÜAS Ambarlı FO Sant. Istanbul",
+                                                                      "primary_fuel":  "Oil"
+                                                                  }
+                                                              ],
+                                    "population_breakdown":  {
+                                                                 "airblast":  {
+                                                                                  "count":  16769745,
+                                                                                  "desc":  "Hava Patlaması (1 psi)",
+                                                                                  "radius_km":  55.64006579333134
+                                                                              },
+                                                                 "crater":  {
+                                                                                "count":  0,
+                                                                                "desc":  "Krater ve Enkaz",
+                                                                                "radius_km":  9.179412967782516
+                                                                            },
+                                                                 "seismic":  {
+                                                                                 "count":  16385024,
+                                                                                 "desc":  "Yıkıcı Sismik Sarsıntı",
+                                                                                 "radius_km":  51.5084924060163
+                                                                             },
+                                                                 "thermal":  {
+                                                                                 "count":  17345502,
+                                                                                 "desc":  "Isısal Radyasyon (Ufuk Sınırlı)",
+                                                                                 "radius_km":  76.88445455078514
+                                                                             },
+                                                                 "tsunami":  {
+                                                                                 "count":  0,
+                                                                                 "desc":  "Tsunami",
+                                                                                 "radius_km":  0
+                                                                             }
+                                                             }
+                                },
+    "input_parameters":  {
+                             "angle_deg":  45,
+                             "composition":  "carbonaceous",
+                             "density":  1190,
+                             "latitude":  40.9833,
+                             "longitude":  29.0333,
+                             "mass_kg":  73290000000,
+                             "spectral_type":  "C",
+                             "velocity_kms":  12.82
+                         },
+    "lithology_analysis":  {
+                               "crater_efficiency":  1.6,
+                               "density_kgm3":  1025,
+                               "global_coverage_pct":  6.2,
+                               "lithology_code":  "wb",
+                               "lithology_name":  "Water Body",
+                               "porosity_pct":  0,
+                               "seismic_velocity_kms":  1.5,
+                               "strength_mpa":  0.0
+                           },
+    "map_data":  {
+                     "features":  [
+                                      {
+                                          "geometry":  {
+                                                           "coordinates":  [
+                                                                               29.0333,
+                                                                               40.9833
+                                                                           ],
+                                                           "type":  "Point"
+                                                       },
+                                          "properties":  {
+                                                             "color":  "black",
+                                                             "radius_km":  3.6717651871130066,
+                                                             "type":  "crater"
+                                                         },
+                                          "type":  "Feature"
+                                      },
+                                      {
+                                          "geometry":  {
+                                                           "coordinates":  [
+                                                                               29.0333,
+                                                                               40.9833
+                                                                           ],
+                                                           "type":  "Point"
+                                                       },
+                                          "properties":  {
+                                                             "color":  "red",
+                                                             "radius_km":  76.88445455078514,
+                                                             "type":  "thermal"
+                                                         },
+                                          "type":  "Feature"
+                                      },
+                                      {
+                                          "geometry":  {
+                                                           "coordinates":  [
+                                                                               29.0333,
+                                                                               40.9833
+                                                                           ],
+                                                           "type":  "Point"
+                                                       },
+                                          "properties":  {
+                                                             "color":  "orange",
+                                                             "radius_km":  22.256026317332537,
+                                                             "type":  "airblast"
+                                                         },
+                                          "type":  "Feature"
+                                      },
+                                      {
+                                          "geometry":  {
+                                                           "coordinates":  [
+                                                                               29.0736,
+                                                                               40.2952
+                                                                           ],
+                                                           "type":  "Point"
+                                                       },
+                                          "properties":  {
+                                                             "capacity_mw":  1432.0,
+                                                             "color":  "purple",
+                                                             "description":  "Bursa Doğalgaz Santrali (Gas, 1432.0 MW)",
+                                                             "fuel":  "Gas",
+                                                             "name":  "Bursa Doğalgaz Santrali",
+                                                             "type":  "infrastructure"
+                                                         },
+                                          "type":  "Feature"
+                                      },
+                                      {
+                                          "geometry":  {
+                                                           "coordinates":  [
+                                                                               28.6921,
+                                                                               40.9834
+                                                                           ],
+                                                           "type":  "Point"
+                                                       },
+                                          "properties":  {
+                                                             "capacity_mw":  1351.0,
+                                                             "color":  "purple",
+                                                             "description":  "Ambarlı B Doğalgaz Santrali (Gas, 1351.0 MW)",
+                                                             "fuel":  "Gas",
+                                                             "name":  "Ambarlı B Doğalgaz Santrali",
+                                                             "type":  "infrastructure"
+                                                         },
+                                          "type":  "Feature"
+                                      },
+                                      {
+                                          "geometry":  {
+                                                           "coordinates":  [
+                                                                               28.6994,
+                                                                               40.9793
+                                                                           ],
+                                                           "type":  "Point"
+                                                       },
+                                          "properties":  {
+                                                             "capacity_mw":  816.0,
+                                                             "color":  "purple",
+                                                             "description":  "Ambarlı A Doğalgaz Santrali (Gas, 816.0 MW)",
+                                                             "fuel":  "Gas",
+                                                             "name":  "Ambarlı A Doğalgaz Santrali",
+                                                             "type":  "infrastructure"
+                                                         },
+                                          "type":  "Feature"
+                                      },
+                                      {
+                                          "geometry":  {
+                                                           "coordinates":  [
+                                                                               28.6993,
+                                                                               40.9787
+                                                                           ],
+                                                           "type":  "Point"
+                                                       },
+                                          "properties":  {
+                                                             "capacity_mw":  630.0,
+                                                             "color":  "purple",
+                                                             "description":  "EÜAS Ambarlı FO Sant. Istanbul (Oil, 630.0 MW)",
+                                                             "fuel":  "Oil",
+                                                             "name":  "EÜAS Ambarlı FO Sant. Istanbul",
+                                                             "type":  "infrastructure"
+                                                         },
+                                          "type":  "Feature"
+                                      }
+                                  ],
+                     "type":  "FeatureCollection"
+                 },
+    "ml_analysis":  {
+                        "comparison_with_physics":  null,
+                        "model_available":  true,
+                        "prediction":  {
+                                           "error":  "X has 19 features, but GradientBoostingRegressor is expecting 54 features as input."
+                                       }
+                    },
+    "physical_impact":  {
+                            "air_blast_radii_km":  {
+                                                       "1_psi_km":  55.64006579333134,
+                                                       "20_psi_km":  8.093100479030014,
+                                                       "5_psi_km":  22.256026317332537,
+                                                       "moderate_km":  55.64006579333134,
+                                                       "severe_km":  22.256026317332537
+                                                   },
+                            "air_blast_radius_km":  {
+                                                        "1_psi_km":  55.64006579333134,
+                                                        "20_psi_km":  8.093100479030014,
+                                                        "5_psi_km":  22.256026317332537,
+                                                        "moderate_km":  55.64006579333134,
+                                                        "severe_km":  22.256026317332537
+                                                    },
+                            "crater_depth_m":  183.58825935565034,
+                            "crater_diameter_km":  3.6717651871130066,
+                            "crater_diameter_transient_km":  2.9374121496904055,
+                            "ejecta_blanket_radius_km":  9.179412967782516,
+                            "energy_partitioning":  {
+                                                        "airblast":  2.165890599267929E+17,
+                                                        "ejecta_kinetic":  1.9493015393411359E+18,
+                                                        "heat_melt_vapor":  1.0829452996339644E+18,
+                                                        "percentages":  {
+                                                                            "airblast":  5.0,
+                                                                            "ejecta_kinetic":  45.0,
+                                                                            "heat_melt_vapor":  25.0,
+                                                                            "plastic_deformation":  25.0,
+                                                                            "seismic":  0.1
+                                                                        },
+                                                        "plastic_deformation":  1.0829452996339644E+18,
+                                                        "seismic":  4331781198535858.0
+                                                    },
+                            "entry_energy_megatons_tnt":  1439.4583408221797,
+                            "impact_energy_megatons_tnt":  1035.3205541433695,
+                            "impact_energy_tnt_tons":  1035320554.1433694,
+                            "impact_scale":  8,
+                            "impact_type":  "Land Impact (Crater Formation)",
+                            "risk_score":  100,
+                            "seismic_description":  "Yıkıcı (Major)",
+                            "seismic_magnitude":  7.023757677539076,
+                            "thermal_burn_radius_km":  {
+                                                           "2nd_degree":  76.88445455078514,
+                                                           "second_degree":  76.88445455078514
+                                                       },
+                            "tsunami_analysis":  null,
+                            "tsunami_wave_height_m":  0
+                        },
+    "scientific_confidence":  {
+                                  "bathymetry":  "HIGH",
+                                  "data_completeness":  "8/8 datasets active",
+                                  "ml_model":  "MODERATE",
+                                  "overall":  "HIGH",
+                                  "physics_model":  "HIGH (Peer-reviewed equations)",
+                                  "population_estimate":  "HIGH"
+                              },
+    "simulation_info_message":  "Analiz Türü: Land Impact (Crater Formation). Hedef: Land (Rakım/Derinlik: 10m). Atmosferik sürtünme nedeniyle 0.72 km/s hız kaybı yaşandı. BİLİMSEL NOT: Termal etki, Dünya\u0027nın eğimi nedeniyle ufuk çizgisinde (~335.6 km) sınırlandırıldı. Yer seviyesindeki bir çarpışmada ısı ışınları toprağın içinden geçemez.",
+    "socio_economic_impact":  {
+                                  "digital_infrastructure":  null,
+                                  "food_security":  {
+                                                        "affected_zones":  [
+
+                                                                           ],
+                                                        "crops_at_risk":  [
+
+                                                                          ],
+                                                        "famine_risk":  "LOW",
+                                                        "global_supply_impact_percent":  0
+                                                    },
+                                  "health_system":  {
+                                                        "affected_names":  [
+                                                                               "Baltalimanı Hastanesi",
+                                                                               "Florence Nightingale",
+                                                                               "Özel Bağcılar Tekden Hastanesi",
+                                                                               "Acıbadem Hospital",
+                                                                               "Çevre Hastanesi"
+                                                                           ],
+                                                        "beds_lost_est":  18537,
+                                                        "hospitals_destroyed":  156,
+                                                        "system_status":  "CRITICAL"
+                                                    }
+                              }
+}

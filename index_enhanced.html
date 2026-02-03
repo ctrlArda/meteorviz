@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeteorViz - NASA Asteroit Etki Simülasyonu ve Gezegen Savunma Sistemi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #22c55e;
+            --purple: #8b5cf6;
+            --cyan: #06b6d4;
+        }
+
+        #map { height: 450px; }
+
+        /* Kart Stilleri */
+        .card {
+            @apply bg-gray-800 rounded-xl border border-gray-700 overflow-hidden;
+        }
+        .card-header {
+            @apply px-4 py-3 border-b border-gray-700 flex items-center justify-between;
+        }
+        .card-body {
+            @apply p-4;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            @apply h-2 rounded-full bg-gray-700 overflow-hidden;
+        }
+        .progress-fill {
+            @apply h-full rounded-full transition-all duration-500;
+        }
+
+        /* Veri Seti Badge */
+        .dataset-badge {
+            @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+        }
+        .dataset-badge.active { @apply bg-green-900 text-green-300; }
+        .dataset-badge.inactive { @apply bg-red-900 text-red-300; }
+
+        /* Torino Ölçeği */
+        .torino-0 { background: #ffffff; color: #111827; }
+        .torino-1 { background: #22c55e; color: white; }
+        .torino-2, .torino-3, .torino-4 { background: #eab308; color: #111827; }
+        .torino-5, .torino-6, .torino-7 { background: #f97316; color: white; }
+        .torino-8, .torino-9, .torino-10 { background: #dc2626; color: white; }
+
+        /* Pulse Animasyonu */
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse-slow { animation: pulse-slow 2s infinite; }
+
+        /* Zaman Çizelgesi */
+        .timeline-item {
+            @apply relative pl-8 pb-6 border-l-2 border-gray-600;
+        }
+        .timeline-item::before {
+            content: '';
+            @apply absolute left-[-5px] top-0 w-2 h-2 rounded-full bg-blue-500;
+        }
+        .timeline-item.critical::before { @apply bg-red-500; }
+        .timeline-item.warning::before { @apply bg-yellow-500; }
+        .timeline-item.safe::before { @apply bg-green-500; }
+
+        /* Tab Stilleri */
+        .tab-btn {
+            @apply px-4 py-2 text-sm font-medium rounded-lg transition-all;
+        }
+        .tab-btn.active {
+            @apply bg-blue-600 text-white;
+        }
+        .tab-btn:not(.active) {
+            @apply text-gray-400 hover:text-white hover:bg-gray-700;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            @apply invisible absolute z-50 px-3 py-2 text-xs bg-gray-900 text-white rounded-lg;
+        }
+        .has-tooltip:hover .tooltip {
+            @apply visible;
+        }
+
+        /* Stat Card */
+        .stat-card {
+            @apply bg-gray-900 rounded-lg p-4 border border-gray-700;
+        }
+        .stat-value {
+            @apply text-2xl font-bold font-mono;
+        }
+        .stat-label {
+            @apply text-xs text-gray-400 uppercase tracking-wide;
+        }
+
+        /* Grid Layout */
+        .grid-dashboard {
+            display: grid;
+            grid-template-columns: 350px 1fr 350px;
+            gap: 1.5rem;
+        }
+        @media (max-width: 1400px) {
+            .grid-dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1f2937; }
+        ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
+
+        /* Harita Lejant */
+        .map-legend {
+            padding: 10px 14px;
+            font: 12px/14px Arial, Helvetica, sans-serif;
+            background: rgba(17, 24, 39, 0.95);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            color: #e5e7eb;
+            border: 1px solid #374151;
+        }
+        .map-legend h4 {
+            margin: 0 0 8px;
+            font-weight: 600;
+            color: #f9fafb;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        .color-box {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            border-radius: 3px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Search Results */
+        #search-results-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .result-item {
+            @apply px-3 py-2 cursor-pointer border-b border-gray-700 text-gray-300 text-sm;
+        }
+        .result-item:hover { @apply bg-gray-700; }
+        .result-item.selected { @apply bg-blue-900 text-blue-200; }
+
+        /* Güven Aralığı */
+        .ci-badge {
+            @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-mono;
+        }
+        .ci-badge.high { @apply bg-green-900 text-green-300; }
+        .ci-badge.moderate { @apply bg-yellow-900 text-yellow-300; }
+        .ci-badge.low { @apply bg-red-900 text-red-300; }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <!-- ================== HEADER ================== -->
+    <header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+        <div class="max-w-[1800px] mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-meteor text-2xl text-orange-500"></i>
+                        <div>
+                            <h1 class="text-xl font-bold text-white">MeteorViz</h1>
+                            <p class="text-xs text-gray-400">NASA Asteroit Etki Simülasyonu</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-2 ml-8">
+                        <span class="px-2 py-1 bg-green-900 text-green-300 text-xs rounded-full">
+                            <i class="fas fa-database mr-1"></i>
+                            <span id="header-dataset-count">50</span> Veri Seti
+                        </span>
+                        <span class="px-2 py-1 bg-blue-900 text-blue-300 text-xs rounded-full">
+                            <i class="fas fa-brain mr-1"></i> Hibrit ML Motoru
+                        </span>
+                        <span class="px-2 py-1 bg-purple-900 text-purple-300 text-xs rounded-full">
+                            <i class="fas fa-atom mr-1"></i> Fizik Simülasyonu
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Ana Mod Seçici -->
+                <div class="flex items-center space-x-1 bg-gray-900 p-1 rounded-lg">
+                    <button id="mode-simulation" class="tab-btn active" data-mode="simulation">
+                        <i class="fas fa-rocket mr-2"></i>Simülasyon
+                    </button>
+                    <button id="mode-analysis" class="tab-btn" data-mode="analysis">
+                        <i class="fas fa-chart-line mr-2"></i>Analiz
+                    </button>
+                    <button id="mode-defense" class="tab-btn" data-mode="defense">
+                        <i class="fas fa-shield-alt mr-2"></i>Savunma
+                    </button>
+                    <button id="mode-datasets" class="tab-btn" data-mode="datasets">
+                        <i class="fas fa-database mr-2"></i>Veri Setleri
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================== ANA İÇERİK ================== -->
+    <main class="max-w-[1800px] mx-auto px-4 py-6">
+        
+        <!-- ================== SİMÜLASYON MODU ================== -->
+        <div id="panel-simulation" class="mode-panel">
+            <div class="grid-dashboard">
+                <!-- SOL PANEL: Kontroller -->
+                <div class="space-y-4">
+                    <!-- Asteroit Seçimi -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="fas fa-search text-blue-400 mr-2"></i>Asteroit Seçimi
+                            </h3>
+                        </div>
+                        <div class="card-body space-y-4">
+                            <div>
+                                <label class="text-xs text-gray-400 block mb-1">NASA/JPL Arama</label>
+                                <div class="flex space-x-2">
+                                    <input type="text" id="search-input" placeholder="ID veya isim yazın..."
+                                        class="flex-1 bg-gray-900 border border-gray-600 px-3 py-2 rounded-lg text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+                                    <button id="search-btn" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-sm font-medium">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <p id="search-status" class="text-xs text-blue-400 mt-1 h-4"></p>
+                            </div>
+                            
+                            <div>
+                                <label class="text-xs text-gray-400 block mb-1">Veri Seti Listesi (2400+ Asteroit)</label>
+                                <select id="asteroid-list" size="8"
+                                    class="w-full bg-gray-900 border border-gray-600 rounded-lg text-sm font-mono">
+                                    <option value="" disabled>Yükleniyor...</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Çarpışma Parametreleri -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="fas fa-sliders-h text-purple-400 mr-2"></i>Parametreler
+                            </h3>
+                        </div>
+                        <div class="card-body space-y-3">
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="text-xs text-gray-400">Kütle (kg)</label>
+                                    <input type="number" id="mass" readonly
+                                        class="w-full bg-gray-900 border border-gray-600 px-3 py-2 rounded-lg text-sm font-mono">
+                                </div>
+                                <div>
+                                    <label class="text-xs text-gray-400">Hız (km/s)</label>
+                                    <input type="number" id="velocity" readonly
+                                        class="w-full bg-gray-900 border border-gray-600 px-3 py-2 rounded-lg text-sm font-mono">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="text-xs text-gray-400">Bileşim</label>
+                                    <select id="composition"
+                                        class="w-full bg-gray-900 border border-gray-600 px-3 py-2 rounded-lg text-sm">
+                                        <option value="rock">Kaya (S-tipi)</option>
+                                        <option value="rubble">Moloz Yığını (C-tipi)</option>
+                                        <option value="iron">Demir (M-tipi)</option>
+                                        <option value="ice">Buz (Kuyruklu yıldız)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="text-xs text-gray-400">Giriş Açısı (°)</label>
+                                    <input type="number" id="angle_deg" value="45" min="5" max="90"
+                                        class="w-full bg-gray-900 border border-gray-600 px-3 py-2 rounded-lg text-sm font-mono">
+                                </div>
+                            </div>
+                            
+                            <!-- Spektral Tip -->
+                            <div>
+                                <label class="text-xs text-gray-400">SMASS Spektral Tip</label>
+                                <select id="spectral-type"
+                                    class="w-full bg-gray-900 border border-gray-600 px-3 py-2 rounded-lg text-sm">
+                                    <option value="S">S-tipi (Silikat, Kaya)</option>
+                                    <option value="C">C-tipi (Karbon, Moloz)</option>
+                                    <option value="M">M-tipi (Metalik, Demir)</option>
+                                    <option value="V">V-tipi (Volkanik, Bazalt)</option>
+                                    <option value="D">D-tipi (Koyu, Organik)</option>
+                                    <option value="X">X-tipi (Karmaşık)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Asteroit Detayları -->
+                    <div id="asteroid-details" class="card hidden">
+                        <div class="card-header">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="fas fa-info-circle text-cyan-400 mr-2"></i>Asteroit Bilgisi
+                            </h3>
+                            <span id="hazard-badge" class="hidden px-2 py-1 bg-red-900 text-red-300 text-xs rounded-full">
+                                <i class="fas fa-exclamation-triangle mr-1"></i>TEHLİKELİ
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div id="asteroid-details-content" class="space-y-2 text-sm"></div>
+                        </div>
+                    </div>
+
+                    <!-- Simülasyon Butonu -->
+                    <button id="simulateBtn"
+                        class="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-xl text-white font-bold text-lg transition-all shadow-lg">
+                        <i class="fas fa-play mr-2"></i>Simülasyonu Başlat
+                    </button>
+                    <p id="simulation-status" class="text-center text-sm text-orange-400 h-6"></p>
+                </div>
+
+                <!-- ORTA PANEL: Harita ve Sonuçlar -->
+                <div class="space-y-4">
+                    <!-- Harita -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="fas fa-globe-americas text-green-400 mr-2"></i>Çarpışma Haritası
+                            </h3>
+                            <span class="text-xs text-gray-400">Tıklayarak çarpışma noktası seçin</span>
+                        </div>
+                        <div class="card-body p-0">
+                            <div id="map" class="rounded-b-xl"></div>
+                        </div>
+                    </div>
+
+                    <!-- Sonuç Paneli -->
+                    <div id="results-panel" class="hidden space-y-4">
+                        <!-- Özet Kartları -->
+                        <div class="grid grid-cols-4 gap-4">
+                            <div class="stat-card border-l-4 border-l-orange-500">
+                                <p class="stat-label">Enerji (MT)</p>
+                                <p id="res-energy-mt" class="stat-value text-orange-400">-</p>
+                            </div>
+                            <div class="stat-card border-l-4 border-l-red-500">
+                                <p class="stat-label">Krater Çapı</p>
+                                <p id="res-crater" class="stat-value text-red-400">-</p>
+                            </div>
+                            <div class="stat-card border-l-4 border-l-purple-500">
+                                <p class="stat-label">Etkilenen Nüfus</p>
+                                <p id="res-population" class="stat-value text-purple-400">-</p>
+                            </div>
+                            <div class="stat-card border-l-4 border-l-cyan-500">
+                                <p class="stat-label">Sismik Büyüklük</p>
+                                <p id="res-seismic" class="stat-value text-cyan-400">-</p>
+                            </div>
+                        </div>
+
+                        <!-- Detaylı Sonuçlar Tab -->
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="flex space-x-2">
+                                    <button class="result-tab-btn tab-btn active" data-tab="physics">Fizik</button>
+                                    <button class="result-tab-btn tab-btn" data-tab="damage">Hasar</button>
+                                    <button class="result-tab-btn tab-btn" data-tab="tsunami">Tsunami</button>
+                                    <button class="result-tab-btn tab-btn" data-tab="atmosphere">Atmosfer</button>
+                                    <button class="result-tab-btn tab-btn" data-tab="infrastructure">Altyapı</button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <!-- Fizik Tab -->
+                                <div id="tab-physics" class="result-tab-content">
+                                    <div class="grid grid-cols-2 gap-6">
+                                        <div>
+                                            <h4 class="text-sm font-bold text-gray-400 mb-3">Enerji Analizi</h4>
+                                            <div class="space-y-2">
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Kinetik Enerji:</span>
+                                                    <span id="res-energy-joules" class="font-mono text-blue-400">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">TNT Eşdeğeri:</span>
+                                                    <span id="res-tnt" class="font-mono text-orange-400">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Hiroşima Oranı:</span>
+                                                    <span id="res-hiroshima" class="font-mono text-yellow-400">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-sm font-bold text-gray-400 mb-3">Krater Oluşumu</h4>
+                                            <div class="space-y-2">
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Çap:</span>
+                                                    <span id="res-crater-diameter" class="font-mono text-red-400">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Derinlik:</span>
+                                                    <span id="res-crater-depth" class="font-mono text-red-400">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Enkaz Örtüsü:</span>
+                                                    <span id="res-ejecta" class="font-mono text-gray-300">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Hasar Tab -->
+                                <div id="tab-damage" class="result-tab-content hidden">
+                                    <div class="grid grid-cols-3 gap-4">
+                                        <div class="bg-gray-900 p-4 rounded-lg">
+                                            <h5 class="text-sm font-bold text-red-400 mb-2">
+                                                <i class="fas fa-fire mr-1"></i>Termal Etki
+                                            </h5>
+                                            <div class="space-y-1 text-sm">
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">3° Yanık:</span>
+                                                    <span id="res-thermal-3" class="font-mono">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">2° Yanık:</span>
+                                                    <span id="res-thermal-2" class="font-mono">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">1° Yanık:</span>
+                                                    <span id="res-thermal-1" class="font-mono">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-gray-900 p-4 rounded-lg">
+                                            <h5 class="text-sm font-bold text-orange-400 mb-2">
+                                                <i class="fas fa-wind mr-1"></i>Hava Şoku
+                                            </h5>
+                                            <div class="space-y-1 text-sm">
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">20 psi (Yıkım):</span>
+                                                    <span id="res-blast-20" class="font-mono text-red-400">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">5 psi (Çökme):</span>
+                                                    <span id="res-blast-5" class="font-mono text-orange-400">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">1 psi (Cam):</span>
+                                                    <span id="res-blast-1" class="font-mono text-yellow-400">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-gray-900 p-4 rounded-lg">
+                                            <h5 class="text-sm font-bold text-purple-400 mb-2">
+                                                <i class="fas fa-house-damage mr-1"></i>Sismik
+                                            </h5>
+                                            <div class="space-y-1 text-sm">
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Magnitüd:</span>
+                                                    <span id="res-seismic-mag" class="font-mono">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">P Dalgası:</span>
+                                                    <span id="res-p-wave" class="font-mono">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">S Dalgası:</span>
+                                                    <span id="res-s-wave" class="font-mono">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tsunami Tab -->
+                                <div id="tab-tsunami" class="result-tab-content hidden">
+                                    <div id="tsunami-content">
+                                        <div id="tsunami-land" class="text-center py-8 text-gray-500">
+                                            <i class="fas fa-mountain text-4xl mb-2"></i>
+                                            <p>Kara çarpışması - Tsunami oluşmayacak</p>
+                                        </div>
+                                        <div id="tsunami-ocean" class="hidden">
+                                            <div class="grid grid-cols-2 gap-6">
+                                                <div>
+                                                    <h5 class="text-sm font-bold text-cyan-400 mb-3">Dalga Yükseklikleri (Green Yasası)</h5>
+                                                    <div class="space-y-2">
+                                                        <div class="flex justify-between items-center">
+                                                            <span class="text-gray-400">Kaynak:</span>
+                                                            <span id="res-wave-source" class="font-mono text-cyan-400 text-lg">-</span>
+                                                        </div>
+                                                        <div class="flex justify-between">
+                                                            <span class="text-gray-400">100 km:</span>
+                                                            <span id="res-wave-100" class="font-mono">-</span>
+                                                        </div>
+                                                        <div class="flex justify-between">
+                                                            <span class="text-gray-400">500 km:</span>
+                                                            <span id="res-wave-500" class="font-mono">-</span>
+                                                        </div>
+                                                        <div class="flex justify-between">
+                                                            <span class="text-gray-400">1000 km:</span>
+                                                            <span id="res-wave-1000" class="font-mono">-</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5 class="text-sm font-bold text-blue-400 mb-3">Kıyı Etkisi</h5>
+                                                    <div class="space-y-2">
+                                                        <div class="flex justify-between">
+                                                            <span class="text-gray-400">Run-up:</span>
+                                                            <span id="res-runup" class="font-mono text-red-400">-</span>
+                                                        </div>
+                                                        <div class="flex justify-between">
+                                                            <span class="text-gray-400">İç Penetrasyon:</span>
+                                                            <span id="res-inundation" class="font-mono">-</span>
+                                                        </div>
+                                                        <div class="flex justify-between">
+                                                            <span class="text-gray-400">Varış Süresi:</span>
+                                                            <span id="res-arrival" class="font-mono">-</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Atmosfer Tab -->
+                                <div id="tab-atmosphere" class="result-tab-content hidden">
+                                    <div class="grid grid-cols-2 gap-6">
+                                        <div>
+                                            <h5 class="text-sm font-bold text-orange-400 mb-3">Atmosferik Giriş</h5>
+                                            <div class="space-y-2">
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Giriş Hızı:</span>
+                                                    <span id="res-entry-vel" class="font-mono">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Çarpma Hızı:</span>
+                                                    <span id="res-impact-vel" class="font-mono">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Enerji Kaybı:</span>
+                                                    <span id="res-energy-loss" class="font-mono">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-sm font-bold text-yellow-400 mb-3">Airburst Analizi</h5>
+                                            <div class="space-y-2">
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Parçalanma İrtifası:</span>
+                                                    <span id="res-breakup-alt" class="font-mono">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Etki Tipi:</span>
+                                                    <span id="res-impact-type" class="font-mono">-</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-400">Ateş Topu:</span>
+                                                    <span id="res-fireball" class="font-mono">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 p-3 bg-gray-900 rounded-lg">
+                                        <p id="res-atmo-summary" class="text-sm text-gray-300"></p>
+                                    </div>
+                                </div>
+
+                                <!-- Altyapı Tab -->
+                                <div id="tab-infrastructure" class="result-tab-content hidden">
+                                    <div class="grid grid-cols-2 gap-6">
+                                        <div>
+                                            <h5 class="text-sm font-bold text-purple-400 mb-3">Risk Altındaki Tesisler</h5>
+                                            <div id="infra-list" class="space-y-2 max-h-48 overflow-y-auto">
+                                                <p class="text-gray-500 text-sm">Simülasyon sonrası listelenecek</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-sm font-bold text-red-400 mb-3">Kademeli Çökme Analizi</h5>
+                                            <div id="cascade-timeline" class="space-y-2">
+                                                <p class="text-gray-500 text-sm">Altyapı bağımlılık ağı analizi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SAĞ PANEL: Bilimsel Analiz -->
+                <div class="space-y-4">
+                    <!-- Veri Seti Durumu -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="fas fa-database text-green-400 mr-2"></i>Veri Seti Durumu
+                            </h3>
+                            <span id="dataset-coverage" class="text-xs text-green-400 font-mono">100%</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="progress-bar mb-3">
+                                <div id="dataset-progress" class="progress-fill bg-green-500" style="width: 100%"></div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">NASA/JPL:</span>
+                                    <span id="ds-nasa" class="text-green-400">4/4</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Asteroit:</span>
+                                    <span id="ds-asteroid" class="text-green-400">5/5</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Fizik:</span>
+                                    <span id="ds-physics" class="text-green-400">7/7</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Altyapı:</span>
+                                    <span id="ds-infra" class="text-green-400">8/8</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Tarihsel:</span>
+                                    <span id="ds-historical" class="text-green-400">6/6</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Savunma:</span>
+                                    <span id="ds-defense" class="text-green-400">5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bilimsel Analiz Araçları -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="fas fa-flask text-purple-400 mr-2"></i>Bilimsel Araçlar
+                            </h3>
+                        </div>
+                        <div class="card-body space-y-3">
+                            <button id="btn-monte-carlo"
+                                class="w-full py-3 bg-purple-700 hover:bg-purple-600 rounded-lg text-sm font-medium transition-colors">
+                                <i class="fas fa-dice mr-2"></i>Monte Carlo Analizi (10.000 iterasyon)
+                            </button>
+                            <button id="btn-validation"
+                                class="w-full py-3 bg-green-700 hover:bg-green-600 rounded-lg text-sm font-medium transition-colors">
+                                <i class="fas fa-check-double mr-2"></i>Tarihsel Doğrulama (Chelyabinsk)
+                            </button>
+                            <button id="btn-comprehensive"
+                                class="w-full py-3 bg-cyan-700 hover:bg-cyan-600 rounded-lg text-sm font-medium transition-colors">
+                                <i class="fas fa-sitemap mr-2"></i>Kapsamlı 50 Veri Seti Analizi
+                            </button>
+                            <button id="btn-decision-support"
+                                class="w-full py-3 bg-orange-700 hover:bg-orange-600 rounded-lg text-sm font-medium transition-colors">
+                                <i class="fas fa-gavel mr-2"></i>Karar Destek Sistemi
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Torino/Palermo Ölçeği -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="fas fa-chart-bar text-yellow-400 mr-2"></i>Risk Değerlendirmesi
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="text-center">
+                                    <p class="text-xs text-gray-400 mb-1">Torino Ölçeği</p>
+                                    <span id="torino-badge" class="torino-0 px-4 py-2 rounded-lg text-2xl font-bold">
+                                        T0
+                                    </span>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-xs text-gray-400 mb-1">Palermo Ölçeği</p>
+                                    <span id="palermo-value" class="text-2xl font-bold font-mono text-blue-400">
+                                        -∞
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="text-xs text-gray-500 border-t border-gray-700 pt-3">
+                                <p><strong>Torino:</strong> 0 (risk yok) - 10 (kesin çarpışma, küresel felaket)</p>
+                                <p><strong>Palermo:</strong> &lt;-2 ihmal edilebilir, 0 arka plan riski, &gt;0 endişe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monte Carlo Sonuçları -->
+                    <div id="monte-carlo-results" class="card hidden">
+                        <div class="card-header">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="fas fa-chart-area text-purple-400 mr-2"></i>Monte Carlo Sonuçları
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="space-y-2 text-sm mb-4">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Ortalama Krater:</span>
+                                    <span id="mc-mean" class="font-mono text-purple-400">-</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Std. Sapma:</span>
+                                    <span id="mc-std" class="font-mono text-gray-300">-</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">%95 Güven:</span>
+                                    <span id="mc-ci" class="font-mono text-yellow-400">-</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Airburst Olasılığı:</span>
+                                    <span id="mc-airburst" class="font-mono">-</span>
+                                </div>
+                            </div>
+                            <div id="mc-histogram" class="h-24 flex items-end space-x-px bg-gray-900 p-2 rounded"></div>
+                        </div>
+                    </div>
+
+                    <!-- Doğrulama Sonuçları -->
+                    <div id="validation-results" class="card hidden">
+                        <div class="card-header">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>Model Doğrulaması
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div id="validation-content" class="space-y-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== ANALİZ MODU ================== -->
+        <div id="panel-analysis" class="mode-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Karar Destek -->
+                <div class="card">
+                    <div class="card-header bg-purple-900/30">
+                        <h3 class="text-lg font-semibold text-purple-300">
+                            <i class="fas fa-gavel mr-2"></i>Karar Destek Analizi
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="decision-panel">
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <p class="text-xs text-gray-400 uppercase">Önerilen Eylem</p>
+                                    <p id="decision-action" class="text-2xl font-bold text-purple-400">-</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs text-gray-400">Güvenilirlik</p>
+                                    <p id="decision-confidence" class="text-xl font-mono text-green-400">-%</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Gerekçeler -->
+                            <div class="mb-4">
+                                <h4 class="text-sm font-bold text-gray-400 mb-2">Eylem Gerekçeleri</h4>
+                                <div id="decision-justification" class="space-y-1"></div>
+                            </div>
+                            
+                            <!-- Reddedilen Alternatifler -->
+                            <div>
+                                <h4 class="text-sm font-bold text-gray-400 mb-2">Reddedilen Alternatifler</h4>
+                                <div id="decision-rejected" class="space-y-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zaman Çizelgesi -->
+                <div class="card">
+                    <div class="card-header bg-cyan-900/30">
+                        <h3 class="text-lg font-semibold text-cyan-300">
+                            <i class="fas fa-clock mr-2"></i>Çarpışma Zaman Çizelgesi
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="impact-timeline" class="space-y-1">
+                            <div class="timeline-item critical">
+                                <p class="font-bold text-sm">T+0: Anlık Etki</p>
+                                <p class="text-xs text-gray-400">Termal flash, şok dalgası başlangıcı</p>
+                            </div>
+                            <div class="timeline-item warning">
+                                <p class="font-bold text-sm">T+1 saat: İlk Müdahale</p>
+                                <p class="text-xs text-gray-400">Acil durum servisleri aktif</p>
+                            </div>
+                            <div class="timeline-item warning">
+                                <p class="font-bold text-sm">T+24 saat: Altyapı Çöküşü</p>
+                                <p class="text-xs text-gray-400">Kademeli sistem arızaları</p>
+                            </div>
+                            <div class="timeline-item safe">
+                                <p class="font-bold text-sm">T+7 gün: İyileşme Başlangıcı</p>
+                                <p class="text-xs text-gray-400">Geçici barınma, gıda dağıtımı</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sosyoekonomik Etki -->
+                <div class="card">
+                    <div class="card-header bg-orange-900/30">
+                        <h3 class="text-lg font-semibold text-orange-300">
+                            <i class="fas fa-users mr-2"></i>Sosyoekonomik Etki
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="stat-card">
+                                <p class="stat-label">Ham Kayıp Tahmini</p>
+                                <p id="socio-raw-casualties" class="stat-value text-red-400">-</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">Kırılganlık Çarpanı</p>
+                                <p id="socio-vulnerability" class="stat-value text-yellow-400">1.0x</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">Düzeltilmiş Kayıp</p>
+                                <p id="socio-adjusted" class="stat-value text-orange-400">-</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">Ekonomik Hasar</p>
+                                <p id="socio-economic" class="stat-value text-green-400">-</p>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-500">
+                            <p>* Kırılganlık çarpanı HDI, sağlık kapasitesi ve tahliye yeteneğine göre hesaplanır</p>
+                            <p>* Kaynak: UNDP İnsani Gelişme Raporu, Dünya Bankası verileri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duyarlılık Analizi -->
+                <div class="card">
+                    <div class="card-header bg-yellow-900/30">
+                        <h3 class="text-lg font-semibold text-yellow-300">
+                            <i class="fas fa-sliders-h mr-2"></i>Duyarlılık Analizi
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="sensitivity-bars" class="space-y-3">
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-300">Hız</span>
+                                    <span class="text-gray-400">45%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill bg-blue-500" style="width: 45%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-300">Kütle</span>
+                                    <span class="text-gray-400">35%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill bg-purple-500" style="width: 35%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-300">Giriş Açısı</span>
+                                    <span class="text-gray-400">15%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill bg-orange-500" style="width: 15%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-300">Yoğunluk</span>
+                                    <span class="text-gray-400">5%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill bg-green-500" style="width: 5%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-xs text-gray-500">
+                            <strong>Baskın Faktör:</strong> <span id="dominant-factor" class="text-yellow-400">Hız</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== SAVUNMA MODU ================== -->
+        <div id="panel-defense" class="mode-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Saptırma Teknolojileri -->
+                <div class="card lg:col-span-2">
+                    <div class="card-header bg-red-900/30">
+                        <h3 class="text-lg font-semibold text-red-300">
+                            <i class="fas fa-rocket mr-2"></i>Saptırma Teknolojileri
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-gray-700">
+                                        <th class="text-left py-2 px-3 text-gray-400">Teknoloji</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">TRL</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">ΔV</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">Min. Uyarı</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">Maliyet</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">Etkinlik</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="deflection-table">
+                                    <tr class="border-b border-gray-800">
+                                        <td class="py-2 px-3 text-green-400 font-medium">
+                                            <i class="fas fa-meteor mr-2"></i>Kinetik Etki (DART)
+                                        </td>
+                                        <td class="text-center py-2 px-3 font-mono">9</td>
+                                        <td class="text-center py-2 px-3 font-mono">0.1-1 cm/s</td>
+                                        <td class="text-center py-2 px-3">2-5 yıl</td>
+                                        <td class="text-center py-2 px-3">$300M</td>
+                                        <td class="text-center py-2 px-3">
+                                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                                <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-gray-800">
+                                        <td class="py-2 px-3 text-blue-400 font-medium">
+                                            <i class="fas fa-magnet mr-2"></i>Çekim Traktörü
+                                        </td>
+                                        <td class="text-center py-2 px-3 font-mono">4</td>
+                                        <td class="text-center py-2 px-3 font-mono">0.01 cm/s</td>
+                                        <td class="text-center py-2 px-3">10+ yıl</td>
+                                        <td class="text-center py-2 px-3">$1B+</td>
+                                        <td class="text-center py-2 px-3">
+                                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                                <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-gray-800">
+                                        <td class="py-2 px-3 text-red-400 font-medium">
+                                            <i class="fas fa-radiation mr-2"></i>Nükleer Patlama
+                                        </td>
+                                        <td class="text-center py-2 px-3 font-mono">6</td>
+                                        <td class="text-center py-2 px-3 font-mono">1-10 cm/s</td>
+                                        <td class="text-center py-2 px-3">6 ay</td>
+                                        <td class="text-center py-2 px-3">$500M</td>
+                                        <td class="text-center py-2 px-3">
+                                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                                <div class="bg-red-500 h-2 rounded-full" style="width: 95%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-gray-800">
+                                        <td class="py-2 px-3 text-purple-400 font-medium">
+                                            <i class="fas fa-sun mr-2"></i>Güneş Yelkeni
+                                        </td>
+                                        <td class="text-center py-2 px-3 font-mono">5</td>
+                                        <td class="text-center py-2 px-3 font-mono">0.001 cm/s</td>
+                                        <td class="text-center py-2 px-3">20+ yıl</td>
+                                        <td class="text-center py-2 px-3">$200M</td>
+                                        <td class="text-center py-2 px-3">
+                                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                                <div class="bg-purple-500 h-2 rounded-full" style="width: 40%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3 text-cyan-400 font-medium">
+                                            <i class="fas fa-bolt mr-2"></i>İyon Işını Saptırma
+                                        </td>
+                                        <td class="text-center py-2 px-3 font-mono">3</td>
+                                        <td class="text-center py-2 px-3 font-mono">0.05 cm/s</td>
+                                        <td class="text-center py-2 px-3">5-10 yıl</td>
+                                        <td class="text-center py-2 px-3">$800M</td>
+                                        <td class="text-center py-2 px-3">
+                                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                                <div class="bg-cyan-500 h-2 rounded-full" style="width: 50%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-4 p-3 bg-green-900/20 rounded-lg border border-green-800">
+                            <h4 class="text-sm font-bold text-green-400 mb-2">
+                                <i class="fas fa-satellite mr-2"></i>DART Misyonu Doğrulaması (2022)
+                            </h4>
+                            <div class="grid grid-cols-3 gap-4 text-sm">
+                                <div>
+                                    <p class="text-gray-400">Çarpma Hızı</p>
+                                    <p class="font-mono text-white">6.6 km/s</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400">Yörünge Değişimi</p>
+                                    <p class="font-mono text-white">-32 dakika</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400">β (Momentum)</p>
+                                    <p class="font-mono text-green-400">3.6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tespit Durumu -->
+                <div class="space-y-4">
+                    <div class="card">
+                        <div class="card-header bg-yellow-900/30">
+                            <h3 class="text-lg font-semibold text-yellow-300">
+                                <i class="fas fa-eye mr-2"></i>Tespit Kapasitesi
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-gray-300">1 km+ NEO</span>
+                                        <span class="text-green-400">%95 tamamlandı</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill bg-green-500" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-gray-300">140m+ NEO</span>
+                                        <span class="text-yellow-400">%40 tamamlandı</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill bg-yellow-500" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-gray-300">50m NEO</span>
+                                        <span class="text-orange-400">%10 tamamlandı</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill bg-orange-500" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-gray-300">20m (Chelyabinsk)</span>
+                                        <span class="text-red-400"><%1</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill bg-red-500" style="width: 1%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kör Nokta Analizi -->
+                    <div class="card">
+                        <div class="card-header bg-red-900/30">
+                            <h3 class="text-lg font-semibold text-red-300">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>Kör Noktalar
+                            </h3>
+                        </div>
+                        <div class="card-body text-sm">
+                            <ul class="space-y-2">
+                                <li class="flex items-start space-x-2">
+                                    <i class="fas fa-sun text-yellow-500 mt-1"></i>
+                                    <span><strong>Güneş Yönü:</strong> 20° elongasyon altı görünmez</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fas fa-moon text-gray-400 mt-1"></i>
+                                    <span><strong>Düşük Albedo:</strong> C-tipi asteroitler %50 daha zor</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fas fa-rocket text-orange-500 mt-1"></i>
+                                    <span><strong>Hızlı Yaklaşma:</strong> Uzun periyot kuyruklular</span>
+                                </li>
+                            </ul>
+                            <div class="mt-4 p-2 bg-red-900/30 rounded text-xs">
+                                <p class="text-red-300">
+                                    <i class="fas fa-info-circle mr-1"></i>
+                                    Chelyabinsk (2013) güneş yönünden geldi ve tespit edilemedi!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JPL Sentry Tehditleri -->
+                <div class="card lg:col-span-3">
+                    <div class="card-header bg-orange-900/30">
+                        <h3 class="text-lg font-semibold text-orange-300">
+                            <i class="fas fa-list mr-2"></i>JPL Sentry Tehdit Listesi
+                        </h3>
+                        <span class="text-xs text-gray-400">En yüksek Palermo puanına göre sıralı</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-gray-700">
+                                        <th class="text-left py-2 px-3 text-gray-400">Nesne</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">Çap</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">Olasılık</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">Potansiyel Tarih</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">Palermo</th>
+                                        <th class="text-center py-2 px-3 text-gray-400">Torino</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="sentry-table">
+                                    <tr class="border-b border-gray-800">
+                                        <td colspan="6" class="text-center py-4 text-gray-500">
+                                            <i class="fas fa-spinner fa-spin mr-2"></i>Yükleniyor...
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== VERİ SETLERİ MODU ================== -->
+        <div id="panel-datasets" class="mode-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <!-- Özet -->
+                <div class="lg:col-span-4">
+                    <div class="card">
+                        <div class="card-header bg-green-900/30">
+                            <h3 class="text-lg font-semibold text-green-300">
+                                <i class="fas fa-database mr-2"></i>50 Bilimsel Veri Seti - Genel Bakış
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                                <div class="stat-card">
+                                    <p class="stat-value text-green-400">50</p>
+                                    <p class="stat-label">Toplam Veri Seti</p>
+                                </div>
+                                <div class="stat-card">
+                                    <p class="stat-value text-blue-400">15K+</p>
+                                    <p class="stat-label">Veri Satırı</p>
+                                </div>
+                                <div class="stat-card">
+                                    <p class="stat-value text-purple-400">200+</p>
+                                    <p class="stat-label">Bilimsel Parametre</p>
+                                </div>
+                                <div class="stat-card">
+                                    <p class="stat-value text-orange-400">20+</p>
+                                    <p class="stat-label">Hakemli Kaynak</p>
+                                </div>
+                                <div class="stat-card">
+                                    <p class="stat-value text-cyan-400">%5</p>
+                                    <p class="stat-label">Chelyabinsk Hatası</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 1: Asteroit Özellikleri -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-sm font-semibold text-orange-400">
+                            <i class="fas fa-meteor mr-2"></i>Asteroit Özellikleri
+                        </h4>
+                        <span class="dataset-badge active">5 dosya</span>
+                    </div>
+                    <div class="card-body text-xs space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span>asteroid_internal_structure.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>asteroid_shapes_physics.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>smass_taxonomy.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>meteorite_physics.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>neowise_thermal_physics.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 2: Tespit & Takip -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-sm font-semibold text-yellow-400">
+                            <i class="fas fa-telescope mr-2"></i>Tespit & Takip
+                        </h4>
+                        <span class="dataset-badge active">5 dosya</span>
+                    </div>
+                    <div class="card-body text-xs space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span>astronomical_surveys.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>neo_detection_constraints.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>cneos_close_approach.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>cneos_fireballs.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>jpl_sentry_threats.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 3: Atmosferik Fizik -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-sm font-semibold text-blue-400">
+                            <i class="fas fa-cloud mr-2"></i>Atmosferik Fizik
+                        </h4>
+                        <span class="dataset-badge active">4 dosya</span>
+                    </div>
+                    <div class="card-body text-xs space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span>atmospheric_airburst_model.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>us_standard_atmosphere_1976.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>shock_chemistry_kinetics.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>nist_janaf_plasma.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 4: Etki Fiziği -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-sm font-semibold text-red-400">
+                            <i class="fas fa-bomb mr-2"></i>Etki Fiziği
+                        </h4>
+                        <span class="dataset-badge active">7 dosya</span>
+                    </div>
+                    <div class="card-body text-xs space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span>physics_constants.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>orbital_mechanics.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>tsunami_propagation_physics.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>prem_earth_model.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>glim_lithology.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 5: Tarihsel Doğrulama -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-sm font-semibold text-green-400">
+                            <i class="fas fa-history mr-2"></i>Tarihsel Doğrulama
+                        </h4>
+                        <span class="dataset-badge active">6 dosya</span>
+                    </div>
+                    <div class="card-body text-xs space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span>historical_events.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>historical_impacts.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>historical_impact_damage_losses.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>model_error_profile_validation.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>parameter_uncertainty_distributions.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 6: Altyapı -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-sm font-semibold text-purple-400">
+                            <i class="fas fa-industry mr-2"></i>Altyapı
+                        </h4>
+                        <span class="dataset-badge active">8 dosya</span>
+                    </div>
+                    <div class="card-body text-xs space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span>nuclear_power_plants.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>major_dams.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>major_airports.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>major_cities.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>infrastructure_dependency_network.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 7: Sosyoekonomik -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-sm font-semibold text-cyan-400">
+                            <i class="fas fa-users mr-2"></i>Sosyoekonomik
+                        </h4>
+                        <span class="dataset-badge active">4 dosya</span>
+                    </div>
+                    <div class="card-body text-xs space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span>socioeconomic_vulnerability_index.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>global_gdp_density.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>biodiversity_hotspots.csv</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>agricultural_zones.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategori 8: Savunma -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-sm font-semibold text-pink-400">
+                            <i class="fas fa-shield-alt mr-2"></i>Gezegen Savunması
+                        </h4>
+                        <span class="dataset-badge active">5 dosya</span>
+                    </div>
+                    <div class="card-body text-xs space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span>deflection_technologies.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>dart_mission_data.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>early_warning_mitigation_effectiveness.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>evacuation_parameters.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>risk_scales.json</span>
+                            <i class="fas fa-check text-green-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ================== FOOTER ================== -->
+    <footer class="bg-gray-800 border-t border-gray-700 mt-8 py-6">
+        <div class="max-w-[1800px] mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-xs text-gray-400">
+                <div>
+                    <h5 class="text-sm font-bold text-gray-300 mb-3">Fizik Modelleri</h5>
+                    <ul class="space-y-1">
+                        <li>• Pi-Ölçekleme Krater Denklemleri (Schmidt & Housen, 1987)</li>
+                        <li>• Chyba-Hills-Goda Airburst Modeli (1993)</li>
+                        <li>• Green Yasası Tsunami Propagasyonu</li>
+                        <li>• Runge-Kutta 4 Atmosferik Entegrasyon</li>
+                        <li>• US Standard Atmosphere 1976</li>
+                        <li>• PREM Sismik Dalga Modeli</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-gray-300 mb-3">Veri Kaynakları</h5>
+                    <ul class="space-y-1">
+                        <li>• NASA JPL Small-Body Database (SBDB)</li>
+                        <li>• NASA CNEOS Fireball & Bolide Data</li>
+                        <li>• JPL Sentry Impact Monitoring System</li>
+                        <li>• SMASS II Spektral Taksonomi</li>
+                        <li>• NEOWISE Termal Gözlemler</li>
+                        <li>• Global Power Plant Database (WRI)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-gray-300 mb-3">Doğrulama Kaynakları</h5>
+                    <ul class="space-y-1">
+                        <li>• Chelyabinsk 2013 (Brown et al., Nature 2013)</li>
+                        <li>• Tunguska 1908 (Chyba et al., Nature 1993)</li>
+                        <li>• DART Misyonu 2022 (NASA)</li>
+                        <li>• EM-DAT Afet Veritabanı</li>
+                        <li>• UNDP İnsani Gelişme Raporu</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-gray-300 mb-3">Bilimsel Atıflar</h5>
+                    <ul class="space-y-1">
+                        <li>• Carry, B. (2012). Planet. Space Sci.</li>
+                        <li>• Collins et al. (2005). Meteoritics & Planet. Sci.</li>
+                        <li>• Ward & Asphaug (2000). Geophys. J. Int.</li>
+                        <li>• Harris & D'Abramo (2015). Icarus</li>
+                        <li>• Mainzer et al. (2011). ApJ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700 text-center text-xs text-gray-500">
+                <p class="mb-1">
+                    <strong>MeteorViz</strong> - NASA Space Apps Challenge Projesi | 
+                    50 Bilimsel Veri Seti | Hibrit Fizik-ML Motoru | Chelyabinsk Doğrulamalı
+                </p>
+                <p>© 2026 - Bilimsel araştırma ve eğitim amaçlıdır</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="simulation_v2.js"></script>
+    <script src="enhanced_ui.js"></script>
+</body>
+
+</html>
